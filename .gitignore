@@ -1,0 +1,48 @@
+### OS
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+### General File
+*.log*
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.tmp
+*.bak
+*.swp
+*.pm2
+
+### General Directory
+**/node_modules/**
+**/bower_components/**
+**/log/**
+**/logs/**
+**/build/**
+**/dist/**
+**/tmp/**
+**/generator-output/**
+**/seeds/0*
+
+### specific files
+.env.file
+brief.json
+test.js
+api-docs.*
+
+### Cloud9 IDE
+.c9/
+data/
+mongod
+
+### Visual Studio
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+src/swagger/api-docs.yml
