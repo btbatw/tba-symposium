@@ -1,0 +1,13 @@
+{
+  "name": "tbasymposium",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:back": "cd server/ && npm run dev",
+    "dev:front": "cd client/ && ng serve"
+  },
+  "author": "",
+  "license": "ISC"
+}
