@@ -8,7 +8,7 @@ module.exports = {
     },
     db: {
         name: 'tbasymposium',
-        url: process.env.MONGOLAB_URI || process.env.MONGODB_URI || 'mongodb://localhost/schola',
+        url: process.env.MONGOLAB_URI || process.env.MONGODB_URI || 'mongodb://localhost/tbasymposium',
         // promise: global.Promise
     },
     port: process.env.PORT || 8080,
