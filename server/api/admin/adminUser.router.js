@@ -1,15 +1,29 @@
-import express from 'express';
 import AdminUserController from './adminUser.controller';
+const adminUserController = new AdminUserController();
 
+module.exports = (router, serverApp) => {
+    router
+        .route('/user')
+        .get(adminUserController.secureQuery)
+    //     .post(adminUserController.register);
+    router
+        .route('/users')
+        .get(adminUserController.getUsers);
+
+    return router;
+}
+/*
 const router = express.Router();
 const adminUserController = new AdminUserController();
 // router.get('/')
 
 router
-    .route('/users?')
+    .route('/user')
     .get(adminUserController.secureQuery)
 //     .post(adminUserController.register);
-
+router
+    .route('/users')
+    .get(adminUserController.getUsers);
 // router
 //     .route('/users?/:id')
 //     .all(adminUserController.getDocument)
@@ -26,3 +40,4 @@ router
 // admin/users
 
 module.exports = router;
+*/
