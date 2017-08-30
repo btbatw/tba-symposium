@@ -6,10 +6,12 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 
 import { AppComponent } from './app.component';
+import { TestAdminComponent } from './test-admin/test-admin.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestAdminComponent
   ],
   imports: [
 	BrowserModule,
