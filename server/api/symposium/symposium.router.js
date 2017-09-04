@@ -13,6 +13,7 @@ module.exports = (router, serverApp) => {
         .all(symposiumController.getDocuments)
         .get(symposiumController.get)
         .put(symposiumController.put)
+        // id == 'new' for POST
         .post(symposiumController.post)
         .delete(symposiumController.delete)
     // router

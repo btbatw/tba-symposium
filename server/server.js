@@ -50,7 +50,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/admin', adminUser(new express.Router()));
-app.use('/symposiums?', symposium(new express.Router()));
+app.use('/api/symposiums?', symposium(new express.Router()));
 app.get('/', (req, res) => {
     res.send('Hello es2015!');
 });
