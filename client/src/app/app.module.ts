@@ -1,25 +1,32 @@
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+
 import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
-
+/* App Root */
 import { AppComponent } from './app.component';
-import { TestAdminComponent } from './test-admin/test-admin.component';
+
+/* Feature Modules */
+import { WebsiteModule } from './website/website.module';
+
+/* Routing Module */
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TestAdminComponent
-  ],
-  imports: [
-	BrowserModule,
-	BrowserAnimationsModule,
-	HttpModule,
-	AngularFontAwesomeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+	],
+	imports: [
+		BrowserModule,
+		BrowserAnimationsModule,
+		WebsiteModule,
+		AppRoutingModule,
+		HttpModule,
+		HttpClientModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
