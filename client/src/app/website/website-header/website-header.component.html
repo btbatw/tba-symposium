@@ -1,0 +1,10 @@
+<md-toolbar color="primary" *ngIf="symposium">
+	<div>
+		<h1>{{ symposium.symposiumInfo.name | uppercase }}</h1>
+	</div>
+	<div *ngFor="let key of keysOfObj(symposium)">
+		<button md-raised-button color="accent" *ngIf="showPageLink('showPageLink', key, symposium)">
+				{{key | uppercase}}
+			</button>
+	</div>
+</md-toolbar>

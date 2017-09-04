@@ -1,0 +1,25 @@
+<app-website-header
+	*ngIf="symposium"
+	[symposium] = "symposium"
+	>
+</app-website-header>
+	<div *ngIf="symposium" class="mat-typography">
+		<section>
+			<h2>{{ symposium.about.title | uppercase }}</h2>
+			<p>{{ symposium.about.text }}</p>
+		</section>
+
+		<section>
+			<h2>{{ symposium.location.title | uppercase }}</h2>
+		</section>
+
+		<section>
+			<app-website-talk
+				[symposium]="symposium"
+				[speakers]="speakers"
+				>
+			</app-website-talk>
+
+
+		</section>
+	</div>

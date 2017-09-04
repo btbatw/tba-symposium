@@ -1,0 +1,21 @@
+<h2>{{ symposium.talk.title | uppercase }}</h2>
+<h3>Schedules</h3>
+<md-tab-group>
+	<md-tab label="11/3">
+		<md-list class="mat-typography">
+			<md-list-item *ngFor="let schedule of symposium.talk.schedules">
+				<div md-list-avatar>{{ schedule.from }} {{ schedule.to }}</div>
+				<h4 md-line class="mat-h2">{{schedule.title}}</h4>
+				<p md-line> {{schedule.topic}} </p>
+			</md-list-item>
+		</md-list>
+	</md-tab>
+	<md-tab label="11/4">Content 2</md-tab>
+</md-tab-group>
+<h3>Speakers</h3>
+<!-- <div fxLayout fxLayoutGap="10px" fxLayoutWrap> -->
+	<app-website-talk-speaker
+		[speakers]="speakers"
+		xLayout fxLayoutGap="3%" fxLayoutWrap>
+	</app-website-talk-speaker>
+<!-- </div> -->

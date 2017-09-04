@@ -1,0 +1,13 @@
+<md-card class="mat-typography" fxFlex="30%" fxLayout="column" *ngFor="let speaker of speakers">
+	<img md-card-image
+		src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}"
+		alt="Photo of {{speaker.name}}">
+	<md-card-title-group fxFlex="1 1 auto">
+		<md-card-subtitle>{{ speaker.title }}, {{ speaker.from }}</md-card-subtitle>
+		<md-card-title>{{ speaker.name }} {{ speaker.nameCh }}</md-card-title>
+		<md-card-subtitle>{{ speaker.affiliations[0] }}</md-card-subtitle>
+	</md-card-title-group>
+	<md-card-footer>
+		<button md-mini-fab><fa name="id-card-o" size="lg"></fa></button>
+	</md-card-footer>
+</md-card>
