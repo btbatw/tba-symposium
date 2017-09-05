@@ -1,0 +1,19 @@
+@import 'variables';
+@import '~@angular/material/theming';
+@import 'yellow-blue-theme';
+
+.header-theme {
+	@include angular-material-theme($header-theme);
+}
+
+.container-header-bg {
+	background-color: $accentColorFB;
+	background-color: $accentColor;
+	padding: 20px 0px;
+}
+
+.hidden {
+	position: absolute;
+	opacity: 0;
+	font-size: 1%;
+}

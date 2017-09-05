@@ -10,7 +10,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
 $ttba2017-app-primary: mat-palette($mat-amber);
-$ttba2017-app-accent:  mat-palette($mat-indigo, 700, A100, A500);
+$ttba2017-app-accent:  mat-palette($mat-light-blue, 900, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $ttba2017-app-warn:    mat-palette($mat-red);
@@ -23,6 +23,11 @@ $ttba2017-app-theme: mat-light-theme($ttba2017-app-primary, $ttba2017-app-accent
 // that you are using.
 @include angular-material-theme($ttba2017-app-theme);
 
+$header-primary: mat-palette($mat-grey, 50, 50, 500);
+$header-accent:  mat-palette($mat-light-blue, 900, A100, A400);
+$header-warn:    mat-palette($mat-deep-orange);
+$header-theme:   mat-light-theme($header-primary, $header-accent, $header-warn);
+
 
 // TYPOGRAPHY
 // Define a custom typography config that overrides the font-family as well as the
@@ -34,7 +39,7 @@ $custom-typography: mat-typography-config(
   $display-2:     mat-typography-level(45px, 48px, 500),
   $display-1:     mat-typography-level(34px, 40px, 500),
   $headline:      mat-typography-level(24px, 32px, 500),
-  $title:         mat-typography-level(20px, 32px, 700),
+  $title:         mat-typography-level(20px, 32px, 500),
   $subheading-2:  mat-typography-level(16px, 28px, 500),
   $subheading-1:  mat-typography-level(15px, 24px, 500),
   $body-2:        mat-typography-level(14px, 24px, 700),
@@ -44,3 +49,5 @@ $custom-typography: mat-typography-config(
   // Line-height must be unit-less fraction of the font-size.
   $input:         mat-typography-level(16px, 1.125, 500)
 );
+
+@include angular-material-typography($custom-typography);

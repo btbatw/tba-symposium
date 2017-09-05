@@ -6,6 +6,10 @@
 
 @include mat-base-typography($custom-typography);
 @include mat-toolbar-typography($custom-typography);
+
+body {
+	margin: 0;
+}
 // @for $index from 1 through 6 {
 // 	h#{$index} {
 // 		// font-weight: 700;

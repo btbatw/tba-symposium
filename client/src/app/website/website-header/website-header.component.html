@@ -1,10 +1,21 @@
-<md-toolbar color="primary" *ngIf="symposium">
-	<div>
-		<h1>{{ symposium.symposiumInfo.name | uppercase }}</h1>
-	</div>
-	<div *ngFor="let key of keysOfObj(symposium)">
-		<button md-raised-button color="accent" *ngIf="showPageLink('showPageLink', key, symposium)">
-				{{key | uppercase}}
+<div class="header-theme container-header-bg" fxLayoutAlign="center">
+	<div
+		fxFlex="0 1 960px"
+		fxLayout="row"
+		fxLayout.xs="column"
+		fxLayoutAlign="space-between center"
+		[style.padding]="'0 10px'">
+		<div fxFlex.xs="1 1 calc(100vw/5.5)" fxFlex="1 1 300px">
+			<h1 class="mat-h1 hidden">{{ symposium.symposiumInfo.name | uppercase }}</h1>
+			<img src="assets/img/header-logo.png" [style.width]="'100%'">
+		</div>
+		<div fxFlex.xs="1 1 auto" fxFlex="0 1 auto" fxLayout="row wrap" fxLayoutAlign="end stretch">
+			<button md-button color="primary"
+				*ngFor="let link of getPageLinks('showPageLink', symposium)">
+				{{link | uppercase}}
 			</button>
+			<button md-raised-button color="accent">REGISTER</button>
+		</div>
 	</div>
-</md-toolbar>
+
+</div>

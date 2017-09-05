@@ -13,7 +13,11 @@ export class WebsiteHeaderComponent {
 		return Object.keys(obj);
 	}
 
-	showPageLink(identifier, key, obj) {
-		return !obj[key][identifier] ? false : obj[key][identifier];
+	getPageLinks(identifier, obj) {
+		return Object.keys(obj)
+			.filter(element =>
+				!obj[element][identifier] ? false : obj[element][identifier]
+			);
+		// return !obj[key][identifier] ? false : obj[key][identifier];
 	}
 }
