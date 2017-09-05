@@ -10,6 +10,12 @@ export class TestAdminService {
 
 	constructor(private http: Http) { }
 
+	getSymposium() {
+		return this.http
+			.get('/symposium/59a768dec853bd1942bd5e71')
+			.map(this.extractData);
+	}
+
 	getUsers() {
 		return this.http
 			.get(this.url + '/users')
