@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import * as moment from 'moment-timezone';
 
 @Component({
 	selector: 'app-website-talk-speaker',
@@ -9,4 +10,8 @@ export class WebsiteTalkSpeakerComponent {
 	@Input() speakers;
 
 	constructor() { }
+
+	formatTimeChicago(dateStr, format) {
+		return moment(dateStr).tz('America/Chicago').format(format);
+	}
 }

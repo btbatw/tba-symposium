@@ -1,21 +1,21 @@
-<h2>{{ symposium.talk.title | uppercase }}</h2>
-<h3>Schedules</h3>
+<h2 class="mat-display-1 vertical-bullet-text" [style.margin]="'1em 0'">{{ symposium.talk.title | uppercase }}</h2>
+<h3 class="mat-headline">Schedules</h3>
 <md-tab-group>
-	<md-tab label="11/3">
-		<md-list class="mat-typography">
-			<md-list-item *ngFor="let schedule of symposium.talk.schedules">
-				<div md-list-avatar>{{ schedule.from }} {{ schedule.to }}</div>
-				<h4 md-line class="mat-h2">{{schedule.title}}</h4>
-				<p md-line> {{schedule.topic}} </p>
-			</md-list-item>
-		</md-list>
-	</md-tab>
-	<md-tab label="11/4">Content 2</md-tab>
+	<span *ngFor="let date of [4, 5]">
+		<md-tab label="11/{{date}}">
+			<div class="container-tab-content" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
+				<div>
+					<h4 class="mat-title">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
+					<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
+				</div>
+				<div>
+					<h4 class="mat-title margin-t-0-xs">{{schedule.title}}</h4>
+					<p class="mat-subheading-1">{{schedule.topic}}</p>
+				</div>
+			</div>
+		</md-tab>
+	</span>
 </md-tab-group>
-<h3>Speakers</h3>
-<!-- <div fxLayout fxLayoutGap="10px" fxLayoutWrap> -->
-	<app-website-talk-speaker
-		[speakers]="speakers"
-		xLayout fxLayoutGap="3%" fxLayoutWrap>
-	</app-website-talk-speaker>
-<!-- </div> -->
+<h3 class="mat-headline">Speakers</h3>
+<app-website-talk-speaker [speakers]="speakers" xLayout fxLayoutGap="3%" fxLayoutWrap>
+</app-website-talk-speaker>
