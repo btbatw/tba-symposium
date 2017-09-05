@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+// import { Http, Response } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
+
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -9,12 +11,12 @@ export class WebsiteService {
 	private url = '/admin';
 	public speakers;
 
-	constructor(private http: Http) { }
+	constructor(private http: HttpClient) { }
 
 	getSymposium() {
 		return this.http
 			.get('api/symposium/59a768dec853bd1942bd5e71')
-			.map(this.extractData)
+			// .map(this.extractData)
 			.map(data => {
 				this.speakers = this.parseSpeakers(data[0]);
 				return data;
