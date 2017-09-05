@@ -1,4 +1,4 @@
-const SymposiumStructure = {
+const ttbaSymposium2017 = {
 
     symposiumInfo: {
         name: 'TTBA Symposium 2017',
@@ -339,4 +339,4 @@ const SymposiumStructure = {
 
 }
 
-module.exports = SymposiumStructure;
+module.exports = ttbaSymposium2017;
