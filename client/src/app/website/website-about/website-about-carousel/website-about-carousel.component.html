@@ -1,0 +1,8 @@
+<div class="wrapper" style="padding-bottom:56.25%;">
+	<span *ngFor="let img of carouselImgs; let idx = index" >
+		<img *ngIf="starting % carouselImgs.length === idx" src="assets/img/carousel/{{img}}.jpg" alt="" [@itemAnim]>
+	</span>
+	<button md-mini-fab (click)="togglePlay()"><fa name="{{ isPlaying ? 'pause' : 'play' }}"></fa></button>
+</div>
+
+

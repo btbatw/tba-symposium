@@ -1,0 +1,17 @@
+button {
+    z-index: 100;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+img {
+	width:100%;
+	position:absolute;
+	top: 0;
+}
+
+.wrapper {
+	position: relative; overflow:hidden;
+}
+
