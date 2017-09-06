@@ -4,17 +4,13 @@
 <div *ngIf="symposium" class="container-content-bg" fxLayoutAlign="center">
 	<div fxFlex="0 1 960px" [style.padding]="'0 10px'">
 		<section>
-			<h2 class="mat-display-1 vertical-bullet-text">{{ symposium.about.title | uppercase }}</h2>
-			<p class="mat-subheading-2">{{ symposium.about.text }}</p>
+			<app-website-about [symposium]="symposium">
+			</app-website-about>
 		</section>
-
 		<section>
 			<h2 class="mat-display-1 vertical-bullet-text">{{ symposium.location.title | uppercase }}</h2>
 		</section>
-
-		<section>
-			<app-website-talk [symposium]="symposium" [speakers]="speakers">
-			</app-website-talk>
-		</section>
+		<app-website-talk [symposium]="symposium" [speakers]="speakers">
+		</app-website-talk>
 	</div>
 </div>
