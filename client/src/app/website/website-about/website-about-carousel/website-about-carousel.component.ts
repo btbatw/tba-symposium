@@ -25,7 +25,7 @@ import {
 					})),
 					animate(0, style({
 						position: 'absolute',
-						top: '0px'
+						top: '-5%'
 					}))
 				])
 			])
@@ -48,7 +48,7 @@ export class WebsiteAboutCarouselComponent implements OnInit, OnDestroy {
 		this.starting += 1;
 		return this.isPlaying = setInterval(() => {
 			this.starting += 1;
-		}, 5000);
+		}, 4000);
 	}
 
 	pause() {

@@ -1,4 +1,4 @@
-<div class="wrapper" style="padding-bottom:56.25%;">
+<div class="wrapper" style="padding-bottom:50%;">
 	<span *ngFor="let img of carouselImgs; let idx = index" >
 		<img *ngIf="starting % carouselImgs.length === idx" src="assets/img/carousel/{{img}}.jpg" alt="" [@itemAnim]>
 	</span>
