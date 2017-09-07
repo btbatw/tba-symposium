@@ -60,6 +60,10 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+// smoothscroll-polyfill
+import { polyfill } from 'smoothscroll-polyfill';
+polyfill();
+// require('smoothscroll-polyfill').polyfill();
 
 /**
  * Date, currency, decimal and percent pipes.
