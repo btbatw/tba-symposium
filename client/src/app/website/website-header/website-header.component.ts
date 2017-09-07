@@ -7,7 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class WebsiteHeaderComponent {
 	@Input() symposium;
-	constructor() { }
+
+	constructor() {
+	}
 
 	keysOfObj(obj) {
 		return Object.keys(obj);
@@ -20,4 +22,9 @@ export class WebsiteHeaderComponent {
 			);
 		// return !obj[key][identifier] ? false : obj[key][identifier];
 	}
+
+	scrollTo(link) {
+		document.getElementById(link).scrollIntoView({ behavior: 'smooth' });
+	}
+
 }
