@@ -9,13 +9,22 @@
 			<h1 class="mat-h1 hidden">{{ symposium.symposiumInfo.name | uppercase }}</h1>
 			<img src="assets/img/header-logo.png" [style.width]="'100%'">
 		</div>
-		<div fxFlex.xs="1 1 auto" fxFlex="0 1 auto" fxLayout="row wrap" fxLayoutAlign="end stretch">
+		<nav fxFlex.xs="1 1 auto" fxFlex="0 1 auto" fxLayout="row wrap" fxLayoutAlign="end stretch" fxLayoutAlign.xs="space-between stretch">
 			<button md-button color="primary"
-				*ngFor="let link of getPageLinks('showPageLink', symposium)">
+				*ngFor="let link of getPageLinks('showPageLink', symposium)"
+				(click)="scrollTo(link)">
 				{{link | uppercase}}
 			</button>
 			<button md-raised-button color="accent">REGISTER</button>
-		</div>
+		</nav>
+		<!-- <div fxLayout="row wrap" fxLayoutAlign="end stretch">
+			<button md-button color="primary"
+				*ngFor="let link of getPageLinks('showPageLink', symposium)"
+				(click)="scrollTo(link)">
+				{{link | uppercase}}
+			</button>
+			<button md-raised-button color="accent">REGISTER</button>
+		</div> -->
 	</div>
-
 </div>
+

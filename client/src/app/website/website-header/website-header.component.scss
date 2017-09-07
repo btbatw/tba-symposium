@@ -1,10 +1,4 @@
 @import 'variables';
-@import '~@angular/material/theming';
-@import 'yellow-blue-theme';
-
-.header-theme {
-	@include angular-material-theme($header-theme);
-}
 
 .container-header-bg {
 	background-color: $accentColorFB;
@@ -16,4 +10,22 @@
 	position: absolute;
 	opacity: 0;
 	font-size: 1%;
+}
+
+nav {
+	@media screen and (max-width: 600px) {
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		background-color: $accentColorFB;
+		width: 100%;
+		min-height: auto;
+		z-index: 1000;
+
+		button {
+			height: 4em;
+			font-size: 75%;
+			min-width: initial;
+		}
+	}
 }

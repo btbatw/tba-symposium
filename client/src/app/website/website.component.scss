@@ -3,6 +3,10 @@
 .container-content-bg {
 	background-color: $bodyBgColor;
 	@extend .text-color;
+
+	@media screen and (max-width: 600px) {
+		padding-bottom: 4em;
+	}
 }
 
 ::ng-deep .vertical-bullet-text, .vertical-bullet-text {
