@@ -1,0 +1,12 @@
+<div md-dialog-content class="wrapper-dialog">
+	<div>
+		<div class="tag mat-typography">{{data.title}}</div>
+		<div class="tag mat-typography">{{formatTimeChicago(data.from, 'M/D HH:mm')}}</div>
+	</div>
+	<p class="mat-body-1" [innerHTML]="data.description"></p>
+</div>
+<md-dialog-actions fxLayout fxLayoutAlign="end">
+		<button md-button color="accent" [md-dialog-close]="true">
+			<fa name="times" size="lg"></fa>
+		</button>
+</md-dialog-actions>
