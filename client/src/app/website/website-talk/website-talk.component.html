@@ -5,12 +5,19 @@
 		<md-tab label="11/{{date}}">
 			<div class="container-tab-content" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
 				<div>
-					<h4 class="mat-title">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
+					<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
 					<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
 				</div>
-				<div>
-					<h4 class="mat-title margin-t-0-xs">{{schedule.title}}</h4>
-					<p class="mat-subheading-1">{{schedule.topic}}</p>
+				<div (click)="toggleShow(schedule.title)">
+						<h4 class="mat-subheading-2 margin-t-0-xs">
+							{{schedule.title}}
+							<span *ngIf="schedule.description"
+								style="display: inline-block; margin-left: 0.5em;">
+								<fa name="{{ showing.includes(schedule.title) ? 'minus' : 'plus' }}"></fa>
+							</span>
+						</h4>
+					<p class="mat-subheading-1 margin-b-0" >{{schedule.topic}}</p>
+					<p class="mat-body-1" *ngIf="showing.includes(schedule.title) && schedule.description">{{schedule.description}}</p>
 				</div>
 			</div>
 		</md-tab>

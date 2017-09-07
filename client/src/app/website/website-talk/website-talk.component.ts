@@ -9,6 +9,7 @@ import * as moment from 'moment-timezone';
 export class WebsiteTalkComponent {
 	@Input() speakers;
 	@Input() symposium;
+	showing = [];
 
 	constructor() {
 	}
@@ -22,6 +23,13 @@ export class WebsiteTalkComponent {
 			.filter(element =>
 				new Date(element.from).getDate() === Number(dateNum)
 			);
+	}
+
+	toggleShow(title) {
+		this.showing.includes(title) ?
+			this.showing = this.showing.filter(element => element !== title) :
+			this.showing = [title, ...this.showing];
+		console.log(this.showing);
 	}
 
 }
