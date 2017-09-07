@@ -5,6 +5,9 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import { fromPromise } from 'rxjs/observable/fromPromise';
+
+import { ttbaSymposium2017 } from './symposium-ttba-2017';
 
 @Injectable()
 export class WebsiteService {
@@ -14,9 +17,10 @@ export class WebsiteService {
 	constructor(private http: HttpClient) { }
 
 	getSymposium() {
-		return this.http
-			.get('api/symposium/59a768dec853bd1942bd5e71')
+		// return this.http
+		// 	.get('api/symposium/59a768dec853bd1942bd5e71')
 			// .map(this.extractData)
+		return fromPromise(Promise.resolve([ttbaSymposium2017]))
 			.map(data => {
 				this.speakers = this.parseSpeakers(data[0]);
 				return data;
