@@ -28,6 +28,10 @@ $header-accent:  mat-palette($mat-light-blue, 900, A100, A400);
 $header-warn:    mat-palette($mat-deep-orange);
 $header-theme:   mat-light-theme($header-primary, $header-accent, $header-warn);
 
+.header-theme {
+	@include angular-material-theme($header-theme);
+}
+
 
 // TYPOGRAPHY
 // Define a custom typography config that overrides the font-family as well as the

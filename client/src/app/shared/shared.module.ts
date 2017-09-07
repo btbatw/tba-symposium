@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import {
 	MdButtonModule,
-	MdCheckboxModule,
-	MdToolbarModule,
-	MdListModule,
-	MdChipsModule,
+	// MdCheckboxModule,
+	// MdToolbarModule,
+	// MdListModule,
+	// MdChipsModule,
 	MdTabsModule,
-	MdCardModule
+	// MdCardModule,
+	MdDialogModule,
+	OverlayContainer
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
@@ -19,14 +21,19 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
 	exports: [
 		CommonModule,
 		MdButtonModule,
-		MdCheckboxModule,
-		MdToolbarModule,
-		MdListModule,
-		MdChipsModule,
+		// MdCheckboxModule,
+		// MdToolbarModule,
+		// MdListModule,
+		// MdChipsModule,
 		MdTabsModule,
-		MdCardModule,
+		// MdCardModule,
+		MdDialogModule,
 		FlexLayoutModule,
 		AngularFontAwesomeModule
 	]
 })
-export class SharedModule { }
+export class SharedModule {
+	constructor(overlayContainer: OverlayContainer) {
+		// overlayContainer.themeClass = 'header-theme';
+	  }
+}
