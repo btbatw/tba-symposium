@@ -3,13 +3,16 @@
 
 <div *ngIf="symposium" class="container-content-bg" fxLayoutAlign="center">
 	<div fxFlex="0 1 960px" [style.padding]="'0 10px'">
+		<a id="about"></a>
 		<section>
 			<app-website-about [symposium]="symposium">
 			</app-website-about>
 		</section>
+		<a id="location"></a>
 		<section>
 			<h2 class="mat-display-1 vertical-bullet-text">{{ symposium.location.title | uppercase }}</h2>
 		</section>
+		<a id="talk"></a>
 		<app-website-talk [symposium]="symposium" [speakers]="speakers">
 		</app-website-talk>
 	</div>
