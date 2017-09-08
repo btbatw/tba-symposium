@@ -23,4 +23,8 @@ export class WebsiteTalkSpeakerComponent {
 			data: data
 		});
 	}
+
+	goToLink(link) {
+		window.open(link, '_blank');
+	}
 }
