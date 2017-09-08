@@ -1,0 +1,6 @@
+<h2 class="mat-display-1 vertical-bullet-text">{{ symposium.location.title | uppercase }}</h2>
+<h3 class="mat-title">{{ symposium.location.text }}</h3>
+<h4 class="mat-subheading-1"><fa name="map-marker"></fa>{{ symposium.location.address }}</h4>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="18">
+	<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>

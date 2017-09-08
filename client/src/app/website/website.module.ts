@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
+import { AgmCoreModule } from '@agm/core';
 
 import { WebsiteComponent } from './website.component';
 import { WebsiteService } from './website.service';
@@ -10,12 +11,13 @@ import { WebsiteTalkSpeakerComponent } from './website-talk/website-talk-speaker
 import { SpeakerDetailDialog } from './website-talk/website-talk-speaker/speaker-detail-dialog/speaker-detail-dialog.component';
 import { WebsiteAboutComponent } from './website-about/website-about.component';
 import { WebsiteAboutCarouselComponent } from './website-about/website-about-carousel/website-about-carousel.component';
+import { WebsiteLocationComponent } from './website-location/website-location.component';
 
 
 
 @NgModule({
-  imports: [ SharedModule, WebsiteRoutingModule ],
-  declarations: [ WebsiteComponent, WebsiteHeaderComponent, WebsiteTalkComponent, WebsiteTalkSpeakerComponent, SpeakerDetailDialog, WebsiteAboutComponent, WebsiteAboutCarouselComponent ],
+  imports: [ SharedModule, WebsiteRoutingModule, AgmCoreModule.forRoot({apiKey: 'AIzaSyALqtOO3Dgdao-2ISlW1auWqzkzIABjwoM'}) ],
+  declarations: [ WebsiteComponent, WebsiteHeaderComponent, WebsiteTalkComponent, WebsiteTalkSpeakerComponent, SpeakerDetailDialog, WebsiteAboutComponent, WebsiteAboutCarouselComponent, WebsiteLocationComponent ],
   providers: [ WebsiteService ],
   entryComponents: [ SpeakerDetailDialog ]
 })
