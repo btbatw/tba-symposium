@@ -1,15 +1,27 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>TTBA Symposium</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<title>TTBA Symposium</title>
+	<base href="/">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		(function () {
+			var redirect = sessionStorage.redirect;
+			delete sessionStorage.redirect;
+			if (redirect && redirect != location.href) {
+				history.replaceState(null, null, redirect);
+			}
+		})();
+	</script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
 </head>
+
 <body>
-  <app-root></app-root>
+	<app-root></app-root>
 </body>
+
 </html>
