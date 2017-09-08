@@ -8,12 +8,10 @@
 			<app-website-about [symposium]="symposium">
 			</app-website-about>
 		</section>
-		<a id="location"></a>
-		<section>
-			<h2 class="mat-display-1 vertical-bullet-text">{{ symposium.location.title | uppercase }}</h2>
-		</section>
 		<a id="talk"></a>
 		<app-website-talk [symposium]="symposium" [speakers]="speakers">
 		</app-website-talk>
+		<a id="location"></a>
+		<app-website-location [symposium]="symposium"></app-website-location>
 	</div>
 </div>

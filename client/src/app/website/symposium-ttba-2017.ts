@@ -18,25 +18,6 @@ export const ttbaSymposium2017 = {
         text: 'Texas Taiwanese Biotechnology Association (TTBA) is a young non-profit organization established by a vibrant group of PhD students from Baylor College of Medicine, UT Southwestern, UT Austin, Texas A & M, and Rice University. Our mission is to facilitate intellectual conversation and networking among young Taiwanese biomedical scientists, and foster their career development in the US and Taiwan. \n \n We regularly host events every month. To keep up with our latest events, please like our fanpage, join the facebook group, and sign up our email updates.',
     },
 
-    location: {
-        title: 'Location',
-        showPageLink: true,
-        text: 'string',
-        googleMapLink: 'string',
-        directions: [{
-            method: 'Parking',
-            description: 'Street parking is available'
-        }],
-        lodgings: [{
-            category: 'Economy',
-            priceRange: 'string',
-            hotels: [{
-                name: 'string',
-                location: 'string'
-            }]
-        }]
-    },
-
     talk: {
         title: 'Talks',
         showPageLink: true,
@@ -361,6 +342,26 @@ export const ttbaSymposium2017 = {
                 }]
             },
         ]
+	},
+
+	location: {
+        title: 'Location',
+        showPageLink: true,
+		text: 'The University of Texas Department of Electrical and Computer Engineering',
+		address: '2501 Speedway, Austin, TX 78712',
+        googleMapLink: 'https://www.google.com/maps/place/The+University+of+Texas+Department+of+Electrical+and+Computer+Engineering/@30.2880874,-97.7354196,20.23z/data=!4m5!3m4!1s0x0:0xfe2d52924498ddf!8m2!3d30.2881002!4d-97.7353755',
+        directions: [{
+            method: 'Parking',
+            description: 'Street parking is available'
+        }],
+        lodgings: [{
+            category: 'Economy',
+            priceRange: 'string',
+            hotels: [{
+                name: 'string',
+                location: 'string'
+            }]
+        }]
     },
 
     sponsor: {
