@@ -8,13 +8,23 @@ export const ttbaSymposium2017 = {
             to: new Date('2017/11/05 12:00 CST')
         },
         year: '2017',
-        briefDescription: 'string',
+        title: 'HUSTLING IN THE ERA OF BIOTECH',
         showPageLink: false,
     },
 
     about: {
-        title: 'TTBA',
-        showPageLink: true,
+        title: 'The symposium',
+		showPageLink: true,
+		subjects : [
+			{
+				title: 'Hustling in the era of biotech',
+				description: '<p>Academic career or Industry job? East coast or West bay? These are the common dichotomy that many of us in the world of bioscience have faced at some point of our career trajectories. But interestingly, these days, there is a third career path for those with creativity, courage, and capability: academic entrepreneurship. In addition, the rising Lonestar is also fostering a vibrant biocluster to attract talents and other resources. How could we grab the opportunities in the era of biotech?</p><p>To unleash the potential of your career development, TTBA 2017 symposium will bring you 2 keynote speeches to share speakers\' visions of how innovations reshape the world. The symposium also present 5 panels covering academic entrepreneurship, startups in Texas, jobs beyond the bench, an in-depth comparison of company cultures at east and west coasts, and the opportunity in Taiwan.</p><p>We welcome all graduate students, postdocs, and young professionals in bio-related fields to join us at the symposium. Please submit an abstract if you would like to present your research at the symposium.</p>'
+			},
+			{
+				title: 'TTBA',
+				description: '<p>The Texas Taiwanese Biotechnology Association (<a target="_blank" href="http://www.ttbatw.org/">TTBA</a>) is the professional society for bioscience. Founded in 2014, TTBA aims to foster individual career development, to enhance scientific collaborations,  and to strengthen networking among academic and industrial bioscience communities in Taiwan and the US.</p><p>Comprised of Boston Taiwanese Biotechnology Association (<a target="_blank" href="http://btbatw.org/">BTBA</a>), TTBA, SoCal Taiwanese Biotechnology Association (<a target="_blank" href="http://www.socaltbatw.org/">SoCal TBA</a>), Europe-Taiwan Biotech Association (<a target="_blank" href="https://www.facebook.com/ETBioA/">ETBA</a>), the alliance of TBAs is the FASTEST growing Taiwanese professional community worldwide. All the associations hold their own annual symposiums attracting totally more than 850 Taiwanese professionals from the bio-related fields each year.</p>'
+			}
+		],
         text: 'Texas Taiwanese Biotechnology Association (TTBA) is a young non-profit organization established by a vibrant group of PhD students from Baylor College of Medicine, UT Southwestern, UT Austin, Texas A & M, and Rice University. Our mission is to facilitate intellectual conversation and networking among young Taiwanese biomedical scientists, and foster their career development in the US and Taiwan. \n \n We regularly host events every month. To keep up with our latest events, please like our fanpage, join the facebook group, and sign up our email updates.',
     },
 
@@ -26,7 +36,7 @@ export const ttbaSymposium2017 = {
                 to: new Date("2017-11-04T17:30:00.000Z"),
                 title: 'Registration',
                 topic: null,
-                description: 'register @ room ... ...',
+                sessionDescription: 'register @ room ... ...',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -43,7 +53,7 @@ export const ttbaSymposium2017 = {
                 to: new Date('2017/11/04 13:00 CDT'),
                 title: 'Opening Remarks',
                 topic: null,
-                description: '',
+                sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -59,7 +69,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 13:00 CDT'),
                 to: new Date('2017/11/04 14:00 CDT'),
                 title: 'Keynote 1: Mien-Chie Hung, PhD',
-                topic: '',
+				topic: null,
+				sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -76,7 +87,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 14:00 CDT'),
                 to: new Date('2017/11/04 15:00 CDT'),
                 title: 'Panel 1: Academic entrepreneur',
-                topic: 'How does academic innovation initiate entrepreneurship?',
+				topic: 'How does academic innovation initiate entrepreneurship?',
+				sessionDescription: 'Should I aim for an academic career or get a job in industry and have an impact on the real world? It’s probably the most common question fresh PhDs faced. How about the third way: becoming an academic entrepreneur? TTBA will bring you four courageous academic entrepreneurs who will show how to transform their light-bulb moments into valuable intellectual properties. If you want to put your feet in two worlds, let’s hustle your way to becoming a successful academic entrepreneur.',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -118,7 +130,7 @@ export const ttbaSymposium2017 = {
                 to: new Date('2017/11/04 15:30 CDT'),
                 title: 'Coffee break',
                 topic: null,
-                description: '',
+                sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -133,7 +145,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 15:30 CDT'),
                 to: new Date('2017/11/04 16:30 CDT'),
                 title: 'Panel 2: Beyond the bench',
-                topic: 'How could we marry biotechnology with a different field?',
+				topic: 'How could we marry biotechnology with a different field?',
+				sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -166,7 +179,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 16:30 CDT'),
                 to: new Date('2017/11/04 17:30 CDT'),
                 title: 'Panel 3: Startup',
-                topic: 'Let’s dive in the shark tank.',
+				topic: 'Let’s dive in the shark tank.',
+				sessionDescription: 'Could Texas become the “Third Coast” of biotech? To narrow the gap between myth and reality, this panel will gather Texas-based entrepreneurs and officers from incubators to discuss the development of biotech industry in Texas. Panelists will also share their own stories to ignite the spirit of the Wild West hidden in your mind. Yeehaw!',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -182,7 +196,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 17:30 CDT'),
                 to: new Date('2017/11/04 18:30 CDT'),
                 title: 'Elevator talk',
-                topic: '',
+				topic: '',
+				sessionDescription: 'Are you looking for a place to present your science? This 5-minute elevator talk competition provides a great opportunity for you to recognize your work, to communicate your work with other scientists, and to earn some money! We prepared a number of travel funds and competition awards. Don’t miss out!',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -198,7 +213,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 18:30 CDT'),
                 to: new Date('2017/11/04 19:30 CDT'),
                 title: 'Reception dinner',
-                topic: '',
+				topic: '',
+				sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -214,7 +230,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 19:30 CDT'),
                 to: new Date('2017/11/04 21:00 CDT'),
                 title: 'Information session',
-                topic: '',
+				topic: '',
+				sessionDescription: 'Let\'s choose speakers you are interested in and have an in-depth discussion with them! In the info session, there will be five subgroups focusing on Academia, Biotechnology, Cancer research, Development, and Enactment. All attendees will be assigned to the groups you selected, which will allow you to build a deeper connection with speakers.',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -230,7 +247,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/04 21:00 CDT'),
                 to: new Date('2017/11/04 24:00 CDT'),
                 title: 'Social night at 6th street',
-                topic: '',
+				topic: '',
+				sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -246,7 +264,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/05 08:00 CST'),
                 to: new Date('2017/11/05 09:00 CST'),
                 title: 'Refreshments',
-                topic: '',
+				topic: '',
+				sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -262,7 +281,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/05 09:00 CST'),
                 to: new Date('2017/11/05 09:30 CST'),
                 title: 'Panel 4: BioGroup @ NTU',
-                topic: 'Introduction of BioGroup platform of National Taiwan University',
+				topic: 'Introduction of BioGroup platform of National Taiwan University',
+				sessionDescription: 'A visiting mission from National Taiwan University will introduce the BioGroup platform which aims to connect domestic and oversea Taiwanese biological scientists, researchers, and students, to facilitate the collaboration between Taiwan and the US.',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -288,7 +308,8 @@ export const ttbaSymposium2017 = {
                 to: new Date('2017/11/05 10:30 CST'),
                 title: 'Panel 5: Industry',
                 topic: 'East coast or west coast? Biotech hubs in the States.',
-                tags: [],
+				tags: [],
+				sessionDescription: '',
                 rooms: [],
                 speakers: [{
                         name: 'Hannah Shen',
@@ -312,7 +333,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/05 10:30 CST'),
                 to: new Date('2017/11/05 11:30 CST'),
                 title: 'Keynote 2: Gene Lay, MS, DVM',
-                topic: '',
+				topic: '',
+				sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
@@ -329,7 +351,8 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/05 11:30 CST'),
                 to: new Date('2017/11/05 12:00 CST'),
                 title: 'Closing remarks and elevator talk award ceremony',
-                topic: '',
+				topic: '',
+				sessionDescription: '',
                 tags: [],
                 rooms: [],
                 speakers: [{
