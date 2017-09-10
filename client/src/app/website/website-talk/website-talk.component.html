@@ -1,4 +1,4 @@
-<h2 class="mat-display-1 vertical-bullet-text" [style.margin]="'1em 0'">{{ symposium.talk.title | uppercase }}</h2>
+<h2 class="mat-display-1 vertical-bullet-text border-color-of-theme" [style.margin]="'1em 0'">{{ symposium.talk.title | uppercase }}</h2>
 <h3 class="mat-headline">Schedules</h3>
 <md-tab-group>
 	<span *ngFor="let date of [4, 5]">
@@ -11,13 +11,13 @@
 				<div (click)="toggleShow(schedule.title)">
 						<h4 class="mat-subheading-2 margin-t-0-xs">
 							{{schedule.title}}
-							<span *ngIf="schedule.description"
+							<span *ngIf="schedule.sessionDescription"
 								style="display: inline-block; margin-left: 0.5em;">
 								<fa name="{{ showing.includes(schedule.title) ? 'minus' : 'plus' }}"></fa>
 							</span>
 						</h4>
 					<p class="mat-subheading-1 margin-b-0" >{{schedule.topic}}</p>
-					<p class="mat-body-1" *ngIf="showing.includes(schedule.title) && schedule.description">{{schedule.description}}</p>
+					<p class="mat-body-1" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription" [innerHTML]="schedule.sessionDescription"></p>
 				</div>
 			</div>
 		</md-tab>
