@@ -10,7 +10,7 @@ import {
 	MdTabsModule,
 	// MdCardModule,
 	MdDialogModule,
-	OverlayContainer
+	// MdSlideToggleModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
@@ -28,12 +28,12 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
 		MdTabsModule,
 		// MdCardModule,
 		MdDialogModule,
+		// MdSlideToggleModule,
 		FlexLayoutModule,
 		AngularFontAwesomeModule
 	]
 })
 export class SharedModule {
-	constructor(overlayContainer: OverlayContainer) {
-		// overlayContainer.themeClass = 'header-theme';
+	constructor() {
 	  }
 }
