@@ -1,30 +1,26 @@
-<div class="header-theme container-header-bg" fxLayoutAlign="center">
-	<div
-		fxFlex="0 1 960px"
-		fxLayout="row"
-		fxLayout.xs="column"
-		fxLayoutAlign="space-between center"
-		[style.padding]="'0 10px'">
-		<div fxFlex.xs="1 1 calc(100vw/5.5)" fxFlex="1 1 300px">
+<div
+	fxLayout="column"
+	fxLayoutAlign="center"
+	fxLayoutAlign.xs="center center"
+	[style.height]="'95vh'">
+	<div fxFlex="1 1 auto"></div>
+		<div >
 			<h1 class="mat-h1 hidden">{{ symposium.symposiumInfo.name | uppercase }}</h1>
-			<img src="assets/img/header-logo.png" [style.width]="'100%'">
+			<img src="assets/img/banner-logo.png" [style.width]="'100%'" [style.max-width]="'350px'">
 		</div>
-		<nav fxFlex.xs="1 1 auto" fxFlex="0 1 auto" fxLayout="row wrap" fxLayoutAlign="end stretch" fxLayoutAlign.xs="space-between stretch">
-			<button md-button color="primary"
-				*ngFor="let link of getPageLinks('showPageLink', symposium)"
-				(click)="scrollTo(link)">
-				{{link | uppercase}}
-			</button>
-			<button md-raised-button color="accent">REGISTER</button>
-		</nav>
-		<!-- <div fxLayout="row wrap" fxLayoutAlign="end stretch">
-			<button md-button color="primary"
-				*ngFor="let link of getPageLinks('showPageLink', symposium)"
-				(click)="scrollTo(link)">
-				{{link | uppercase}}
-			</button>
-			<button md-raised-button color="accent">REGISTER</button>
-		</div> -->
+	<div fxFlex="0 1 80px"></div>
+	<div>
+		<h2 class="mat-h1 hidden">{{ symposium.symposiumInfo.title | uppercase }}</h2>
+		<img src="assets/img/banner-title.png" alt="" [style.width]="'100%'">
 	</div>
+	<div fxFlex="1 1 auto"></div>
+	<nav fxFlex.xs="1 1 auto" fxFlex="0 1 auto" fxLayout="row wrap" fxLayoutAlign="end stretch" fxLayoutAlign.xs="space-between stretch" class="header-theme">
+		<button md-button color="primary"
+			*ngFor="let link of getPageLinks('showPageLink', symposium)"
+			(click)="scrollTo(link)">
+			{{link | uppercase}}
+		</button>
+		<button md-raised-button color="accent">REGISTER</button>
+	</nav>
 </div>
 
