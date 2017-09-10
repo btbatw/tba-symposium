@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'mixin';
+@import 'dynamic-theme';
 
 .mat-caption {
 	margin: 0;
@@ -9,8 +8,4 @@
 	margin-bottom: 10px;
 	padding: 1%;
 	background-color: lighten($bodyBgColor, 30%);
-}
-
-button {
-	@include linx(inherit, inherit, inherit, inherit)
 }
