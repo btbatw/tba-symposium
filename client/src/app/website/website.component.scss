@@ -1,22 +1,27 @@
 @import 'variables';
+@import 'dynamic-theme';
+
+button {
+	position: absolute;
+	right: 10px;
+	top: 2em;
+}
 
 .container-content-bg {
-	background-color: $bodyBgColor;
-	@extend .text-color;
-
 	@media screen and (max-width: 600px) {
 		padding-bottom: 4em;
 	}
 }
 
 ::ng-deep .vertical-bullet-text, .vertical-bullet-text {
-	border-left: solid $accentColorFB 0.2em;
-	border-left: solid $accentColor 0.2em;
+	border-left: solid 0.2em;
+	border-left: solid 0.2em;
 	padding-left: 0.5em;
-	margin: 1em 0;
+	margin: 1em 0 !important;
+	@extend .border-color-of-theme;
 }
 
 ::ng-deep .text-color {
-	color: $primaryColorFB;
-	color: $primaryColor;
+	// color: $primaryColorFB;
+	// color: $primaryColor;
 }

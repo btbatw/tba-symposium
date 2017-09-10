@@ -1,8 +1,8 @@
 @import 'variables';
 
 .container-header-bg {
-	background-color: $accentColorFB;
-	background-color: $accentColor;
+	// background-color: $primaryColorFB;
+	// background-color: $primaryColor;
 	padding: 20px 0px;
 }
 
@@ -12,12 +12,19 @@
 	font-size: 1%;
 }
 
+#logo-header {
+	width: 340px;
+	@media screen and (max-width: 600px) {
+		max-width: 80%;
+	}
+}
+
 nav {
 	@media screen and (max-width: 600px) {
 		position: fixed;
 		bottom: 0px;
 		left: 0px;
-		background-color: $accentColorFB;
+		// background-color: $primaryColor;
 		width: 100%;
 		min-height: auto;
 		z-index: 1000;
