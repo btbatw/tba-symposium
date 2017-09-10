@@ -2,10 +2,10 @@
 @import 'variables';
 @import 'mixin';
 // @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import './yellow-blue-theme.scss';
-
-@include mat-base-typography($custom-typography);
-@include mat-toolbar-typography($custom-typography);
+@import './dynamic-theme';
+@include mat-core();
+// @include mat-base-typography($custom-typography, '.round-text');
+// @include mat-toolbar-typography($custom-typography);
 
 body {
 	margin: 0;
@@ -68,7 +68,7 @@ body {
 // }
 
 
-// @include linx($textColorAccent, $textColorAccent, $textColorAccent, $textColorAccent);
+// @include linx($accentColor, $accentColor, $accentColor, $accentColor);
 
 // a:not(.button) {
 // 	position: relative;

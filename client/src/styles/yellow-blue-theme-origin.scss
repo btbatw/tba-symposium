@@ -10,22 +10,21 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
 $ttba2017-app-primary: mat-palette($mat-amber);
-$ttba2017-app-accent:  mat-palette($mat-light-blue, A700, A100, A400);
+$ttba2017-app-accent:  mat-palette($mat-light-blue, 900, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $ttba2017-app-warn:    mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$ttba2017-app-theme: mat-light-theme($ttba2017-app-accent, $ttba2017-app-accent, $ttba2017-app-warn);
-@include mat-tabs-theme(mat-light-theme($ttba2017-app-accent, $ttba2017-app-accent, $ttba2017-app-accent));
+$ttba2017-app-theme: mat-light-theme($ttba2017-app-primary, $ttba2017-app-accent, $ttba2017-app-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($ttba2017-app-theme);
 
-$header-primary: mat-palette($mat-grey, 50, 50, 400);
-$header-accent:  $ttba2017-app-accent;
+$header-primary: mat-palette($mat-grey, 50, 50, 500);
+$header-accent:  mat-palette($mat-light-blue, 900, A100, A400);
 $header-warn:    mat-palette($mat-deep-orange);
 $header-theme:   mat-light-theme($header-primary, $header-accent, $header-warn);
 
@@ -38,21 +37,21 @@ $header-theme:   mat-light-theme($header-primary, $header-accent, $header-warn);
 // Define a custom typography config that overrides the font-family as well as the
 // `headlines` and `body-1` levels.
 $custom-typography: mat-typography-config(
-  $font-family: 'Roboto',
-  $display-4:     mat-typography-level(112px, 112px, 400),
-  $display-3:     mat-typography-level(56px, 56px, 400),
-  $display-2:     mat-typography-level(45px, 48px, 400),
-  $display-1:     mat-typography-level(34px, 40px, 400),
-  $headline:      mat-typography-level(24px, 32px, 400),
-  $title:         mat-typography-level(20px, 32px, 400),
+  $font-family: 'Quicksand',
+  $display-4:     mat-typography-level(112px, 112px, 500),
+  $display-3:     mat-typography-level(56px, 56px, 500),
+  $display-2:     mat-typography-level(45px, 48px, 500),
+  $display-1:     mat-typography-level(34px, 40px, 500),
+  $headline:      mat-typography-level(24px, 32px, 500),
+  $title:         mat-typography-level(20px, 32px, 500),
   $subheading-2:  mat-typography-level(16px, 28px, 700),
-  $subheading-1:  mat-typography-level(15px, 24px, 400),
+  $subheading-1:  mat-typography-level(15px, 24px, 500),
   $body-2:        mat-typography-level(14px, 24px, 700),
-  $body-1:        mat-typography-level(14px, 20px, 400),
-  $caption:       mat-typography-level(12px, 20px, 400),
+  $body-1:        mat-typography-level(14px, 20px, 500),
+  $caption:       mat-typography-level(12px, 20px, 500),
   $button:        mat-typography-level(14px, 14px, 700),
   // Line-height must be unit-less fraction of the font-size.
-  $input:         mat-typography-level(16px, 1.125, 400)
+  $input:         mat-typography-level(16px, 1.125, 500)
 );
 
 @include angular-material-typography($custom-typography);

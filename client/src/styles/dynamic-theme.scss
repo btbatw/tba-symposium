@@ -1,0 +1,121 @@
+@import '~@angular/material/theming';
+@import 'variables';
+@import 'mixin';
+
+// palette
+$theming-amber: mat-palette($mat-amber);
+$themeing-light-blue-dark:  mat-palette($mat-light-blue, 900, A100, A400);
+$themeing-light-blue:  mat-palette($mat-light-blue, A700, 900, A400);
+$themeing-white: mat-palette($mat-grey, 50, 50, 400);
+
+// themes
+$amber-blue-theme: mat-light-theme($theming-amber, $themeing-light-blue-dark);
+$white-blue-theme:   mat-light-theme($themeing-white, $themeing-light-blue-dark);
+$white-light-blue-theme: mat-light-theme($themeing-white, $themeing-light-blue);
+
+// shared background color
+$bodyBgColor: #f1f0eb;
+
+// dynamic themes
+.amber-blue-theme {
+	@include angular-material-theme($amber-blue-theme);
+	&.bg-color-theme-default, .bg-color-theme-default {
+		// background-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 0.5);
+		background-color: #f1f0eb;
+	}
+	&.text-color-of-theme, .text-color-of-theme {
+		color: rgba(mat-color(map-get($amber-blue-theme, accent)), 1);
+	}
+	.border-color-of-theme {
+		border-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 1);
+	}
+	.bg-color-theme-primary {
+		background-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 1);
+	}
+	@include linx(mat-color(map-get($amber-blue-theme, accent)), mat-color(map-get($amber-blue-theme, accent)), mat-color(map-get($amber-blue-theme, accent)), mat-color(map-get($amber-blue-theme, accent)));
+	a {
+		background-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 0.5);
+		text-decoration: none;
+		&:hover, &:active {
+			text-decoration: underline;
+		}
+	}
+	.header-theme {
+		@include mat-button-theme(mat-light-theme($themeing-white, $themeing-light-blue-dark));
+		// background-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 0.5);
+		background-color: #fccb72;
+	}
+}
+.white-light-blue-theme {
+	@include angular-material-theme($white-light-blue-theme);
+	&.bg-color-theme-default, .bg-color-theme-default {
+		// background-color: rgba(mat-color(map-get($amber-blue-theme, accent)), 0.5);
+		background-color: #f1f0eb;
+	}
+	&.text-color-of-theme, .text-color-of-theme {
+		color: rgba(mat-color(map-get($white-light-blue-theme, primary), 900), 1);
+	}
+	.border-color-of-theme {
+		border-color: rgba(mat-color(map-get($white-light-blue-theme, accent)), 1);
+	}
+	.bg-color-theme-primary {
+		background-color: rgba(mat-color(map-get($white-light-blue-theme, primary), 900), 1);
+	}
+	@include linx(mat-color(map-get($white-light-blue-theme, accent)), mat-color(map-get($white-light-blue-theme, accent)), mat-color(map-get($white-light-blue-theme, accent)), mat-color(map-get($white-light-blue-theme, accent)));
+	@include mat-tabs-theme(mat-light-theme($themeing-light-blue, $themeing-light-blue));
+	a {
+		background-color: rgba(mat-color(map-get($white-light-blue-theme, primary)), 0.5);
+		text-decoration: none;
+		&:hover, &:active {
+			text-decoration: underline;
+		}
+	}
+	.header-theme {
+		background-color: rgba(mat-color(map-get($white-light-blue-theme, primary), 900), 1);
+		@include mat-button-theme(mat-light-theme($themeing-white, $themeing-light-blue));
+	}
+}
+
+// TYPOGRAPHY
+$roboto-typography: mat-typography-config(
+  $font-family: 'Roboto',
+  $display-4:     mat-typography-level(112px, 112px, 400),
+  $display-3:     mat-typography-level(56px, 56px, 400),
+  $display-2:     mat-typography-level(45px, 48px, 400),
+  $display-1:     mat-typography-level(34px, 40px, 400),
+  $headline:      mat-typography-level(24px, 32px, 400),
+  $title:         mat-typography-level(20px, 32px, 400),
+  $subheading-2:  mat-typography-level(16px, 28px, 700),
+  $subheading-1:  mat-typography-level(15px, 24px, 400),
+  $body-2:        mat-typography-level(14px, 24px, 700),
+  $body-1:        mat-typography-level(14px, 20px, 400),
+  $caption:       mat-typography-level(12px, 20px, 400),
+  $button:        mat-typography-level(14px, 14px, 700),
+  // Line-height must be unit-less fraction of the font-size.
+  $input:         mat-typography-level(16px, 1.125, 400)
+);
+
+$quicksand-typography: mat-typography-config(
+	$font-family: 'Quicksand',
+	$display-4:     mat-typography-level(112px, 112px, 500),
+	$display-3:     mat-typography-level(56px, 56px, 500),
+	$display-2:     mat-typography-level(45px, 48px, 500),
+	$display-1:     mat-typography-level(34px, 40px, 500),
+	$headline:      mat-typography-level(24px, 32px, 500),
+	$title:         mat-typography-level(20px, 32px, 500),
+	$subheading-2:  mat-typography-level(16px, 28px, 700),
+	$subheading-1:  mat-typography-level(15px, 24px, 500),
+	$body-2:        mat-typography-level(14px, 24px, 700),
+	$body-1:        mat-typography-level(14px, 20px, 500),
+	$caption:       mat-typography-level(12px, 20px, 500),
+	$button:        mat-typography-level(14px, 14px, 700),
+	// Line-height must be unit-less fraction of the font-size.
+	$input:         mat-typography-level(16px, 1.125, 500)
+  );
+
+.roboto-typography {
+	@include angular-material-typography($roboto-typography);
+}
+.quicksand-typography {
+	@include angular-material-typography($quicksand-typography);
+}
