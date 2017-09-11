@@ -33,7 +33,7 @@ import {
 	]
 })
 export class WebsiteAboutCarouselComponent implements OnInit, OnDestroy {
-	carouselImgs = ['01', '02', '03', '04', '05', '06', '07'];
+	carouselImgs = ['01', '02', '03', '04', '06', '07'];
 	showingImg = this.carouselImgs[0];
 	starting = this.carouselImgs.length;
 	isPlaying;
