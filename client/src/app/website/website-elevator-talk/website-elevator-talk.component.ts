@@ -10,4 +10,8 @@ export class WebsiteElevatorTalkComponent {
 
 	constructor() { }
 
+	goToLink(link) {
+		window.open(link, '_blank');
+	}
+
 }
