@@ -366,7 +366,12 @@ export const ttbaSymposium2017 = {
             },
         ]
 	},
-
+	elevatorTalk: {
+		title: 'Elevator Talk',
+		showPageLink: 'true',
+		text: '',
+		link: 'http://abstract2017.ttbatw.org/',
+	},
 	location: {
         title: 'Location',
         showPageLink: true,
@@ -404,6 +409,6 @@ export const ttbaSymposium2017 = {
         imgLinks: []
     }]
 
-}
+};
 
 // module.exports = ttbaSymposium2017;
