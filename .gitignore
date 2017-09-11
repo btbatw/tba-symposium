@@ -23,6 +23,7 @@ Thumbs.db
 **/logs/**
 **/build/**
 **/dist/**
+**/public/**
 **/tmp/**
 **/generator-output/**
 **/seeds/0*
