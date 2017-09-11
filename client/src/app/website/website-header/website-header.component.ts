@@ -27,4 +27,8 @@ export class WebsiteHeaderComponent {
 		document.getElementById(link).scrollIntoView({ behavior: 'smooth' });
 	}
 
+	parseCamelCase(str) {
+		return str.replace( /([A-Z])/g, " $1" ).trim();
+	}
+
 }

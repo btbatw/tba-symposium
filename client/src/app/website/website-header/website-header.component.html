@@ -18,7 +18,7 @@
 		<button md-button color="primary"
 			*ngFor="let link of getPageLinks('showPageLink', symposium)"
 			(click)="scrollTo(link)">
-			{{link | uppercase}}
+			{{parseCamelCase(link) | uppercase}}
 		</button>
 		<button md-raised-button color="accent">REGISTER</button>
 	</nav>
