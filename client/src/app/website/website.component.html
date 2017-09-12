@@ -1,6 +1,6 @@
 <div [class]="websiteTheme">
 
-
+	<a id="pageTop"></a>
 	<header class="header-theme" fxLayoutAlign="center">
 		<div fxFlex="0 1 960px" [style.padding]="'10px'">
 			<app-website-header *ngIf="symposium" [symposium]="symposium">
@@ -10,7 +10,7 @@
 
 
 	<content *ngIf="symposium" class="container-content-bg bg-color-theme-default text-color-of-theme" fxLayoutAlign="center">
-		<div fxFlex="0 1 960px" [style.padding]="'0 10px'" [style.position]="'relative'">
+		<div fxFlex="0 1 960px" [style.padding]="'0 10px'">
 			<button (click)="test()" md-mini-fab color="accent"><fa name="adjust"></fa></button>
 			<a id="about"></a>
 			<section>
