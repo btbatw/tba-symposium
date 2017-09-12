@@ -1,26 +1,43 @@
-<div
-	fxLayout="column"
-	fxLayoutAlign="center"
-	fxLayoutAlign.xs="center center"
-	[style.height]="'95vh'">
+<div fxLayout="column" fxLayoutAlign="center" fxLayoutAlign.xs="center center" [style.height]="'95vh'">
 	<div fxFlex="1 1 auto"></div>
-		<div >
-			<h1 class="mat-h1 hidden">{{ symposium.symposiumInfo.name | uppercase }}</h1>
-			<img src="assets/img/banner-logo.png" [style.width]="'100%'" [style.max-width]="'350px'">
-		</div>
+	<div>
+		<h1 class="mat-h1 hidden">{{ symposium.symposiumInfo.name | uppercase }}</h1>
+		<img src="assets/img/banner-logo.png" [style.width]="'100%'" [style.max-width]="'350px'">
+	</div>
 	<div fxFlex="0 1 80px"></div>
 	<div>
 		<h2 class="mat-h1 hidden">{{ symposium.symposiumInfo.title | uppercase }}</h2>
 		<img src="assets/img/banner-title.png" alt="" [style.width]="'100%'">
 	</div>
 	<div fxFlex="1 1 auto"></div>
-	<nav fxFlex.xs="1 1 auto" fxFlex="0 1 auto" fxLayout="row wrap" fxLayoutAlign="end stretch" fxLayoutAlign.xs="space-between stretch" class="header-theme">
-		<button md-button color="primary"
-			*ngFor="let link of getPageLinks('showPageLink', symposium)"
-			(click)="scrollTo(link)">
+	<nav fxFlex.xs="1 1 auto" fxFlex="0 1 auto" fxLayout="row wrap" fxLayoutAlign="end stretch" fxLayoutAlign.xs="space-between stretch"
+	class="header-theme" fxShow fxHide.xs="true">
+		<button md-button color="primary" *ngFor="let link of getPageLinks('showPageLink', symposium)" (click)="scrollTo(link)">
 			{{parseCamelCase(link) | uppercase}}
 		</button>
-		<button md-raised-button color="accent">REGISTER</button>
+		<button md-raised-button color="accent" (click)="goToLink(symposium.symposiumInfo.registrationLink)">REGISTER</button>
 	</nav>
-</div>
 
+	<nav fxHide fxShow.xs="true" class="nav-xs">
+		<button md-fab color="accent" [mdMenuTriggerFor]="menu">
+			<fa name="bars"></fa>
+		</button>
+		<md-menu #menu="mdMenu">
+			<button md-menu-item (click)="scrollTo('pageTop')">
+				<fa name="arrow-up"></fa>
+				<span>Top</span>
+			</button>
+			<button md-menu-item *ngFor="let link of getPageLinks('showPageLink', symposium)" (click)="scrollTo(link)">
+					<span>{{parseCamelCase(link) | uppercase}}</span>
+			</button>
+			<button md-menu-item (click)="goToLink(symposium.symposiumInfo.registrationLink)">
+					<span>REGISTER</span>
+			</button>
+		</md-menu>
+	</nav>
+
+	<button md-fab color="accent" (click)="scrollTo('pageTop')" fxShow fxHide.xs="true" class="nav-xs">
+		<fa name="arrow-up"></fa>
+	</button>
+
+</div>

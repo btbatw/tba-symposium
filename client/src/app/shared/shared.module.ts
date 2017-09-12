@@ -11,6 +11,7 @@ import {
 	// MdCardModule,
 	MdDialogModule,
 	// MdSlideToggleModule
+	MdMenuModule
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
@@ -29,6 +30,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
 		// MdCardModule,
 		MdDialogModule,
 		// MdSlideToggleModule,
+		MdMenuModule,
 		FlexLayoutModule,
 		AngularFontAwesomeModule
 	]
