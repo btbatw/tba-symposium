@@ -28,7 +28,11 @@ export class WebsiteHeaderComponent {
 	}
 
 	parseCamelCase(str) {
-		return str.replace( /([A-Z])/g, " $1" ).trim();
+		return str.replace( /([A-Z])/g, ' $1' ).trim();
+	}
+
+	goToLink(link) {
+		window.open(link, '_blank');
 	}
 
 }
