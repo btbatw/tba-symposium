@@ -1,4 +1,4 @@
-<div class="cards-speaker" fxFlex="45%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between" *ngFor="let speaker of speakers">
+<div class="cards-speaker" fxFlex="48%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between" *ngFor="let speaker of speakers">
 	<div fxLayout fxLayoutAlign="space-between">
 		<div fxFlex="30%">
 			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
@@ -9,7 +9,7 @@
 			<p class="mat-body-1">{{ speaker.affiliations[0] }}</p>
 		</div>
 	</div>
-	<div fxLayout fxLayoutAlign="end" fxLayoutGap="15px">
+	<div fxLayout fxLayoutAlign="end" fxLayoutGap="10px">
 		<button md-mini-fab *ngIf="speaker.links[0]" (click)="goToLink(speaker.links[0])">
 			<!-- <a [href]="speaker.links[0]" target="blank"> -->
 				<fa name="{{ speaker.links[0].indexOf('linkedin') > 0 ? 'linkedin-square' : 'link' }}" size="lg"></fa>
