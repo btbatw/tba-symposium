@@ -152,7 +152,7 @@ export const ttbaSymposium2017 = {
                 rooms: [],
                 speakers: [{
                         name: 'C.J. George Chang',
-                        nameCh: '',
+                        nameCh: '張景杰',
                         affiliations: ['Senior Pharmacologist, US FDA Center for Drug Review and Research (CDER)'],
                         imgFileName: 'cj_george_chang.jpg',
                         links: ['https://www.linkedin.com/in/c-j-george-chang-10174760/'],
@@ -314,7 +314,7 @@ export const ttbaSymposium2017 = {
                 rooms: [],
                 speakers: [{
                         name: 'Hannah Shen',
-                        nameCh: '',
+                        nameCh: '沈敬涵',
                         affiliations: ['Scientist, Marketing, Benchling'],
                         imgFileName: 'hannah_shen.jpg',
                         links: ['https://www.linkedin.com/in/chinghanshen/'],
@@ -322,7 +322,7 @@ export const ttbaSymposium2017 = {
                     },
                     {
                         name: 'Haofan Eric Peng',
-                        nameCh: '',
+                        nameCh: '彭浩凡',
                         affiliations: ['Senior Engineer II, Biogen'],
                         imgFileName: 'eric_haofan_peng.jpg',
                         links: ['https://www.linkedin.com/in/haofanpeng/'],
