@@ -13,6 +13,7 @@ import { WebsiteAboutComponent } from './website-about/website-about.component';
 import { WebsiteAboutCarouselComponent } from './website-about/website-about-carousel/website-about-carousel.component';
 import { WebsiteLocationComponent } from './website-location/website-location.component';
 import { WebsiteElevatorTalkComponent } from './website-elevator-talk/website-elevator-talk.component';
+import { WebsiteSponsorComponent } from './website-sponsor/website-sponsor.component';
 
 
 
@@ -27,7 +28,8 @@ import { WebsiteElevatorTalkComponent } from './website-elevator-talk/website-el
 		WebsiteAboutComponent,
 		WebsiteAboutCarouselComponent,
 		WebsiteLocationComponent,
-		WebsiteElevatorTalkComponent
+		WebsiteElevatorTalkComponent,
+		WebsiteSponsorComponent
 	],
 	providers: [WebsiteService],
 	entryComponents: [SpeakerDetailDialog]
