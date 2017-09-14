@@ -10,13 +10,11 @@
 
 
 	<content *ngIf="symposium" class="container-content-bg bg-color-theme-default text-color-of-theme" fxLayoutAlign="center">
-		<div fxFlex="0 1 960px" [style.padding]="'0 10px'">
+		<div fxFlex="0 1 960px" fxFlex.xs="100%" [style.padding]="'0 10px'">
 			<button (click)="test()" md-mini-fab color="accent"><fa name="adjust"></fa></button>
 			<a id="about"></a>
-			<section>
-				<app-website-about [symposium]="symposium">
-				</app-website-about>
-			</section>
+			<app-website-about [symposium]="symposium">
+			</app-website-about>
 			<a id="talk"></a>
 			<app-website-talk [symposium]="symposium" [speakers]="speakers">
 			</app-website-talk>
@@ -25,6 +23,8 @@
 			</app-website-elevator-talk>
 			<a id="location"></a>
 			<app-website-location [symposium]="symposium"></app-website-location>
+			<a id="sponsor"></a>
+			<app-website-sponsor></app-website-sponsor>
 		</div>
 	</content>
 </div>
