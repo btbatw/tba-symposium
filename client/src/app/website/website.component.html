@@ -27,4 +27,12 @@
 			<app-website-sponsor></app-website-sponsor>
 		</div>
 	</content>
+
+	<footer class="header-theme text-color-of-theme-header" fxLayoutAlign="center" *ngIf="symposium">
+		<div fxFlex="0 1 960px" [style.padding]="'10px'">
+			<app-website-footer
+				[symposium]="symposium">
+			</app-website-footer>
+		</div>
+	</footer>
 </div>

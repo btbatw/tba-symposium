@@ -1,0 +1,11 @@
+<div fxFlex fxLayoutAlign="center" fxLayout fxLayoutWrap (click)="goToLink(symposium.host.webLink)">
+	<div fxFlex="2em">
+		<img [src]="'assets/img/' + symposium.host.logoSmall" alt="logo" [style.width]="'100%'">
+	</div>
+	<div fxFlex="100%" class="mat-body-1 text-center">
+		{{ symposium.host.name }}
+	</div>
+	<div fxFlex="100%" class="mat-body-1 text-center">
+		{{ symposium.host.nameCh }}
+	</div>
+</div>
