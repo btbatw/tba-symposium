@@ -1,8 +1,8 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ 'sponsor' | uppercase }}</h2>
 <section>
 	<h2 class="mat-headline">Thanks for your support!</h2>
-	<div fxLayout="row wrap" fxLayoutAlign="space-around center" class="container-sponsor-imgs">
-		<div *ngFor="let img of sponsorImgs" fxFlex.xs="45vw" fxFlex="33%">
+	<div fxLayout fxLayoutWrap fxLayoutAlign="space-around center" class="container-sponsor-imgs">
+		<div *ngFor="let img of sponsorImgs" fxFlex.xs="50" fxFlex="33%">
 			<img [src]="'assets/img/sponsors/' + img" alt="" [style.width]="'100%'">
 		</div>
 	</div>
@@ -29,7 +29,7 @@
 	<p class="mat-body-1">
 		* Online Media: Company name and logo prominently displayed on the TTBA official website and Facebook fan page
 		<br />
-		** Registration: How many people you can register to attend our welcome banquet and reception dinner
+		** Registration: The number of representatives from your company who can attend our welcome banquet and reception dinner
 	</p>
 
 	<p class="mat-subheading-1">
