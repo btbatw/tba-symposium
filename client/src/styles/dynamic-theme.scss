@@ -26,6 +26,9 @@ $bodyBgColor: #f1f0eb;
 	&.text-color-of-theme, .text-color-of-theme {
 		color: rgba(mat-color(map-get($amber-blue-theme, accent)), 1);
 	}
+	&.text-color-of-theme-header, .text-color-of-theme-header {
+		color: rgba(mat-color(map-get($amber-blue-theme, accent)), 1);
+	}
 	.border-color-of-theme {
 		border-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 1);
 	}
@@ -54,6 +57,9 @@ $bodyBgColor: #f1f0eb;
 	}
 	&.text-color-of-theme, .text-color-of-theme {
 		color: rgba(mat-color(map-get($white-light-blue-theme, primary), 900), 1);
+	}
+	&.text-color-of-theme-header, .text-color-of-theme-header {
+		color: rgba(mat-color(map-get($white-light-blue-theme, primary), 50), 1);
 	}
 	.border-color-of-theme {
 		border-color: rgba(mat-color(map-get($white-light-blue-theme, accent)), 1);
