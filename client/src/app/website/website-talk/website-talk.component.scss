@@ -22,6 +22,17 @@
 	.margin-b-0 {
 		margin-bottom: 0;
 	}
+	&.dropdown-summary {
+		position: relative;
+		z-index: 100
+	}
+	.dropdown-description {
+		position: relative;
+		z-index: 0;
+	}
+	.translucent {
+		opacity: 0.3;
+	}
 
 }
 md-tab-group {

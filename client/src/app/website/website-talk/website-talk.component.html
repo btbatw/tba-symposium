@@ -1,23 +1,26 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ symposium.talk.title | uppercase }}</h2>
 <h3 class="mat-headline">Schedules</h3>
+
 <md-tab-group>
 	<span *ngFor="let date of [4, 5]">
 		<md-tab label="11/{{date}}">
-			<div class="container-tab-content" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
+
+			<div class="container-tab-content bg-color-theme-default dropdown-summary" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
 				<div>
 					<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
 					<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
 				</div>
 				<div (click)="toggleShow(schedule.title)">
 						<h4 class="mat-subheading-2 margin-t-0-xs">
-							{{schedule.title}}
-							<span *ngIf="schedule.sessionDescription"
-								style="display: inline-block; margin-left: 0.5em;">
-								<fa name="{{ showing.includes(schedule.title) ? 'minus' : 'plus' }}"></fa>
+							<span [class]="schedule.sessionDescription ? '' : 'translucent'"
+								style="display: inline-block; margin-right: 0.5em;"
+								[@focusPanel]="showing.includes(schedule.title) ? 'active' : 'inactive'">
+								<fa name="chevron-right" ></fa>
 							</span>
+							{{schedule.title}}
 						</h4>
 					<p class="mat-subheading-1 margin-b-0" >{{schedule.topic}}</p>
-					<p class="mat-body-1" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription" [innerHTML]="schedule.sessionDescription"></p>
+					<p class="mat-body-1 dropdown-description" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription" [innerHTML]="schedule.sessionDescription" [@itemAnim]></p>
 				</div>
 			</div>
 		</md-tab>
