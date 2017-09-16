@@ -10,12 +10,21 @@ export const ttbaSymposium2017 = {
         year: '2017',
         title: 'HUSTLING IN THE ERA OF BIOTECH',
 		showPageLink: false,
-		registrationLink: 'https://www.eventbrite.com/e/ttba-symposium-2017-registration-37658097383'
-    },
+		registrationLink: 'https://www.eventbrite.com/e/ttba-symposium-2017-registration-37658097383',
+	},
+
+	host: {
+		name: 'Texas Taiwanese Biotechnology Association',
+		nameShort: 'TTBA',
+		nameCh: '德州台灣人生物科技協會',
+		webLink: 'https://www.ttbatw.org/',
+		logoSmall: 'logo-ttba-small.png',
+	},
 
     about: {
         title: 'The symposium',
 		showPageLink: true,
+
 		subjects : [
 			{
 				title: 'Hustling in the era of biotech',
@@ -26,7 +35,6 @@ export const ttbaSymposium2017 = {
 				description: '<p>The Texas Taiwanese Biotechnology Association (TTBA) is the professional society for bioscience. Founded in 2014, TTBA aims to foster individual career development, to enhance scientific collaborations,  and to strengthen networking among academic and industrial bioscience communities in Taiwan and the US.</p><p>Comprised of Boston Taiwanese Biotechnology Association (<a target="_blank" href="http://btbatw.org/">BTBA</a>), TTBA, SoCal Taiwanese Biotechnology Association (<a target="_blank" href="http://www.socaltbatw.org/">SoCal TBA</a>), Europe-Taiwan Biotech Association (<a target="_blank" href="https://www.facebook.com/ETBioA/">ETBA</a>), the alliance of TBAs is the FASTEST growing Taiwanese professional community worldwide. All the associations hold their own annual symposiums attracting totally more than <strong>850</strong> Taiwanese professionals from the bio-related fields each year.</p>'
 			}
 		],
-        text: 'Texas Taiwanese Biotechnology Association (TTBA) is a young non-profit organization established by a vibrant group of PhD students from Baylor College of Medicine, UT Southwestern, UT Austin, Texas A & M, and Rice University. Our mission is to facilitate intellectual conversation and networking among young Taiwanese biomedical scientists, and foster their career development in the US and Taiwan. \n \n We regularly host events every month. To keep up with our latest events, please like our fanpage, join the facebook group, and sign up our email updates.',
     },
 
     talk: {
@@ -322,7 +330,7 @@ export const ttbaSymposium2017 = {
                     },
                     {
                         name: 'Haofan Eric Peng',
-                        nameCh: '彭浩凡',
+                        nameCh: '彭浩帆',
                         affiliations: ['Senior Engineer II, Biogen'],
                         imgFileName: 'eric_haofan_peng.jpg',
                         links: ['https://www.linkedin.com/in/haofanpeng/'],
@@ -381,7 +389,32 @@ export const ttbaSymposium2017 = {
         googleMapLink: 'https://www.google.com/maps/place/The+University+of+Texas+Department+of+Electrical+and+Computer+Engineering/@30.2880874,-97.7354196,20.23z/data=!4m5!3m4!1s0x0:0xfe2d52924498ddf!8m2!3d30.2881002!4d-97.7353755',
         directions: [{
             method: 'Parking',
-            description: 'Street parking is available'
+            lots: [
+				{
+					name: 'street parking',
+					description: '$1/hour on Saturday free after 6 pm; free on Sunday',
+					address: 'On Dean Keeton Street',
+					link: ''
+				},
+				{
+					name: 'San Jacinto Garage (SJG)',
+					description: '$3/hour, max $18/day',
+					address: '2401 San Jacinto Boulevard',
+					link: 'https://www.google.com/maps/place/San+Jacinto+Garage/@30.2866002,-97.7330305,17.36z/data=!4m5!3m4!1s0x0:0xa097d977872555e7!8m2!3d30.287725!4d-97.7328837'
+				},
+				{
+					name: 'Speedway Garage (SWG)',
+					description: '$3/hour, max $18/day',
+					address: '2105 E. 27th Street',
+					link: 'https://www.google.com/maps/place/27th+Street+Garage,+109+W+27th+St,+Austin,+TX+78712/@30.2912949,-97.7407441,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b583b190db59:0x2e1eb5678aa95217!8m2!3d30.2912611!4d-97.7385507'
+				},
+				{
+					name: '27th Street Garage (TSG)',
+					description: '$3/hour, max $18/day',
+					address: '109 W. 27th St.',
+					link: 'https://www.google.com/maps/@30.2907745,-97.7385594,18.73z'
+				}
+			]
         }],
         lodgings: [{
             category: 'Economy',
