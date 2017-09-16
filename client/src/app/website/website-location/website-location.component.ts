@@ -25,4 +25,8 @@ export class WebsiteLocationComponent implements OnInit {
 			.map(element => Number(element));
 	}
 
+	goToLink(link) {
+		window.open(link, '_blank');
+	}
+
 }

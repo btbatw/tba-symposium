@@ -1,6 +1,23 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ symposium.location.title | uppercase }}</h2>
 <h3 class="mat-title">{{ symposium.location.text }}</h3>
 <h4 class="mat-subheading-1"><fa name="map-marker"></fa>{{ symposium.location.address }}</h4>
+<span *ngFor="let direction of symposium.location.directions">
+	<h3 class="mat-title">{{ direction.method }}</h3>
+	<div fxLayout fxLayoutWrap fxLayoutAlign="space-between">
+		<div *ngFor="let lot of direction.lots" fxFlex.xs="100" fxFlex="48" class="card-parking-lot">
+			<h4 class="mat-subheading-1">
+				<a [href]="lot.link">{{ lot.name | titlecase }}</a>: {{ lot.description }}
+			</h4>
+			<p class="mat-body-1">
+				<button md-mini-fab (click)="goToLink(lot.link)" disabled="{{!lot.link}}">
+					<fa name="location-arrow" size="lg"></fa>
+				</button>
+				{{ lot.address }}
+			</p>
+		</div>
+	</div>
+
+</span>
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="18">
 	<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
