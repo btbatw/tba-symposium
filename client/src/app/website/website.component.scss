@@ -3,7 +3,7 @@
 
 button {
 	position: fixed;
-	top: 10px;
+	top: 4em;
 	right: 10px;
 	z-index: 900;
 }
@@ -25,4 +25,16 @@ button {
 ::ng-deep .text-color {
 	// color: $primaryColorFB;
 	// color: $primaryColor;
+}
+
+::ng-deep .fixed-top {
+	position: fixed;
+    top: 0;
+	z-index: 800;
+	display: initial !important;
+	width: 100%
+}
+
+.sticky-hidden {
+	display: none;
 }

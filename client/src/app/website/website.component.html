@@ -7,8 +7,13 @@
 				</app-website-header>
 		</div>
 	</header>
+	<ng-template [ngIf]="symposium">
+	<app-website-nav appScrollFix [symposium]="symposium" [isSticky]="false"></app-website-nav>
+	<app-website-nav [symposium]="symposium" class="sticky-hidden" [isSticky]="true"></app-website-nav>
+	</ng-template>
 
 
+	<!-- <div appScrollFix>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</div> -->
 	<content *ngIf="symposium" class="container-content-bg bg-color-theme-default text-color-of-theme" fxLayoutAlign="center">
 		<div fxFlex="0 1 960px" fxFlex.xs="100%" [style.padding]="'0 10px'">
 			<button (click)="test()" md-mini-fab color="accent"><fa name="adjust"></fa></button>
@@ -24,7 +29,7 @@
 			<a id="location"></a>
 			<app-website-location [symposium]="symposium"></app-website-location>
 			<a id="sponsor"></a>
-			<app-website-sponsor></app-website-sponsor>
+			<app-website-sponsor [symposium]="symposium"></app-website-sponsor>
 		</div>
 	</content>
 
