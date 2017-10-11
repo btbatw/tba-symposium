@@ -28,7 +28,7 @@ export const ttbaSymposium2017 = {
 		subjects : [
 			{
 				title: 'Hustling in the era of biotech',
-				description: '<p>Academic career or Industry job? East coast or West bay? These are the common dichotomy that many of us have faced at some point of our career trajectories. But there is actually a third career path for those with creativity, courage, and capability: academic entrepreneurship in which scientist can still possess the academic freedom and the opportunity to bring their discoveries to market. The rising Lonestar is also fostering a vibrant biocluster to attract talents and other resources, which might become the “Third Coast” of the biotech industry. With more options, how could we grab the opportunities to thrive in the era of biotech?</p><p>To unleash the potential of your career development, TTBA 2017 symposium will bring you <strong>2 keynote speeches given by Dr. Mien-Chie Hung, the Vice President of MD-Anderson</strong>, <strong>and Mr. Gene Lay, the Founder and CEO of BioLegend</strong>, to share their visions of how innovations reshape the world. TTBA will also host <strong>5 panel discussions</strong> covering (1) academic entrepreneurship, (2) startups in Texas, (3) jobs beyond the bench, (4) an in-depth comparison of company cultures at east and west coasts, and (5) the opportunity in Taiwan. We truly believe that the 2-day symposium will expand the horizon of your career and root your connection into the fields where your calling is.</p><p>TTBA 2017 Symposium is our third symposium since 2015. TTBA is proud of hosting the high-quality symposium and creating an engaging network environment filled with the  Taiwanese hospitality. Please join us now. We welcome all graduate students, postdocs, and professionals in bio-related fields.</p>'
+				description: '<p>Academic career or Industry job? East coast or West bay? These are the common dichotomy that many of us have faced at some point of our career trajectories. But there is actually a third career path for those with creativity, courage, and capability: academic entrepreneurship in which scientist can still possess the academic freedom and the opportunity to bring their discoveries to market. The rising Lonestar is also fostering a vibrant biocluster to attract talents and other resources, which might become the “Third Coast” of the biotech industry. With more options, how could we grab the opportunities to thrive in the era of biotech?</p><p>To unleash the potential of your career development, TTBA 2017 symposium will bring you <strong>2 keynote speeches given by Dr. Mien-Chie Hung, the Vice President of MD-Anderson</strong>, <strong>and Mr. Gene Lay, the Founder and CEO of BioLegend</strong>, to share their visions of how innovations reshape the world. TTBA will also host <strong>5 panel discussions</strong> covering (1) academic entrepreneurship, (2) startups in Texas, (3) jobs beyond the bench, (4) an in-depth discussion of biotech ecosystem in the States, and (5) the opportunity in Taiwan. We truly believe that the 2-day symposium will expand the horizon of your career and root your connection into the fields where your calling is.</p><p>TTBA 2017 Symposium is our third symposium since 2015. TTBA is proud of hosting the high-quality symposium and creating an engaging network environment filled with the  Taiwanese hospitality. Please join us now. We welcome all graduate students, postdocs, and professionals in bio-related fields.</p>'
 			},
 			{
 				title: 'TTBA',
@@ -181,25 +181,50 @@ export const ttbaSymposium2017 = {
                         imgFileName: 'kay_kai-yun_chuang.jpg',
                         links: ['https://www.linkedin.com/in/kai-yun-chuang-68b43a42/'],
                         description: 'Kay is a Regional Business Development manager at GenScript. She leads and supports a cross-functional team to develop new business and collaborations in New England, Canada, and Mid-west. Previously, she worked at Life Technologies as a Global Market Development specialist, launching new recombinant protein products by Gibco and Invitrogen. Kay received her B.Sc. in Biomedical Sciences from Chang Gung University and M.S. in Biotechnology from Johns Hopkins University. When Kay is not working with clients, she enjoys traveling with her husband Hsien-Yi and spending time with her cat Meowshienbao. She can be contacted at kay.chuang[AT]genscript.com',
+					},
+					{
+                        name: 'Carol Chuang',
+                        nameCh: '莊可柔',
+                        affiliations: ['Sr. Clinical Research Program Coordinator, Department of Investigational Cancer Therapeutics at MD Anderson Cancer Center'],
+                        imgFileName: 'carol_chuang.jpg',
+                        links: ['https://www.linkedin.com/in/carolcmda'],
+                        description: 'Dr. Chuang received her Ph.D. in biomedical sciences from Baylor College of Medicine with a focus on molecular and cellular biology. Prior to joining the Department of Investigational Cancer Therapeutics (ICT) at The University of Texas MD Anderson Cancer Center (MDACC), she was a patent research analyst at Global Patent Solutions and a postdoctoral fellow at MDACC.  Dr. Chuang joined ICT as a regulatory coordinator in September 2014.  Her various experiences have provided her with the tools to meet tight deadlines and to effectively communicate expected timelines and deliverables to the study Sponsor/CRO.',
                     },
                 ]
             },
             {
                 from: new Date('2017/11/04 16:30 CDT'),
                 to: new Date('2017/11/04 17:30 CDT'),
-                title: 'Panel 3: Startup',
+                title: 'Panel 3: From startup to scaleup',
 				topic: 'Let’s dive in the shark tank.',
-				sessionDescription: 'Could Texas become the “Third Coast” of biotech? To narrow the gap between myth and reality, this panel will gather Texas-based entrepreneurs and officers from incubators to discuss the development of biotech industry in Texas. Panelists will also share their own stories to ignite the spirit of the Wild West hidden in your mind. Yeehaw!',
+				sessionDescription: '50% is the 5-year survival rate of all the startups in America. Facing the coin-flipping probability, how could we bet on our future.  TTBA presents you three panelists who will share their own stories to ignite the spirit of the Wild West hidden in your mind and also teach you the survival guide in startups and middle-sized companies.',
                 tags: [],
                 rooms: [],
                 speakers: [{
-                    name: null,
+                    name: 'Lida Huang',
+                    nameCh: '黃立達',
+                    affiliations: ['CEO and President, CalexFit.com, Foot Pain Relief Store'],
+                    imgFileName: 'lida_huang.jpg',
+                    links: ['https://www.linkedin.com/in/lida-huang-6686364b/'],
+                    description: 'Li-Da Huang received the Ph.D. degree in computer sciences from the University of Texas, Austin, 2003. From 2000 to 2006, he was a Senior Mixed-Signal IC Designer with Texas Instruments, Austin, TX. From 2006 to 2010, he was leading the projects for the router in design for manufacturing with Magma Design Automation. From 2010 to 2012, he served as the director of product engineering in Customer Design Business Unit, Magma Design Automation. He was in charge of analog design optimization and device modeling. Afterwards, he was with Analog Mixed-Signal Group in Synospys as Senior Research Staff. Currently, he is the founder and CEO of Calex Tech Inc. at Taiwan, Calex LLC at United States. He is also the President of Foot Pain Relief Store LLC that focus on the orthotic solutions and gait analysis for the medical and professional athletic cases. Dr. Huang\'s research includes circuit design, design automation, computer vision, signal processing and neural sciences. He published more than 30 papers and patents. Several papers are regarded as pioneer works in design for manufacturing in OPC-friendly routing, Antenna effects in routing, and Redundant via insertion, which was nominated as the Most Influential Paper in the Past Decade in ASPDAC 2015. Recently, he is focusing on brain modeling, cognitive function enhancement, aging process and bio-modulation. He is a member of Upsilon-Pi-Epsilon, the international honor society for the computing and information disciplines.',
+				},
+				{
+                    name: 'Po-Jen (Will) Yen',
                     nameCh: null,
-                    affiliations: [],
-                    imgFileName: '',
-                    links: [],
-                    description: '',
-                }]
+                    affiliations: ['Business Development, Voyager Therapeutics'],
+                    imgFileName: 'will_yen.jpg',
+                    links: ['https://www.linkedin.com/in/willyen'],
+                    description: 'Will currently works at Voyager Therapeutics, a young gene therapy company focusing on severe neurological diseases. As a core member of Business Development team in a small company, Will not only contributes to every aspect of business development activities, but also plays significant roles in various functions, including strategy, competitive intelligence, commercial, as well as supporting research and development with his science expertise. Prior to Voyager, Will worked at Biogen Corporate Strategy, where he looked at neurodegenerative disease space with a comprehensive view to identify trends and barriers of the field, thereby informed the company\'s investment opportunities and long term growth strategy. Before transitioning to business development / strategy roles, Will started his career as a research scientist at Agios. Will received his scientific training through a PhD in Virology at Harvard University, a Master in Biotechnology at University of Pennsylvania, and a Bachelor in Zoology at National Taiwan University. ',
+				},
+				{
+                    name: 'Ray Lin',
+                    nameCh: '林伯睿',
+                    affiliations: ['Senior Scientist, Assay Development, OriGene Technologies, Inc.'],
+                    imgFileName: 'ray_lin.jpg',
+                    links: ['https://www.linkedin.com/in/ray-lin-75a29657'],
+                    description: 'Ray Lin graduated from National Taiwan University with a B.S. degree in Agriculture Chemistry.  He received his PhD degree in Biology from Georgia State University, where he developed two-electrode voltage clamp and patch clamp techniques to study E. coli protein-conducting channels. He also received his MBA degree from Johns Hopkins Carey Business School. Ray has worked as a postdoctoral fellow at Leidos Biomedical Research and focused on HIV and cancer research. He then joined OriGene Technologies as a senior scientist and product manager and worked on variety of projects in the Antibody, Assay, and Molecular Biology departments, including developing high-affinity SISCAPA antibodies, expanding ELISA & multiplexed Luminex assay, and optimizing lentivirus production and manufacturing processes. Ray also worked with OriGene’s Marketing team and performed product market analyses as well as coordinated new product launches for Assay and Molecular Biology product lines.',
+				}
+			]
             },
             {
                 from: new Date('2017/11/04 17:30 CDT'),
@@ -316,9 +341,9 @@ export const ttbaSymposium2017 = {
                 from: new Date('2017/11/05 09:30 CST'),
                 to: new Date('2017/11/05 10:30 CST'),
                 title: 'Panel 5: Industry',
-                topic: 'East coast or west coast? Biotech hubs in the States.',
+                topic: 'An in-depth discussion of biotech ecosystem in the States.',
 				tags: [],
-				sessionDescription: 'Want to go to industry? Here are some tips/advices/secrets for all of you! Two industrial speakers are going to share their career experiences in four aspects: (1) The environment difference between east and west coast area, (2) The R&D strategies in different companies, (3) The working/cooperation pattern between different departments, and finally, (4) The pros and cons of PhD program experiences contribute to industrial career.',
+				sessionDescription: '<p>Want to move into industry?</p><p>Here are some tips/advices/secrets for all of you!</p><p>Two industrial speakers are going to share their experiences in the biopharmaceutical industry in five dimensions:</p><ol><li>Industrial Clusters in Biotechnology: the differences between east and west coast hubs.</li><li>R&D Strategies and Biopharma Innovative Performance.</li><li>Gate Keeping or Bridge Building? The cooperation pattern between departments and companies.</li><li>Beyond Biopharma: what makes a healthcare ecosystem?</li><li>The pros and cons of PhD experiences contribute to industrial career.</li></ol>',
                 rooms: [],
                 speakers: [{
                         name: 'Hannah Shen',
@@ -384,8 +409,8 @@ export const ttbaSymposium2017 = {
 	location: {
         title: 'Location',
         showPageLink: true,
-		text: 'The University of Texas Department of Electrical and Computer Engineering',
-		address: '2501 Speedway, Austin, TX 78712',
+		text: 'Venue',
+		address: 'The University of Texas Department of Electrical and Computer Engineering <br/>2501 Speedway, Austin, TX 78712',
         googleMapLink: 'https://www.google.com/maps/place/The+University+of+Texas+Department+of+Electrical+and+Computer+Engineering/@30.2880874,-97.7354196,20.23z/data=!4m5!3m4!1s0x0:0xfe2d52924498ddf!8m2!3d30.2881002!4d-97.7353755',
         directions: [{
             method: 'Parking',
@@ -415,15 +440,27 @@ export const ttbaSymposium2017 = {
 					link: 'https://www.google.com/maps/@30.2907745,-97.7385594,18.73z'
 				}
 			]
-        }],
-        lodgings: [{
-            category: 'Economy',
-            priceRange: 'string',
-            hotels: [{
-                name: 'string',
-                location: 'string'
-            }]
-        }]
+		}],
+		lodging: {
+			text: 'Lodging',
+			description: '<a>Drury Inn & Suites Austin North</a> is our partner of TTBA 2017 Symposium. Rooms have been held for TTBA attendees. Make your reservations by <a>Friday, October 13, 2017</a> to receive the group rate. For more info, click the button below.',
+			hotels: [
+				{
+					name: 'Drury Inn & Suites Austin North',
+					location: '6711 IH 35 NORTH, Austin, TX 78752',
+					tel: '(512) 467-9500',
+					displayText: 'Please make your reservations by Wednesday, October 13, 2017 to receive the group rate.'
+				},
+				// {
+				// 	category: 'Economy',
+				// 	priceRange: 'string',
+				// 	hotels: [{
+				// 		name: 'string',
+				// 		location: 'string'
+				// 	}]
+				// }
+			]
+		},
     },
 
     sponsor: {
@@ -432,8 +469,26 @@ export const ttbaSymposium2017 = {
         sponsors: [{
             level: 'string',
             name: 'string',
-            logoUrl: 'string',
-            link: 'string'
+            logoUrl: 'taiwan_ministry_of_science_and_technology.png',
+            link: 'https://www.most.gov.tw/?l=en'
+		},
+		{
+            level: 'string',
+            name: 'string',
+            logoUrl: 'teco_houston_techno.png',
+            link: 'https://www.most.gov.tw/houston/en?view_mode=listView'
+		},
+		{
+            level: 'string',
+            name: 'string',
+            logoUrl: 'hsinchu_sci_park.png',
+            link: 'http://www.sipa.gov.tw/english/index.jsp'
+		},
+		{
+            level: 'string',
+            name: 'string',
+            logoUrl: 'biovision.png',
+            link: 'https://www.biovision.com/'
         }],
     },
 
