@@ -16,10 +16,11 @@ import {
 } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
+import { ScrollFixDirective } from './scroll-fix.directive';
 
 @NgModule({
 	imports: [CommonModule],
-	declarations: [],
+	declarations: [ScrollFixDirective],
 	exports: [
 		CommonModule,
 		MdButtonModule,
@@ -34,7 +35,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
 		MdMenuModule,
 		MdTableModule,
 		FlexLayoutModule,
-		AngularFontAwesomeModule
+		AngularFontAwesomeModule,
+		ScrollFixDirective
 	]
 })
 export class SharedModule {
