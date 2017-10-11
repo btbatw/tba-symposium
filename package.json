@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:back": "cd server/ && npm run dev",
-    "dev:front": "cd client/ && npm run start:broadcast"
+    "dev:front": "cd client/ && npm run start",
+    "dev:front:broadcast": "cd client/ && npm run start:broadcast",
+    "deploy": "cd client/ && cp -R dist/ public && firebase deploy"
   },
   "author": "",
   "license": "ISC"
