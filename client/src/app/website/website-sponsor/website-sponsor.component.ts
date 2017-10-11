@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DataSource } from '@angular/cdk/collections';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
@@ -8,7 +8,8 @@ import 'rxjs/add/observable/of';
 	templateUrl: './website-sponsor.component.html',
 	styleUrls: ['./website-sponsor.component.scss']
 })
-export class WebsiteSponsorComponent implements OnInit {
+export class WebsiteSponsorComponent {
+	@Input() symposium;
 	displayedColumns = ['package', 'price', 'programBook', 'onlineMedia*', 'slideShow', 'booth', 'registration**'];
 	referenceColumns = ['package', 'price', 'programBook', 'onlineMedia', 'slideShow', 'booth', 'registration'];
 	sponsorTabledataSource = new SponsorTableDataSource();
@@ -17,12 +18,10 @@ export class WebsiteSponsorComponent implements OnInit {
 		'taiwan_ministry_of_science_and_technology.png',
 		'teco_houston_techno.png',
 		'hsinchu_sci_park.png',
+		'biovision.png'
 	];
 
 	constructor() { }
-
-	ngOnInit() {
-	}
 
 	parseCamelCase(str) {
 		return str.replace( /([A-Z])/g, ' $1' ).trim();
@@ -32,6 +31,9 @@ export class WebsiteSponsorComponent implements OnInit {
 		return Number(str);
 	}
 
+	goToLink(link) {
+		window.open(link, '_blank');
+	}
 	// stripStr(str) {
 	// 	return str.replace(/\W+/g, '');
 	// }

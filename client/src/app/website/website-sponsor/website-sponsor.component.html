@@ -2,9 +2,13 @@
 <section>
 	<h2 class="mat-headline">Thanks for your support!</h2>
 	<div fxLayout fxLayoutWrap fxLayoutAlign="space-around center" class="container-sponsor-imgs">
-		<div *ngFor="let img of sponsorImgs" fxFlex.xs="50" fxFlex="33%">
-			<img [src]="'assets/img/sponsors/' + img" alt="" [style.width]="'100%'">
+		<div *ngFor="let sponsor of symposium.sponsor.sponsors" fxFlex.xs="50" fxFlex="33%"
+			(click)="goToLink(sponsor.link)" class="clickable">
+			<img [src]="'assets/img/sponsors/' + sponsor.logoUrl" alt="" [style.width]="'100%'">
 		</div>
+		<!-- <div *ngFor="let img of sponsorImgs" fxFlex.xs="50" fxFlex="33%">
+			<img [src]="'assets/img/sponsors/' + img" alt="" [style.width]="'100%'">
+		</div> -->
 	</div>
 </section>
 <section>
