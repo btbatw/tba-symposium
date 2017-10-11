@@ -1,6 +1,10 @@
 import { Component, Input } from '@angular/core';
 import * as moment from 'moment-timezone';
 
+import { MdDialog } from '@angular/material';
+import { SpeakerDetailDialog } from './website-talk-speaker/speaker-detail-dialog/speaker-detail-dialog.component';
+
+
 import {
 	trigger,
 	style,
@@ -26,14 +30,14 @@ import {
 			])
 		]),
 		trigger('focusPanel', [
-			state('inactive', style({
-				transform: 'scale(1)',
+			state('close', style({
+				// transform: 'rotate(90deg)',
 			})),
-			state('active', style({
+			state('open', style({
 				transform: 'rotate(90deg)',
 			})),
-			transition('inactive => active', animate('100ms ease-out')),
-			transition('active => inactive', animate('100ms ease-in'))
+			transition('close => open', animate('100ms ease-out')),
+			transition('open => close', animate('100ms ease-in'))
 		])
 	]
 })
@@ -42,7 +46,7 @@ export class WebsiteTalkComponent {
 	@Input() symposium;
 	showing = [];
 
-	constructor() {
+	constructor(public dialog: MdDialog) {
 	}
 
 	formatTimeChicago(dateStr, format) {
@@ -60,6 +64,12 @@ export class WebsiteTalkComponent {
 		this.showing.includes(title) ?
 			this.showing = this.showing.filter(element => element !== title) :
 			this.showing = [title, ...this.showing];
+	}
+
+	openDialog(data) {
+		this.dialog.open(SpeakerDetailDialog, {
+			data: data
+		});
 	}
 
 }

@@ -1,8 +1,10 @@
 <div md-dialog-content class="wrapper-dialog text-color-of-theme">
-	<div>
-		<div class="tag mat-typography bg-color-theme-primary">{{data.title}}</div>
-		<div class="tag mat-typography bg-color-theme-primary">{{formatTimeChicago(data.from, 'M/D HH:mm')}}</div>
+	<div class="container-tag">
+		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.title">{{data.title}}</div>
+		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.from">{{formatTimeChicago(data.from, 'M/D HH:mm')}}</div>
 	</div>
+	<h3 class="mat-title">{{data.name}}<br />{{data.nameCh}}</h3>
+	<h4 class="mat-subheading-1">{{data.affiliations[0]}}</h4>
 	<p class="mat-body-1" [innerHTML]="data.description"></p>
 </div>
 <md-dialog-actions fxLayout fxLayoutAlign="end">

@@ -10,18 +10,30 @@
 					<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
 					<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
 				</div>
-				<div (click)="toggleShow(schedule.title)">
-						<h4 class="mat-subheading-2 margin-t-0-xs">
-							<span [class]="schedule.sessionDescription ? '' : 'translucent'"
-								style="display: inline-block; margin-right: 0.5em;"
-								[@focusPanel]="showing.includes(schedule.title) ? 'active' : 'inactive'">
-								<fa name="chevron-right" ></fa>
-							</span>
-							{{schedule.title}}
-						</h4>
-					<p class="mat-subheading-1 margin-b-0" >{{schedule.topic}}</p>
-					<p class="mat-body-1 dropdown-description" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription" [innerHTML]="schedule.sessionDescription" [@itemAnim]></p>
+				<div>
+					<h4 class="mat-subheading-2 margin-t-0-xs clickable" (click)="toggleShow(schedule.title)">
+						<span [class]="schedule.sessionDescription ? '' : 'translucent'"
+							style="display: inline-block; margin-right: 0.5em;"
+							[@focusPanel]="showing.includes(schedule.title) ? 'open' : 'close'">
+							<fa name="chevron-right" ></fa>
+						</span>
+						{{schedule.title}}
+					</h4>
+					<p class="mat-subheading-1 clickable" (click)="toggleShow(schedule.title)">{{schedule.topic}}</p>
+					<div fxLayout fxLayoutGap.xs="5px" fxLayoutGap="10px" *ngIf="schedule.speakers.length && schedule.speakers[0].name" class="container-avatar">
+						<div *ngFor="let speaker of schedule.speakers" >
+							<div class="img-avatar clickable" (click)="openDialog(speaker)">
+								<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
+							</div>
+							<!-- <div class="mat-caption">
+								{{ speaker.name }}
+							</div> -->
+						</div>
+					</div>
+					<p class="mat-body-1 dropdown-description clickable" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription" [innerHTML]="schedule.sessionDescription" [@itemAnim] (click)="toggleShow(schedule.title)"></p>
 				</div>
+				<div fxFlex="1 1 auto" (click)="toggleShow(schedule.title)" class="clickable"></div>
+
 			</div>
 		</md-tab>
 	</span>
