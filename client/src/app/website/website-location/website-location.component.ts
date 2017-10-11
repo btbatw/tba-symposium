@@ -1,5 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
 
+import { MdDialog } from '@angular/material';
+import { HotelDetailDialog } from './hotel-detail-dialog/hotel-detail-dialog.component';
+// import {} from
 @Component({
 	selector: 'app-website-location',
 	templateUrl: './website-location.component.html',
@@ -10,7 +13,7 @@ export class WebsiteLocationComponent implements OnInit {
 	lat;
 	lng;
 
-	constructor() { }
+	constructor(public dialog: MdDialog) { }
 
 	ngOnInit() {
 		this.parseLatLng();
@@ -23,6 +26,11 @@ export class WebsiteLocationComponent implements OnInit {
 			.slice(1)
 			.split(',')
 			.map(element => Number(element));
+	}
+
+	openDialog() {
+		this.dialog.open(HotelDetailDialog, {
+		});
 	}
 
 	goToLink(link) {

@@ -1,6 +1,9 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ symposium.location.title | uppercase }}</h2>
-<h3 class="mat-title">{{ symposium.location.text }}</h3>
-<h4 class="mat-subheading-1"><fa name="map-marker"></fa>{{ symposium.location.address }}</h4>
+<h3 class="mat-headline">{{ symposium.location.text }}</h3>
+<h4 class="mat-subheading-1"><span [innerHTML]="symposium.location.address"></span></h4>
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="18">
+	<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
 <span *ngFor="let direction of symposium.location.directions">
 	<h3 class="mat-title">{{ direction.method }}</h3>
 	<div fxLayout fxLayoutWrap fxLayoutAlign="space-between">
@@ -16,8 +19,10 @@
 			</p>
 		</div>
 	</div>
-
 </span>
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]="18">
-	<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-</agm-map>
+<p></p>
+<h3 class="mat-headline">{{ symposium.location.lodging.text }}</h3>
+<h4 class="mat-subheading-1"><span [innerHTML]="symposium.location.lodging.description"></span></h4>
+<div fxLayoutAlign="center">
+	<button md-raised-button color="accent" (click)="openDialog()">{{'lodging info' | uppercase}}</button>
+</div>

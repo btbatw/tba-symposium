@@ -1,0 +1,18 @@
+@import 'variables';
+
+.wrapper-dialog {
+	// color: $primaryColorFB;
+	// color: $primaryColor;
+	.container-tag {
+		margin-bottom: 1em;
+	}
+	.tag {
+		// background-color: $accentColorFB;
+		color: white;
+		display: inline-block;
+		padding: 0.5em 1em;
+		border-radius: 2em;
+		margin: 0.2em 0;
+	}
+}
+

@@ -15,6 +15,8 @@ import { WebsiteLocationComponent } from './website-location/website-location.co
 import { WebsiteElevatorTalkComponent } from './website-elevator-talk/website-elevator-talk.component';
 import { WebsiteSponsorComponent } from './website-sponsor/website-sponsor.component';
 import { WebsiteFooterComponent } from './website-footer/website-footer.component';
+import { HotelDetailDialog } from './website-location/hotel-detail-dialog/hotel-detail-dialog.component';
+import { WebsiteNavComponent } from './website-nav/website-nav.component';
 
 
 
@@ -31,9 +33,11 @@ import { WebsiteFooterComponent } from './website-footer/website-footer.componen
 		WebsiteLocationComponent,
 		WebsiteElevatorTalkComponent,
 		WebsiteSponsorComponent,
-		WebsiteFooterComponent
+		WebsiteFooterComponent,
+		HotelDetailDialog,
+		WebsiteNavComponent
 	],
 	providers: [WebsiteService],
-	entryComponents: [SpeakerDetailDialog]
+	entryComponents: [SpeakerDetailDialog, HotelDetailDialog]
 })
 export class WebsiteModule { }

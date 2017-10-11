@@ -1,0 +1,51 @@
+<div md-dialog-content class="wrapper-dialog text-color-of-theme">
+	<h3 class="mat-title">Drury Inn & Suites Austin North</h3>
+	<p class="mat-body-1">
+		Address: 6711 IH 35 NORTH, Austin, TX 78752<br />
+		Telephone:  (512) 467-9500
+	</p>
+	<p class="mat-body-1">
+		Drury Inn & Suites Austin North is our partner of TTBA 2017 Symposium. Rooms have been held for TTBA attendees. To make reservations with group rate, click on the button below. Please make your reservations by Wednesday, October 13, 2017 to receive the group rate.
+	</p>
+	<div fxLayoutAlign="center">
+		<button md-raised-button color="accent" (click)="goToLink('https://www.druryhotels.com/Reservations.aspx?groupno=2320377')">{{'Group rate: $112' | uppercase}}</button>
+	</div>
+	<p class="mat-body-1">
+		For AAA members, follow the button below and select AAA rate in the booking process.
+	</p>
+	<div fxLayoutAlign="center">
+		<button md-raised-button color="accent" (click)="goToLink('https://www.druryhotels.com/locations/austin-tx/drury-inn-and-suites-austin-north')">{{'aaa rate: $108' | uppercase}}</button>
+	</div>
+
+	<p class="mat-body-1">Amenities:</p>
+	<ul class="mat-body-1">
+		<li>
+			HOT QUIKSTART ® Breakfast - Belgian waffles, scrambled eggs, biscuits & gravy, sausage and more.
+		</li>
+		<li>
+			5:30 Kickback® - Enjoy a variety of free snacks — like salads, soups and more — and cold beverages from 5:30 to 7 p.m.
+		</li>
+		<li>
+			Wireless Internet Access - High speed Internet in all rooms and the lobby.
+		</li>
+		<li>
+			Soda and Popcorn – From 3:00 pm to 10:00 pm every night in the lobby.
+		</li>
+		<li>
+			<a href="https://www.druryhotels.com/locations/austin-tx/drury-inn-and-suites-austin-north" target="_blank">More info</a>
+		</li>
+	</ul>
+
+	<!-- <div class="container-tag">
+		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.title">{{data.title}}</div>
+		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.from">{{formatTimeChicago(data.from, 'M/D HH:mm')}}</div>
+	</div>
+	<h3 class="mat-title">{{data.name}}<br />{{data.nameCh}}</h3>
+	<h4 class="mat-subheading-1">{{data.affiliations[0]}}</h4>
+	<p class="mat-body-1" [innerHTML]="data.description"></p> -->
+</div>
+<md-dialog-actions fxLayout fxLayoutAlign="end">
+		<button md-button color="accent" [md-dialog-close]="true">
+			<fa name="times" size="lg"></fa>
+		</button>
+</md-dialog-actions>
