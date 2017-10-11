@@ -1,8 +1,6 @@
 @import 'variables';
 
 .container-header-bg {
-	// background-color: $primaryColorFB;
-	// background-color: $primaryColor;
 	padding: 20px 0px;
 }
 
@@ -17,30 +15,4 @@
 	@media screen and (max-width: 600px) {
 		max-width: 80%;
 	}
-}
-
-// nav {
-// 	@media screen and (max-width: 600px) {
-// 		position: fixed;
-// 		bottom: 0px;
-// 		left: 0px;
-// 		// background-color: $primaryColor;
-// 		width: 100%;
-// 		min-height: auto;
-// 		z-index: 1000;
-
-// 		button {
-// 			height: 4em;
-// 			font-size: 75%;
-// 			min-width: initial;
-// 		}
-// 	}
-// }
-
-.nav-xs {
-	position: fixed;
-	bottom: 100px;
-	bottom: 15vh;
-	right: 10px;
-	z-index: 900;
 }

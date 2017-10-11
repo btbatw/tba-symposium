@@ -1,0 +1,36 @@
+<div class="header-theme nav-container">
+	<nav class="header-theme nav-content" fxShow fxHide.xs="true">
+		<img src="assets/img/banner-logo.png" alt="TTBA Symposium 2017 logo" *ngIf="isSticky" [style.height]="'2em'" [style.float]="'left'">
+		<button md-button color="primary" *ngFor="let link of getPageLinks('showPageLink', symposium)" (click)="scrollTo(link)">
+			{{parseCamelCase(link) | uppercase}}
+		</button>
+		<button md-button color="primary" (click)="scrollTo('sponsor')">
+			{{'sponsor' | uppercase}}
+		</button>
+		<button md-raised-button color="accent" (click)="goToLink(symposium.symposiumInfo.registrationLink)">REGISTER</button>
+	</nav>
+	<nav fxHide fxShow.xs="true" class="nav-xs">
+		<button md-fab color="accent" [mdMenuTriggerFor]="menu">
+			<fa name="bars" size="lg"></fa>
+		</button>
+		<md-menu #menu="mdMenu">
+			<button md-menu-item (click)="scrollTo('pageTop')">
+				<fa name="arrow-up"></fa>
+				<span>Top</span>
+			</button>
+			<button md-menu-item *ngFor="let link of getPageLinks('showPageLink', symposium)" (click)="scrollTo(link)">
+				<span>{{parseCamelCase(link) | uppercase}}</span>
+			</button>
+			<button md-menu-item (click)="scrollTo('sponsor')">
+				{{'sponsor' | uppercase}}
+			</button>
+			<button md-menu-item (click)="goToLink(symposium.symposiumInfo.registrationLink)">
+				<span>REGISTER</span>
+			</button>
+		</md-menu>
+	</nav>
+
+	<button md-fab color="accent" (click)="scrollTo('pageTop')" fxShow fxHide.xs="true" class="nav-xs">
+		<fa name="arrow-up"></fa>
+	</button>
+</div>
