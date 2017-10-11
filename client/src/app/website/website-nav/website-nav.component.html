@@ -1,4 +1,4 @@
-<div class="header-theme nav-container">
+<div class="header-theme nav-container" [ngClass]="{'mat-elevation-z5': isSticky}">
 	<nav class="header-theme nav-content" fxShow fxHide.xs="true">
 		<img src="assets/img/banner-logo.png" alt="TTBA Symposium 2017 logo" *ngIf="isSticky" [style.height]="'2em'" [style.float]="'left'">
 		<button md-button color="primary" *ngFor="let link of getPageLinks('showPageLink', symposium)" (click)="scrollTo(link)">

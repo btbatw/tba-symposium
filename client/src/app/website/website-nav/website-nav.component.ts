@@ -20,7 +20,11 @@ export class WebsiteNavComponent {
 	}
 
 	scrollTo(link) {
-		document.getElementById(link).scrollIntoView({ behavior: 'smooth' });
+		// document.getElementById(link).scrollIntoView({ behavior: 'smooth' });
+		const stickyNavEl = <HTMLElement> document.querySelector('.nav-content');
+		const navHeight = stickyNavEl.offsetHeight;
+		const elTop = document.getElementById(link).offsetTop;
+		window.scroll({ top: elTop - navHeight, left: 0, behavior: 'smooth' });
 	}
 
 	parseCamelCase(str) {
