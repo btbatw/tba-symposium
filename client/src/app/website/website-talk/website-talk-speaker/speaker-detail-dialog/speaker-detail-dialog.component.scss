@@ -14,5 +14,13 @@
 		border-radius: 2em;
 		margin: 0.2em 0;
 	}
+	.speaker-dialog-img {
+		width: 150px;
+		float:left;
+		margin-right: 1em;
+		@media screen and (max-width: 599px) {
+			width: 75px;
+		}
+	}
 }
 

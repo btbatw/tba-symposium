@@ -1,10 +1,13 @@
-<div class="cards-speaker" fxFlex="48%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between" *ngFor="let speaker of speakers">
+<div class="cards-speaker mat-elevation-z1"
+	fxFlex="48%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between"
+	*ngFor="let speaker of speakers"
+	(click)="openDialog(speaker)">
 	<div fxLayout fxLayoutAlign="space-between">
 		<div fxFlex="30%">
 			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
 		</div>
 		<div fxFlex="65%">
-			<p class="mat-caption">{{ speaker.title }}, {{ formatTimeChicago(speaker.from, 'HH:mm') }}</p>
+			<p class="mat-caption">{{ speaker.title }}, {{ formatTimeChicago(speaker.from, 'M/D HH:mm') }}</p>
 			<h5 class="mat-subheading-2 vertical-bullet-text border-color-of-theme">{{ speaker.name }} <br />{{ speaker.nameCh }}</h5>
 			<p class="mat-body-1">{{ speaker.affiliations[0] }}</p>
 		</div>
