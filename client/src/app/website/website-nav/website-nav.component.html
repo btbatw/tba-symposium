@@ -9,7 +9,7 @@
 		</button>
 		<button md-raised-button color="accent" (click)="goToLink(symposium.symposiumInfo.registrationLink)">REGISTER</button>
 	</nav>
-	<nav fxHide fxShow.xs="true" class="nav-xs">
+	<nav fxHide fxShow.xs="true" class="nav-xs" *ngIf="!isSticky">
 		<button md-fab color="accent" [mdMenuTriggerFor]="menu">
 			<fa name="bars" size="lg"></fa>
 		</button>
@@ -30,7 +30,7 @@
 		</md-menu>
 	</nav>
 
-	<button md-fab color="accent" (click)="scrollTo('pageTop')" fxShow fxHide.xs="true" class="nav-xs">
+	<button md-fab color="accent" (click)="scrollTo('pageTop')" fxShow fxHide.xs="true" class="nav-xs" *ngIf="!isSticky">
 		<fa name="arrow-up"></fa>
 	</button>
 </div>
