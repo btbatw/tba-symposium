@@ -45,6 +45,7 @@ export class WebsiteTalkComponent {
 	@Input() speakers;
 	@Input() symposium;
 	showing = [];
+	tabIndex = 0;
 
 	constructor(public dialog: MdDialog) {
 	}
@@ -70,6 +71,23 @@ export class WebsiteTalkComponent {
 		this.dialog.open(SpeakerDetailDialog, {
 			data: data
 		});
+	}
+
+	toggleTab() {
+		this.tabIndex = (this.tabIndex + 1) % 2;
+	}
+
+	scrollTo(link = 'talk') {
+		// document.getElementById(link).scrollIntoView({ behavior: 'smooth' });
+		const stickyNavEl = <HTMLElement> document.querySelector('.nav-content');
+		const navHeight = stickyNavEl.offsetHeight;
+		const elTop = document.getElementById(link).offsetTop;
+		window.scroll({ top: elTop - navHeight, left: 0, behavior: 'smooth' });
+		setTimeout(() => this.toggleTab(), 300);
+	}
+
+	onSelectedIndexChange(number) {
+		this.tabIndex = number;
 	}
 
 }

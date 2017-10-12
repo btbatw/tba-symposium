@@ -1,9 +1,9 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ symposium.talk.title | uppercase }}</h2>
 <h3 class="mat-headline">Schedules</h3>
 
-<md-tab-group>
-	<span *ngFor="let date of [4, 5]">
-		<md-tab label="11/{{date}}">
+<md-tab-group [selectedIndex]="tabIndex" dynamicHeight="true" (selectedIndexChange)="onSelectedIndexChange($event)">
+	<span *ngFor="let date of [4, 5]; index as idx">
+		<md-tab label="11/{{date}}" (click)="test()">
 
 			<div class="container-tab-content bg-color-theme-default dropdown-summary" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
 				<div>
@@ -33,7 +33,9 @@
 					<p class="mat-body-1 dropdown-description clickable" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription" [innerHTML]="schedule.sessionDescription" [@itemAnim] (click)="toggleShow(schedule.title)"></p>
 				</div>
 				<div fxFlex="1 1 auto" (click)="toggleShow(schedule.title)" class="clickable"></div>
-
+			</div>
+			<div fxLayoutAlign="center">
+				<button md-raised-button color="accent" (click)="scrollTo()"><fa [name]="tabIndex ? 'chevron-left' : 'chevron-right'"></fa></button>
 			</div>
 		</md-tab>
 	</span>
