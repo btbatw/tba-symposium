@@ -23,7 +23,7 @@ $bodyBgColor: #f1f0eb;
 		// background-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 0.5);
 		background-color: #f1f0eb;
 	}
-	&.text-color-of-theme, .text-color-of-theme {
+	&.text-color-of-theme, .text-color-of-theme, .mat-menu-item {
 		color: rgba(mat-color(map-get($amber-blue-theme, accent)), 1);
 	}
 	&.text-color-of-theme-header, .text-color-of-theme-header {

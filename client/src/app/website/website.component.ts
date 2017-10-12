@@ -22,7 +22,8 @@ export class WebsiteComponent implements OnInit {
 	constructor(private websiteService: WebsiteService, private overlayContainer: OverlayContainer) { }
 
 	ngOnInit() {
-		this.overlayContainer.themeClass = this.websiteTheme.split(' ')[0];
+		this.websiteTheme.split(' ')
+			.forEach((theme) => this.modifyClassToOverlayContainer(theme, 'add'));
 		this.websiteService.getSymposium()
 			.subscribe(result => {
 				this.symposium = result[0];
@@ -30,7 +31,20 @@ export class WebsiteComponent implements OnInit {
 			});
 	}
 	test() {
-		this.websiteTheme = this.websiteTheme === this.themeBright ? this.themeTechie : this.themeBright;
-		this.overlayContainer.themeClass = this.websiteTheme.split(' ')[0];
+		this.websiteTheme.split(' ')
+			.forEach((theme) => this.modifyClassToOverlayContainer(theme, 'remove'));
+		this.websiteTheme = this.websiteTheme === this.themeBright
+			? this.themeTechie
+			: this.themeBright;
+		this.websiteTheme.split(' ')
+			.forEach((theme) => this.modifyClassToOverlayContainer(theme, 'add'));
+	}
+	modifyClassToOverlayContainer(theme, operation) {
+		const containerClassList = this.overlayContainer.getContainerElement().classList;
+		return operation === 'add'
+			? containerClassList.add(theme)
+			: operation === 'remove'
+			? containerClassList.remove(theme)
+			: console.error('operation must be either "add" or "remove"');
 	}
 }
