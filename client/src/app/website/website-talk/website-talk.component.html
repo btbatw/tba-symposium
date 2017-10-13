@@ -3,9 +3,9 @@
 
 <md-tab-group [selectedIndex]="tabIndex" dynamicHeight="true" (selectedIndexChange)="onSelectedIndexChange($event)">
 	<span *ngFor="let date of [4, 5]; index as idx">
-		<md-tab label="11/{{date}}" (click)="test()">
+		<md-tab label="11/{{date}}">
 
-			<div class="container-tab-content bg-color-theme-default dropdown-summary" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
+			<div class="container-tab-content dropdown-summary mat-elevation-z1" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
 				<div>
 					<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
 					<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
@@ -14,7 +14,8 @@
 					<h4 class="mat-subheading-2 margin-t-0-xs clickable" (click)="toggleShow(schedule.title)">
 						<span [class]="schedule.sessionDescription ? '' : 'translucent'"
 							style="display: inline-block; margin-right: 0.5em;"
-							[@focusPanel]="showing.includes(schedule.title) ? 'open' : 'close'">
+							[@focusPanel]="showing.includes(schedule.title) ? 'open' : 'close'"
+							*ngIf="reRender">
 							<fa name="chevron-right" ></fa>
 						</span>
 						{{schedule.title}}
@@ -30,7 +31,7 @@
 							</div> -->
 						</div>
 					</div>
-					<p class="mat-body-1 dropdown-description clickable" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription" [innerHTML]="schedule.sessionDescription" [@itemAnim] (click)="toggleShow(schedule.title)"></p>
+					<p class="mat-body-1 dropdown-description clickable" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription && reRender" [innerHTML]="schedule.sessionDescription" [@itemAnim] (click)="toggleShow(schedule.title)"></p>
 				</div>
 				<div fxFlex="1 1 auto" (click)="toggleShow(schedule.title)" class="clickable"></div>
 			</div>

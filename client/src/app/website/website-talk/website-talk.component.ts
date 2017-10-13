@@ -31,7 +31,7 @@ import {
 		]),
 		trigger('focusPanel', [
 			state('close', style({
-				// transform: 'rotate(90deg)',
+				transform: 'rotate(0deg)',
 			})),
 			state('open', style({
 				transform: 'rotate(90deg)',
@@ -46,6 +46,7 @@ export class WebsiteTalkComponent {
 	@Input() symposium;
 	showing = [];
 	tabIndex = 0;
+	reRender = true; // for proper display childAnimation
 
 	constructor(public dialog: MdDialog) {
 	}
@@ -88,6 +89,8 @@ export class WebsiteTalkComponent {
 
 	onSelectedIndexChange(number) {
 		this.tabIndex = number;
+		this.reRender = false;
+		setTimeout(() => this.reRender = true, 0);
 	}
 
 }
