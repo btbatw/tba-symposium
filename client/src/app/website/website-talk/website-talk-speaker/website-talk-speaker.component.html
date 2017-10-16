@@ -1,7 +1,6 @@
 <div class="cards-speaker mat-elevation-z1"
 	fxFlex="48%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between"
-	*ngFor="let speaker of speakers"
-	(click)="openDialog(speaker)">
+	*ngFor="let speaker of speakers">
 	<div fxLayout fxLayoutAlign="space-between">
 		<div fxFlex="30%">
 			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">

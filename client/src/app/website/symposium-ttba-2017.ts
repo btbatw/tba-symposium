@@ -431,13 +431,13 @@ export const ttbaSymposium2017 = {
 					name: 'Speedway Garage (SWG)',
 					description: '$3/hour, max $18/day',
 					address: '2105 E. 27th Street',
-					link: 'https://www.google.com/maps/place/27th+Street+Garage,+109+W+27th+St,+Austin,+TX+78712/@30.2912949,-97.7407441,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b583b190db59:0x2e1eb5678aa95217!8m2!3d30.2912611!4d-97.7385507'
+					link: 'https://www.google.com/maps/place/Speedway+Garage+(SWG)/@30.2901508,-97.737673,18z/data=!4m5!3m4!1s0x8644b583975605b3:0x2e2d30a8bb92908a!8m2!3d30.2911695!4d-97.7370948'
 				},
 				{
 					name: '27th Street Garage (TSG)',
 					description: '$3/hour, max $18/day',
 					address: '109 W. 27th St.',
-					link: 'https://www.google.com/maps/@30.2907745,-97.7385594,18.73z'
+					link: 'https://www.google.com/maps/place/27th+Street+Garage,+109+W+27th+St,+Austin,+TX+78712/@30.2912949,-97.7407441,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b583b190db59:0x2e1eb5678aa95217!8m2!3d30.2912611!4d-97.7385507'
 				}
 			]
 		}],
