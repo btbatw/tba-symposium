@@ -14,6 +14,12 @@ button {
 	}
 }
 
+header {
+	background: url(assets/img/bg_img.png) no-repeat right;
+	background-size: cover;
+	// background-attachment: fixed;
+}
+
 ::ng-deep .vertical-bullet-text, .vertical-bullet-text {
 	border-left: solid 0.2em;
 	border-left: solid 0.2em;
