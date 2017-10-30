@@ -1,7 +1,8 @@
 <div md-dialog-content class="wrapper-dialog text-color-of-theme">
 	<div class="container-tag">
-		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.title">{{data.title}}</div>
 		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.from">{{formatTimeChicago(data.from, 'M/D HH:mm')}}</div>
+		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.title">{{data.title}}</div>
+		<div class="tag mat-typography bg-color-theme-primary" *ngIf="data.infoSession">Info session: {{ data.infoSession }}</div>
 	</div>
 	<img src="{{data.imgFileName ? 'assets/img/speakers/' + data.imgFileName : 'assets/img/carousel_01.jpg'}}" class="speaker-dialog-img">
 	<h3 class="mat-title">{{data.name}}<br />{{data.nameCh}}</h3>
