@@ -58,7 +58,7 @@ export class WebsiteTalkComponent {
 	filterDate(schedules, dateNum) {
 		return schedules
 			.filter(element =>
-				new Date(element.from).getDate() === Number(dateNum)
+				moment(element.from).tz('America/Chicago').format('D') === dateNum.toString()
 			);
 	}
 
