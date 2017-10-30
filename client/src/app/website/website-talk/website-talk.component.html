@@ -21,8 +21,23 @@
 						{{schedule.title}}
 					</h4>
 					<p class="mat-subheading-1 clickable" (click)="toggleShow(schedule.title)">{{schedule.topic}}</p>
-					<div fxLayout fxLayoutGap.xs="5px" fxLayoutGap="10px" *ngIf="schedule.speakers.length && schedule.speakers[0].name" class="container-avatar">
-						<div *ngFor="let speaker of schedule.speakers" >
+					<div *ngIf="schedule.title === 'Information session'" class="container-avatar" fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px">
+						<div *ngFor="let group of schedule.speakers" class="mat-elevation-z2 info-session-groups">
+							<div class="info-session-group-title">{{ group[0].infoSession }}</div>
+							<div fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px">
+								<div *ngFor="let speaker of group">
+									<div class="img-avatar clickable" (click)="openDialog(speaker)">
+										<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px" *ngIf="schedule.speakers.length && schedule.speakers[0].name && schedule.title !== 'Information session'" class="container-avatar">
+						<div *ngFor="let speaker of schedule.speakers, index as idx" >
+							<!-- <div *ngIf="schedule.title === 'Information session'" [style.width]="'20px'">
+								{{ idx === 0 ? speaker.infoSession : speaker.infoSession === schedule.speakers[idx - 1].infoSession ? '&nbsp;' : speaker.infoSession}}
+							</div> -->
 							<div class="img-avatar clickable" (click)="openDialog(speaker)">
 								<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
 							</div>
