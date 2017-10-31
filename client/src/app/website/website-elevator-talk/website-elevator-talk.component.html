@@ -3,6 +3,12 @@
 	</h2>
 	<div class="mat-typography" id="elevator">
 		<h4>
+			All the submitted abstracts have been reviewed. Ten abstracts are selelcted for elevator talk. Follow the link below for selected abstracts.
+		</h4>
+		<div fxLayoutAlign="center" style="margin-bottom: 1.5em">
+			<button md-raised-button color="accent" (click)="goToLink('http://abstract2017.ttbatw.org/#!/results')">{{'elevator talk abstracts' | uppercase}}</button>
+		</div>
+		<h4>
 			The 5-minute elevator talk competition includes an abstract competition and an oral competition.
 		</h4>
 		<h3>Abstract competition</h3>
@@ -16,6 +22,6 @@
 		</ul>
 		<h4>1st, 2nd, and 3rd place winners will be awarded $150, $100, and $50 accordingly.</h4>
 	</div>
-	<div fxLayoutAlign="center">
+	<!-- <div fxLayoutAlign="center">
 		<button md-raised-button color="accent" (click)="goToLink(symposium.elevatorTalk.link)">{{'Submit Abstract' | uppercase}}</button>
-	</div>
+	</div> -->
