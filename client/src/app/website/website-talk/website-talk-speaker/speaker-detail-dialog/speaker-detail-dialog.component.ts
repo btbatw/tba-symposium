@@ -15,4 +15,8 @@ export class SpeakerDetailDialog {
 	formatTimeChicago(dateStr, format) {
 		return moment(dateStr).tz('America/Chicago').format(format);
 	}
+
+	goToLink(link) {
+		window.open(link, '_blank');
+	}
 }

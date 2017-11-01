@@ -7,6 +7,9 @@
 	<img src="{{data.imgFileName ? 'assets/img/speakers/' + data.imgFileName : 'assets/img/carousel_01.jpg'}}" class="speaker-dialog-img">
 	<h3 class="mat-title">{{data.name}}<br />{{data.nameCh}}</h3>
 	<h4 class="mat-subheading-1">{{data.affiliations[0]}}</h4>
+	<button md-mini-fab *ngIf="data.links[0]" (click)="goToLink(data.links[0])">
+			<fa name="{{ data.links[0].indexOf('linkedin') > 0 ? 'linkedin-square' : 'link' }}" size="lg"></fa>
+	</button>
 	<p class="mat-body-1" [innerHTML]="data.description"></p>
 </div>
 <md-dialog-actions fxLayout fxLayoutAlign="end">
