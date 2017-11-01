@@ -134,7 +134,7 @@ export const ttbaSymposium2017 = {
                         imgFileName: 'tim_hsin-chih_yeh.jpg',
                         links: ['http://research.engr.utexas.edu/yeh/'],
 						description: 'Dr. Tim Hsin-Chih Yeh obtained his BS degree from National Taiwan University, MS degree from the University of California, Los Angeles, and PhD from Johns Hopkins University, all in mechanical engineering. After graduation from UCLA, he worked at Optical Micro Machines Inc. in San Diego from 1998 to 2003 as an R&D engineer, developing MEMS-based photonic switches for telecommunications. Dr. Yeh received his postdoctoral training at Los Alamos National Laboratory from 2009 to 2012, in the Center for Integrated Nanotechnologies. Dr. Yeh joined the Biomedical Engineering Department at the University of Texas at Austin in 2012 as an Assistant Professor. His research interests include nanobiosensor development, 3D molecular tracking and super-resolution imaging.',
-						infoSession: 'Academia',
+						infoSession: '',
                     }
                 ]
             },
@@ -296,6 +296,15 @@ export const ttbaSymposium2017 = {
                     imgFileName: 'tai-yen_chen.jpg',
                     links: ['http://chen.chem.uh.edu/'],
 					description: 'Dr. Tai-Yen Chen is an assistant professor of Chemistry at the University of Houston. He received his BS and MS from National Tsing Hua University, Taiwan, in 2002 and 2004 and obtained his Ph.D. with Prof. Dong Hee Son in physical chemistry from Texas A&M University in 2010. He then did postdoctoral research in single-molecule biophysics with Prof. Peng Chen at Cornell University before starting at the University of Houston in 2016. His current research investigates metal homeostasis in healthy and diseased neurons using single-molecule techniques, with the goals to understand how metals affect neuronal signaling and cause neurodegenerative diseases.',
+					infoSession: 'Academia',
+				},
+				{
+                    name: 'Tiencheng Arthur Chang',
+                    nameCh: '',
+                    affiliations: ['Associate Professor, Dept. of OB/GYN, University of Texas Health Science Center at San Antonio'],
+                    imgFileName: 'arthur_chang.jpg',
+                    links: ['https://www.linkedin.com/in/arthurtienchengchang'],
+					description: 'Dr. Chang obtained his BS degree in Animal Science from National Taiwan University, MS and PhD in Endocrinology-Reproductive Physiology from the University of Wisconsin-Madison, and clinical laboratory director/consultant board certification from American Board of Bioanalysis (ABB). His clinical and research interests include reproductive medicine, in vitro fertilization (IVF), embryology, preimplantation genetic diagnosis (PGD), embryo implantation, stem cell, laboratory quality management and regulatory compliance, healthcare business, as well as nonhuman primate animal models for reproductive and regenerative medicine. He has served on boards and committees of various academic associations and professional societies, and currently as President of Society of Reproductive Biologists and Technologists (SRBT). We believe that Dr. Chang’s profound expertise in laboratory medicine and experience in research make him an excellent role model for young professionals to develop their career in translational medicine',
 					infoSession: 'Academia',
 				}]
             },
