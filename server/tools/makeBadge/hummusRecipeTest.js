@@ -4,8 +4,11 @@ const HummusRecipe = require('hummus-recipe');
 const PDFDocument = require('pdfkit');
 
 
+// const badgeDataFile = './110317_attendee.csv';
 // const badgeDataFile = './103117_attendee.csv';
-const badgeDataFile = './balnkBadgeData';
+// const badgeDataFile = './balnkBadgeData';
+const badgeDataFile = './demo_data.csv';
+// const badgeDataFile = './103117_speaker.csv';
 
 
 const badgeData = badgeDataFile.includes('.csv')
@@ -18,13 +21,8 @@ const outputFilePath = badgeDataFile.split(outputFileName)[0];
 
 const [badgeWidth, badgeHeight] = [288, 216];
 
-genZhNamePdf(badgeData, outputFileName)
-    .then(() => splitPdf(`./${outputFileName}-allZhNames-tempBadge.pdf`, './', `${outputFileName}-zhNames-tempBadge`))
-    .then(() => genEngBadgePdf(badgeData, `./${outputFileName}-engBadge-tempBadge.pdf`))
-    .then(() => mergeZhEngBadge(badgeData, `./${outputFileName}-engBadge-tempBadge.pdf`, './', `${outputFileName}-zhNames-tempBadge`, path.join(outputFilePath, outputFileName + '.pdf')))
-    .then(() => removeTempFiles('./'))
+genEngBadgePdf(badgeData, `./${outputFileName}.pdf`)
     .then(() => insertTimeTable(path.join(outputFilePath, outputFileName + '.pdf'), './timeTable.pdf', `./${outputFileName}TwoSided.pdf`, Math.ceil(badgeData.length/6) ))
-    // .then(() => genTimeTable('./timeTable.pdf'))
 
 function genEngBadgePdf (badgeData, output) {
 
@@ -59,12 +57,18 @@ function genEngBadgePdf (badgeData, output) {
         fontSize: 32,
         textBox
     };
+    const zhNameSetting = {
+        font: 'applegothic',
+        color: '#333333',
+        fontSize: 18,
+        textBox
+    };
     const elevatorTalkSetting = {
         font: 'roboto-light',
         color: '#333333',
         fontSize: 24,
     };
-    infoSessionFont = {
+    const infoSessionFont = {
         font: 'roboto-regular',
         color: '#aaaaaa',
         fontSize: 10
@@ -99,7 +103,7 @@ function genEngBadgePdf (badgeData, output) {
             // speaker: '#19589b',
             speaker: '#7bb1ea',
             ttba: '#63aa9c',
-            sponsor: '#ff944d'
+            supporter: '#ff944d'
         };
         return {
             fill: colorMap[role],
@@ -134,6 +138,7 @@ function genEngBadgePdf (badgeData, output) {
             .rectangle(positionX, positionY, badgeWidth, badgeHeight, badgeFrameRectangleSetting)
             .text(person.firstName, positionX, positionY -3, firstNameSetting)
             .text(person.lastName, positionX, positionY + 35, lastNameSetting)
+            .text(person.zhName, positionX, positionY + 68, zhNameSetting)
             .text(person.elevatorTalk, positionX + badgeWidth - 40, positionY + 20, elevatorTalkSetting)
             .rectangle(positionX, positionY + 127, badgeWidth, badgeHeight - 165, roleRectangleSetting(person.role.toLowerCase()))
             .image('./ttba_2017_roboto.png', positionX + badgeWidth - 13 - 120, positionY + 188, {
@@ -158,7 +163,7 @@ function genEngBadgePdf (badgeData, output) {
     if (badgeData.length % 6 !== 0) {
         pdfDoc.endPage();
     }
-    pdfDoc.endPDF(() => Promise.resolve());
+    return pdfDoc.endPDF(() => Promise.resolve());
 };
 
 function insertTimeTable (pdf, otherPdf, outputPdf, repeats) {
@@ -170,6 +175,29 @@ function insertTimeTable (pdf, otherPdf, outputPdf, repeats) {
     }
     finalPdf.endPDF();
 }
+
+function genTimeTable (dir) {
+    const timeTablePdf = new HummusRecipe('new', dir);
+    
+    timeTablePdf.createPage();
+    Array(6).fill('placeholder').forEach((element, index) => {
+        let positionX = 18 + badgeWidth * (index % 2);
+        let positionY = 72 + badgeHeight * Math.floor((index % 6)/2);
+        timeTablePdf.image('./time_table_badge.jpg', positionX, positionY, {
+            width: badgeWidth
+        });
+    });
+    timeTablePdf.endPage();
+    timeTablePdf.endPDF();
+}
+
+// genZhNamePdf(badgeData, outputFileName)
+//     .then(() => splitPdf(`./${outputFileName}-allZhNames-tempBadge.pdf`, './', `${outputFileName}-zhNames-tempBadge`))
+//     .then(() => genEngBadgePdf(badgeData, `./${outputFileName}-engBadge-tempBadge.pdf`))
+//     .then(() => mergeZhEngBadge(badgeData, `./${outputFileName}-engBadge-tempBadge.pdf`, './', `${outputFileName}-zhNames-tempBadge`, path.join(outputFilePath, outputFileName + '.pdf')))
+//     .then(() => removeTempFiles('./'))
+//     .then(() => insertTimeTable(path.join(outputFilePath, outputFileName + '.pdf'), './timeTable.pdf', `./${outputFileName}TwoSided.pdf`, Math.ceil(badgeData.length/6) ))
+    // .then(() => genTimeTable('./timeTable.pdf'))
 
 function mergeZhEngBadge (badgeData, pdf1, splitPdfDir, splitPdfPrefix, outputPdf) {
     const merged = new HummusRecipe(pdf1, outputPdf);
@@ -223,18 +251,4 @@ function removeTempFiles (dir) {
         let tempFiles = files.filter(element => element.includes('-tempBadge'));
         tempFiles.forEach(file => fs.unlink(path.join(dir, file)));
     });
-}
-function genTimeTable (dir) {
-    const timeTablePdf = new HummusRecipe('new', dir);
-    
-    timeTablePdf.createPage();
-    Array(6).fill('placeholder').forEach((element, index) => {
-        let positionX = 18 + badgeWidth * (index % 2);
-        let positionY = 72 + badgeHeight * Math.floor((index % 6)/2);
-        timeTablePdf.image('./time_table_badge.jpg', positionX, positionY, {
-            width: badgeWidth
-        });
-    });
-    timeTablePdf.endPage();
-    timeTablePdf.endPDF();
 }

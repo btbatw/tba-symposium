@@ -12,7 +12,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
-    "hummus-recipe": "^1.3.5",
+    "hummus-recipe": "^1.4.1",
     "mongodb": "^2.2.30",
     "pdfkit": "^0.8.3"
   },

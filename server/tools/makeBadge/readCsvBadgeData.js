@@ -19,7 +19,7 @@ module.exports = (file) => {
             return {
                 firstName: element[0],
                 lastName: element[1],
-                zhName: element[2],
+                zhName: !element[2] ? ' ' : element[2],
                 affiliation: element[3],
                 role: element[4] ? element[4].toUpperCase() : 'ATTENDEE',
                 elevatorTalk: !element[5] ? ' ' : element[5].length === 1 ? '  ' + element[5] : element[5],
