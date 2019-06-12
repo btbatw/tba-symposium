@@ -33,6 +33,8 @@ Thumbs.db
 brief.json
 test.js
 api-docs.*
+server/tools/**
+client/docs/**
 
 ### Cloud9 IDE
 .c9/

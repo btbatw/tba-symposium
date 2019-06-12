@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 
 /* Feature Modules */
 import { WebsiteModule } from './website/website.module';
+import { AdminModule } from './admin/admin.module';
 
 /* Routing Module */
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
 		BrowserModule,
 		BrowserAnimationsModule,
 		WebsiteModule,
+		AdminModule,
 		AppRoutingModule,
 		HttpModule,
 		HttpClientModule,

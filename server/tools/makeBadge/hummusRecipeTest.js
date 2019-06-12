@@ -18,7 +18,7 @@ const outputFileName = badgeDataFile.split('/').slice(-1)[0]
     ? badgeDataFile.split('/').slice(-1)[0].split('.')[0]
     : new Date().toJSON();
 const outputFilePath = badgeDataFile.split(outputFileName)[0];
-
+console.log(badgeData)
 const [badgeWidth, badgeHeight] = [288, 216];
 
 genEngBadgePdf(badgeData, `./${outputFileName}.pdf`)

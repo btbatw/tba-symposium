@@ -1,27 +1,58 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">
-		{{ symposium.elevatorTalk.title | uppercase }}
-	</h2>
-	<div class="mat-typography" id="elevator">
-		<h4>
-			All the submitted abstracts have been reviewed. Ten abstracts are selelcted for elevator talk. Follow the link below for selected abstracts.
-		</h4>
-		<div fxLayoutAlign="center" style="margin-bottom: 1.5em">
-			<button md-raised-button color="accent" (click)="goToLink('http://abstract2017.ttbatw.org/#!/results')">{{'elevator talk abstracts' | uppercase}}</button>
-		</div>
-		<h4>
-			The 5-minute elevator talk competition includes an abstract competition and an oral competition.
-		</h4>
-		<h3>Abstract competition</h3>
-		<p>The abstracts should be submitted no later than <strong>September 30th</strong>. Each abstract will be judged by at least 3 referees with related expertise. The top 3 contestants will receive <strong>travel funds</strong> ($50 per person), and the selected 10 finalists will enter oral competition.</p>
-		<h3>Oral competition</h3>
-		<p>The elevator talk is on <strong>November 4th from 5:30 to 6:30 pm</strong>. Those selected will give <strong>a 5-minute presentation</strong> to highlight their research. The participants will be judged by a panel of 3 or more judges. Each judge scores speakers on a scale of 1 to 10 in each of the 3 criteria below. The judges' scores are combined and the top 3 are winners. The participants will be judged on the following criteria:</p>
-		<ul>
-			<li>Comprehension: Does the presentation help the audience understand the research?</li>
-			<li>Engagement: Does the oration make the audience want to know more?</li>
-			<li>Communication: Is the information delivered clearly and simply?</li>
-		</ul>
-		<h4>1st, 2nd, and 3rd place winners will be awarded $150, $100, and $50 accordingly.</h4>
+	{{ symposium.elevatorTalk.title | uppercase }}
+</h2>
+<div class="mat-typography" id="elevator">
+	<h4>
+		We are accepting abstracts for the Elevator Pitch (Saturday 12:15-13:45, August 3) and the Poster Session
+		(Saturday 15:40-17:00) at the 2019 BTBA Annual Symposium. Please register before submitting your abstract.
+	</h4>
+	<h4>
+		Submission deadline: 07/20/2019 (Sat) 12:00AM (EST)
+	</h4>
+	<div fxLayoutAlign="center" style="margin-bottom: 1.5em">
+		<button md-raised-button color="accent"
+			(click)="goToLink('http://abstract2017.ttbatw.org/#!/results')">{{'submit abstract' | uppercase}}</button>
 	</div>
+	<h2 class="mat-headline">Abstract format</h2>
+	<ol style="margin-bottom: 1.8em">
+		<li>A single-page PDF file with filesize smaller than 10 MB</li>
+		<li>The abstract should include Title, Authors, Affiliations, Main Text and References. Figures are optional.</li>
+		<li>
+			Layout - <a href="assets/files/Abstract_template.docx" class="href">{{ 'download Word template' }}</a>:
+			<ul>
+				<li>Margin: 1-inch; Font: Times New Roman</li>
+				<li>Title: 12 pt bold; Other text: 10 pt</li>
+				<li>1.5-lines spacing, but single line spacing for reference and figure caption</li>
+				<li>
+					Reference format: Number, Authors (abbreviated first and flil last name), Journal, Issue, Page,
+					Year. <br>
+					Reference example: 1. M. Casalino, L. Sirleto, L. Moretti, and I. Rendina, Semicond, Sci. Technol.
+					23,075001 (2008)
+				</li>
+			</ul>
+		</li>
+
+	</ol>
+	<h2 class="mat-headline">Elevator Pitch</h2>
+	<p style="margin-bottom: 1.8em">
+		8 participants will be selected for presenting their work. Each presentation is restricted to 150 seconds with
+		no more than 3 slides. 2 best speakers will be awarded with $50 Amazon gift card in the Closing Remarks & Award
+		Ceremony on Sunday, August 4.
+	</p>
+	<h2 class="mat-headline">Poster setup</h2>
+	<ul>
+		<li>
+			Poster size: 47 inches (or less) in width and 35.5 inches (or less) in length.
+		</li>
+		<li>
+			Please setup up your poster between 8:15AM and 8:45AM on Saturday, Aug 3 and keep
+			it until 5PM the same day.
+		</li>
+		<li>
+			The judges will score and the 3 best posters will receive certificate/prize/reward ($25
+			Amazon gift card) in the Closing Remarks &amp; Award Ceremony on Sunday, Aug 4.
+		</li>
+	</ul>
 	<!-- <div fxLayoutAlign="center">
 		<button md-raised-button color="accent" (click)="goToLink(symposium.elevatorTalk.link)">{{'Submit Abstract' | uppercase}}</button>
 	</div> -->

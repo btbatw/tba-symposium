@@ -8,6 +8,7 @@
     "dev:back": "cd server/ && npm run dev",
     "dev:front": "cd client/ && npm run start",
     "dev:front:broadcast": "cd client/ && npm run start:broadcast",
+    "dist:front": "cd client/ && ng build --prod --base-href '/'",
     "deploy": "cd client/ && cp -R dist/ public && firebase deploy"
   },
   "author": "",

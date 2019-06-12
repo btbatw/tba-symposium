@@ -1,12 +1,13 @@
 <div class="header-theme nav-container" [ngClass]="{'mat-elevation-z5': isSticky}">
-	<nav class="header-theme nav-content" fxShow fxHide.xs="true">
-		<img src="assets/img/banner-logo.png" alt="TTBA Symposium 2017 logo" *ngIf="isSticky" [style.height]="'2em'" [style.float]="'left'">
+	<nav class="header-theme nav-content" fxShow fxHide.xs="true" [style.padding]="'0.3em'">
+		<img src="assets/img/banner-logo.png" alt="TTBA Symposium 2017 logo" *ngIf="isSticky" [style.height]="'2.4em'" [style.float]="'left'" [style.padding-left]="'0.5em'">
 		<button md-button color="primary" *ngFor="let link of getPageLinks('showPageLink', symposium)" (click)="scrollTo(link)">
 			{{parseCamelCase(link) | uppercase}}
 		</button>
 		<button md-button color="primary" (click)="scrollTo('sponsor')">
 			{{'support' | uppercase}}
 		</button>
+		<!-- <button md-raised-button color="accent" (click)="goToLink('https://github.com/Yu-AnChen/tba-symposium/raw/master/client/src/app/website/assets/pdf/TTBA_2017_Symposium_program.pdf')">PROGRAM BOOK</button> -->
 		<button md-raised-button color="accent" (click)="goToLink(symposium.symposiumInfo.registrationLink)">REGISTER</button>
 	</nav>
 	<nav fxHide fxShow.xs="true" class="nav-xs" *ngIf="!isSticky">
@@ -24,6 +25,9 @@
 			<button md-menu-item (click)="scrollTo('sponsor')">
 				{{'support' | uppercase}}
 			</button>
+			<!-- <button md-menu-item (click)="goToLink('https://github.com/Yu-AnChen/tba-symposium/raw/master/client/src/app/website/assets/pdf/TTBA_2017_Symposium_program.pdf')">
+				<span>PROGRAM BOOK</span>
+			</button> -->
 			<button md-menu-item (click)="goToLink(symposium.symposiumInfo.registrationLink)">
 				<span>REGISTER</span>
 			</button>

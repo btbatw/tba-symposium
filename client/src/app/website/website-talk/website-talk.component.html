@@ -2,57 +2,75 @@
 <h3 class="mat-headline">Schedules</h3>
 
 <md-tab-group [selectedIndex]="tabIndex" dynamicHeight="true" (selectedIndexChange)="onSelectedIndexChange($event)">
-	<span *ngFor="let date of [4, 5]; index as idx">
-		<md-tab label="11/{{date}}">
+	<span *ngFor="let date of [3, 4]; index as idx">
+		<md-tab label="8/{{date}}">
+			<div fxLayout fxLayoutGap="0%" fxLayoutWrap fxLayoutAlign="space-between">
 
-			<div class="container-tab-content dropdown-summary mat-elevation-z1" fxLayout.xs="column" fxLayout *ngFor="let schedule of filterDate(symposium.talk.schedules, date)">
-				<div>
-					<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
-					<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
-				</div>
-				<div>
-					<h4 class="mat-subheading-2 margin-t-0-xs clickable" (click)="toggleShow(schedule.title)">
-						<span [class]="schedule.sessionDescription ? '' : 'translucent'"
-							style="display: inline-block; margin-right: 0.5em;"
-							[@focusPanel]="showing.includes(schedule.title) ? 'open' : 'close'"
-							*ngIf="reRender">
-							<fa name="chevron-right" ></fa>
-						</span>
-						{{schedule.title}}
-					</h4>
-					<p class="mat-subheading-1 clickable" (click)="toggleShow(schedule.title)">{{schedule.topic}}</p>
-					<div *ngIf="schedule.title === 'Information session'" class="container-avatar" fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px">
-						<div *ngFor="let group of schedule.speakers" class="mat-elevation-z2 info-session-groups">
-							<div class="info-session-group-title">{{ group[0].infoSession }}</div>
-							<div fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px">
-								<div *ngFor="let speaker of group">
-									<div class="img-avatar clickable" (click)="openDialog(speaker)">
-										<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
+
+				<div class="container-tab-content dropdown-summary mat-elevation-z1"
+					fxFlex="{{ schedule.numOfParallelSessions ? 100/schedule.numOfParallelSessions - 0.3 + '%' : '100%' }}"
+					fxFlex.xs="100%" fxLayoutAlign="space-between baseline"
+					*ngFor="let schedule of filterDate(symposium.talk.schedules, date)" style="margin: 0em 0;">
+					<div>
+						<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
+						<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
+					</div>
+					<div>
+						<h4 class="mat-subheading-2 margin-t-0-xs clickable" (click)="toggleShow(schedule.title)">
+							<span [class]="schedule.sessionDescription ? '' : 'translucent'"
+								style="display: inline-block; margin-right: 0.5em;"
+								[@focusPanel]="showing.includes(schedule.title) ? 'open' : 'close'" *ngIf="reRender">
+								<fa name="chevron-right"></fa>
+							</span>
+							{{schedule.title}}
+						</h4>
+						<p class="mat-subheading-1 clickable" (click)="toggleShow(schedule.title)">{{schedule.topic}}
+						</p>
+						<div *ngIf="schedule.title === 'Information session'" class="container-avatar" fxLayout
+							fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px">
+							<div *ngFor="let group of schedule.speakers" class="mat-elevation-z2 info-session-groups">
+								<div class="info-session-group-title">{{ group[0].infoSession }}</div>
+								<div class="info-session-group-title">@ {{ group[0].infoSessionRoom }}</div>
+								<div fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px">
+									<div *ngFor="let speaker of group">
+										<div class="img-avatar clickable" (click)="openDialog(speaker)">
+											<img [style.width]="'100%'"
+												src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px" *ngIf="schedule.speakers.length && schedule.speakers[0].name && schedule.title !== 'Information session'" class="container-avatar">
-						<div *ngFor="let speaker of schedule.speakers, index as idx" >
-							<!-- <div *ngIf="schedule.title === 'Information session'" [style.width]="'20px'">
+						<div fxLayout fxLayoutWrap fxLayoutGap.xs="5px" fxLayoutGap="10px"
+							*ngIf="schedule.speakers.length && schedule.speakers[0].name && schedule.title !== 'Information session'"
+							class="container-avatar">
+							<div *ngFor="let speaker of schedule.speakers, index as idx">
+								<!-- <div *ngIf="schedule.title === 'Information session'" [style.width]="'20px'">
 								{{ idx === 0 ? speaker.infoSession : speaker.infoSession === schedule.speakers[idx - 1].infoSession ? '&nbsp;' : speaker.infoSession}}
 							</div> -->
-							<div class="img-avatar clickable" (click)="openDialog(speaker)">
-								<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
-							</div>
-							<!-- <div class="mat-caption">
+								<div class="img-avatar clickable" (click)="openDialog(speaker)">
+									<img [style.width]="'100%'"
+										src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
+								</div>
+								<!-- <div class="mat-caption">
 								{{ speaker.name }}
 							</div> -->
+							</div>
 						</div>
+						<p class="mat-body-1 dropdown-description clickable"
+							*ngIf="showing.includes(schedule.title) && schedule.sessionDescription && reRender"
+							[innerHTML]="schedule.sessionDescription" [@itemAnim] (click)="toggleShow(schedule.title)">
+						</p>
 					</div>
-					<p class="mat-body-1 dropdown-description clickable" *ngIf="showing.includes(schedule.title) && schedule.sessionDescription && reRender" [innerHTML]="schedule.sessionDescription" [@itemAnim] (click)="toggleShow(schedule.title)"></p>
+					<div fxFlex="1 1 auto" (click)="toggleShow(schedule.title)" class="clickable"></div>
 				</div>
-				<div fxFlex="1 1 auto" (click)="toggleShow(schedule.title)" class="clickable"></div>
 			</div>
-			<div fxLayoutAlign="center">
-				<button md-raised-button color="accent" (click)="scrollTo()"><fa [name]="tabIndex ? 'chevron-left' : 'chevron-right'"></fa></button>
+			<div fxLayoutAlign="center" style="margin-top:0.5em;">
+				<button md-raised-button color="accent" (click)="scrollTo()">
+					<fa [name]="tabIndex ? 'chevron-left' : 'chevron-right'"></fa>
+				</button>
 			</div>
+
 		</md-tab>
 	</span>
 </md-tab-group>

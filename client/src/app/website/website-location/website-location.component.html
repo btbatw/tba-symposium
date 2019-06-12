@@ -4,7 +4,7 @@
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="18">
 	<agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
-<span *ngFor="let direction of symposium.location.directions">
+<!-- <span *ngFor="let direction of symposium.location.directions">
 	<h3 class="mat-title">{{ direction.method }}</h3>
 	<div fxLayout fxLayoutWrap fxLayoutAlign="space-between">
 		<div *ngFor="let lot of direction.lots" fxFlex.xs="100" fxFlex="48" class="card-parking-lot">
@@ -25,4 +25,4 @@
 <h4 class="mat-subheading-1"><span [innerHTML]="symposium.location.lodging.description"></span></h4>
 <div fxLayoutAlign="center">
 	<button md-raised-button color="accent" (click)="openDialog()">{{'lodging info' | uppercase}}</button>
-</div>
+</div> -->

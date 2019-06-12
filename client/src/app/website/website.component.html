@@ -2,7 +2,7 @@
 
 	<a id="pageTop"></a>
 	<header class="header-theme" fxLayoutAlign="center">
-		<div fxFlex="0 1 960px" [style.padding]="'10px'">
+		<div fxFlex="0 1 960px" [style.padding]="'2em'">
 			<app-website-header *ngIf="symposium" [symposium]="symposium">
 				</app-website-header>
 		</div>
@@ -15,8 +15,8 @@
 
 	<!-- <div appScrollFix>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</div> -->
 	<content *ngIf="symposium" class="container-content-bg bg-color-theme-default text-color-of-theme" fxLayoutAlign="center">
-		<div fxFlex="0 1 960px" fxFlex.xs="100%" [style.padding]="'0 10px'">
-			<button (click)="test()" md-mini-fab color="accent"><fa name="adjust"></fa></button>
+		<div fxFlex="0 1 960px" fxFlex.xs="100%" [style.padding]="'0 2em'">
+			<!-- <button (click)="test()" md-mini-fab color="accent"><fa name="adjust"></fa></button> -->
 			<a id="about"></a>
 			<app-website-about [symposium]="symposium">
 			</app-website-about>

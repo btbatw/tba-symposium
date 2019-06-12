@@ -1,10 +1,11 @@
 @import '~@angular/material/theming';
 @import 'variables';
 @import 'mixin';
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap');
 
 // palette
 $theming-amber: mat-palette($mat-amber);
-$themeing-light-blue-dark:  mat-palette($mat-light-blue, 900, A100, A400);
+$themeing-light-blue-dark:  mat-palette($mat-teal, 800, A100, A400);
 $themeing-light-blue:  mat-palette($mat-light-blue, A700, 900, A400);
 $themeing-white: mat-palette($mat-grey, 50, 50, 400);
 
@@ -21,7 +22,7 @@ $bodyBgColor: #f1f0eb;
 	@include angular-material-theme($amber-blue-theme);
 	&.bg-color-theme-default, .bg-color-theme-default {
 		// background-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 0.5);
-		background-color: #f1f0eb;
+		background-color: #f5f4f0;
 	}
 	&.text-color-of-theme, .text-color-of-theme, .mat-menu-item {
 		color: rgba(mat-color(map-get($amber-blue-theme, accent)), 1);
@@ -102,7 +103,7 @@ $roboto-typography: mat-typography-config(
 );
 
 $quicksand-typography: mat-typography-config(
-	$font-family: 'Quicksand',
+	$font-family: 'IBM Plex Sans',
 	$display-4:     mat-typography-level(112px, 112px, 500),
 	$display-3:     mat-typography-level(56px, 56px, 500),
 	$display-2:     mat-typography-level(45px, 48px, 500),
