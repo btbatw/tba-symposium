@@ -1,0 +1,28 @@
+@import 'variables';
+
+.container-header-bg {
+	padding: 20px 0px;
+}
+
+.hidden {
+	position: absolute;
+	opacity: 0;
+	font-size: 1%;
+}
+
+// #logo-header {
+// 	width: 340px;
+// 	@media screen and (max-width: 600px) {
+// 		max-width: 80%;
+// 	}
+// 	@media screen and (max-width: 600px) {
+// 		max-width: 80%;
+// 	}
+// }
+
+#logo-header {
+	max-width: 150px;
+	@media screen and (max-width: 600px) {
+		max-width: 100px;
+	}
+}

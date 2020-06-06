@@ -17,6 +17,7 @@ import { WebsiteSponsorComponent } from './website-sponsor/website-sponsor.compo
 import { WebsiteFooterComponent } from './website-footer/website-footer.component';
 import { HotelDetailDialog } from './website-location/hotel-detail-dialog/hotel-detail-dialog.component';
 import { WebsiteNavComponent } from './website-nav/website-nav.component';
+import { WebsiteHeaderStaticComponent } from './website-header-static/website-header-static.component';
 
 
 
@@ -35,7 +36,8 @@ import { WebsiteNavComponent } from './website-nav/website-nav.component';
 		WebsiteSponsorComponent,
 		WebsiteFooterComponent,
 		HotelDetailDialog,
-		WebsiteNavComponent
+		WebsiteNavComponent,
+		WebsiteHeaderStaticComponent
 	],
 	providers: [WebsiteService],
 	entryComponents: [SpeakerDetailDialog, HotelDetailDialog]
