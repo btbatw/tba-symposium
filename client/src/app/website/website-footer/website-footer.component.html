@@ -1,11 +1,15 @@
-<div fxFlex fxLayoutAlign="center" fxLayout fxLayoutWrap (click)="goToLink(symposium.host.webLink)">
+<div fxFlex fxLayoutAlign="center" fxLayout fxLayoutWrap
+	[style.color]="'white'">
 	<!-- <div fxFlex="2em">
 		<img [src]="'assets/img/' + symposium.host.logoSmall" alt="logo" [style.width]="'100%'">
 	</div> -->
-	<div fxFlex="100%" class="mat-body-1 text-center">
+	<div fxFlex="100%" class="mat-body-1 text-center" [style.cursor]="'pointer'" (click)="goToLink(symposium.host.webLink)">
 		{{ symposium.host.name }}
 	</div>
-	<div fxFlex="100%" class="mat-body-1 text-center">
+	<div fxFlex="100%" class="mat-body-1 text-center" [style.cursor]="'pointer'" (click)="goToLink(symposium.host.webLink)">
 		{{ symposium.host.nameCh }}
+	</div>
+	<div fxFlex="100%" class="mat-body-1 text-center">
+		{{ symposium.host.email }}
 	</div>
 </div>
