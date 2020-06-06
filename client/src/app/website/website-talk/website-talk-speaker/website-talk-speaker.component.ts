@@ -11,16 +11,17 @@ import { SpeakerDetailDialog } from './speaker-detail-dialog/speaker-detail-dial
 })
 export class WebsiteTalkSpeakerComponent {
 	@Input() speakers;
+	@Input() timeZone;
 
 	constructor(public dialog: MdDialog) { }
 
-	formatTimeChicago(dateStr, format) {
-		return moment(dateStr).tz('America/Chicago').format(format);
+	formatTimeFromSetting(dateStr, format) {
+		return moment(dateStr).tz(this.timeZone).format(format);
 	}
 
 	openDialog(data) {
 		this.dialog.open(SpeakerDetailDialog, {
-			data: data
+			data: Object.assign(data, {timeZone: this.timeZone}),
 		});
 	}
 

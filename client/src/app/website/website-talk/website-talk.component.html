@@ -12,8 +12,8 @@
 					fxFlex.xs="100%" fxLayoutAlign="space-between baseline"
 					*ngFor="let schedule of filterDate(symposium.talk.schedules, date)" style="margin: 0em 0;">
 					<div>
-						<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeChicago(schedule.from, 'HH:mm') }}</h4>
-						<!-- <p class="mat-subheading-1">({{ formatTimeChicago(schedule.from, 'z') }})</p> -->
+						<h4 class="mat-subheading-2 margin-b-0-xs">{{ formatTimeFromSetting(schedule.from, 'HH:mm') }}</h4>
+						<!-- <p class="mat-subheading-1">({{ formatTimeFromSetting(schedule.from, 'z') }})</p> -->
 					</div>
 					<div>
 						<h4 class="mat-subheading-2 margin-t-0-xs clickable" (click)="toggleShow(schedule.title)">
@@ -75,5 +75,5 @@
 	</span>
 </md-tab-group>
 <h3 class="mat-headline">Speakers</h3>
-<app-website-talk-speaker [speakers]="speakers" fxLayout fxLayoutGap.xs="0%" fxLayoutWrap fxLayoutAlign="space-around">
+<app-website-talk-speaker [speakers]="speakers" [timeZone]='symposium.symposiumInfo.timeZone' fxLayout fxLayoutGap.xs="0%" fxLayoutWrap fxLayoutAlign="space-around">
 </app-website-talk-speaker>

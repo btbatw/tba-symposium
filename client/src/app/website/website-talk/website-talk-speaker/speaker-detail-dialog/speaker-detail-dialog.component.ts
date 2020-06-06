@@ -12,8 +12,8 @@ export class SpeakerDetailDialog {
 
 	constructor( @Inject(MD_DIALOG_DATA) public data: any) { }
 
-	formatTimeChicago(dateStr, format) {
-		return moment(dateStr).tz('America/Chicago').format(format);
+	formatTimeFromSetting(dateStr, format) {
+		return moment(dateStr).tz(this.data.timeZone).format(format);
 	}
 
 	goToLink(link) {

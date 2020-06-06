@@ -51,14 +51,18 @@ export class WebsiteTalkComponent {
 	constructor(public dialog: MdDialog) {
 	}
 
-	formatTimeChicago(dateStr, format) {
-		return moment(dateStr).tz('America/Chicago').format(format);
+	formatTimeFromSetting(dateStr, format) {
+		return moment(dateStr).tz(
+			this.symposium.symposiumInfo.timeZone
+		).format(format);
 	}
 
 	filterDate(schedules, dateNum) {
 		return schedules
 			.filter(element =>
-				moment(element.from).tz('America/Chicago').format('D') === dateNum.toString()
+				moment(element.from).tz(
+					this.symposium.symposiumInfo.timeZone
+				).format('D') === dateNum.toString()
 			);
 	}
 
@@ -70,7 +74,7 @@ export class WebsiteTalkComponent {
 
 	openDialog(data) {
 		this.dialog.open(SpeakerDetailDialog, {
-			data: data
+			data: Object.assign(data, {timeZone: this.symposium.symposiumInfo.timeZone})
 		});
 	}
 

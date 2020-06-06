@@ -6,7 +6,7 @@
 			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
 		</div>
 		<div fxFlex="65%">
-			<p class="mat-caption">{{ speaker.title }}, {{ formatTimeChicago(speaker.from, 'M/D HH:mm') }}</p>
+			<p class="mat-caption">{{ speaker.title }}, {{ formatTimeFromSetting(speaker.from, 'M/D HH:mm') }}</p>
 			<h5 class="mat-subheading-2 vertical-bullet-text border-color-of-theme">{{ speaker.name }} <br />{{ speaker.nameCh }}</h5>
 			<p class="mat-body-1">{{ speaker.affiliations[0] }}</p>
 		</div>
