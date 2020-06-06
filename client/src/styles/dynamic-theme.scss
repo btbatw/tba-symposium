@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap');
 
 // palette
-$theming-amber: mat-palette($mat-amber);
-$themeing-light-blue-dark:  mat-palette($mat-teal, 800, A100, A400);
+$theming-amber: mat-palette($mat-teal);
+$themeing-light-blue-dark:  mat-palette($mat-grey, 900, A100, A400);
 $themeing-light-blue:  mat-palette($mat-light-blue, A700, 900, A400);
 $themeing-white: mat-palette($mat-grey, 50, 50, 400);
 
@@ -47,7 +47,7 @@ $bodyBgColor: #f1f0eb;
 	.header-theme {
 		@include mat-button-theme(mat-light-theme($themeing-white, $themeing-light-blue-dark));
 		// background-color: rgba(mat-color(map-get($amber-blue-theme, primary)), 0.5);
-		background-color: #fccb72;
+		background-color: #3b8f5f;
 	}
 }
 .white-light-blue-theme {
