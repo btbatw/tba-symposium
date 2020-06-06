@@ -12,11 +12,12 @@
 		</div>
 	</div>
 	<div fxLayout fxLayoutAlign="end" fxLayoutGap="10px">
-		<button md-mini-fab *ngIf="speaker.links[0]" (click)="goToLink(speaker.links[0])">
-			<!-- <a [href]="speaker.links[0]" target="blank"> -->
-				<fa name="{{ speaker.links[0].indexOf('linkedin') > 0 ? 'linkedin-square' : 'link' }}" size="lg"></fa>
-			<!-- </a> -->
+		<button md-mini-fab *ngFor="let link of speaker.links" (click)="goToLink(link)">
+			<fa name="{{ link.indexOf('linkedin') > 0 ? 'linkedin-square' : 'link' }}" size="lg"></fa>
 		</button>
+		<!-- <button md-mini-fab *ngIf="speaker.links[0]" (click)="goToLink(speaker.links[0])">
+				<fa name="{{ speaker.links[0].indexOf('linkedin') > 0 ? 'linkedin-square' : 'link' }}" size="lg"></fa>
+		</button> -->
 		<button md-raised-button color="accent" (click)="openDialog(speaker)">MORE</button>
 	</div>
 </div>

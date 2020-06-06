@@ -1,5 +1,9 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ 'Support' | uppercase }}</h2>
 <section>
+	<div fxLayoutAlign="center" style="margin-bottom: 1.5em">
+		<button md-raised-button color="accent"
+			(click)="goToLink(symposium.host.supportLink)">{{ 'support ' + symposium.host.nameShort | uppercase }}</button>
+	</div>
 	<h2 class="mat-headline">Thank you for your support!</h2>
 	<div fxLayout fxLayoutWrap fxLayoutAlign="space-around center" class="container-sponsor-imgs">
 		<div *ngFor="let sponsor of symposium.sponsor.sponsors" fxFlex.xs="50" fxFlex="33%"
@@ -10,6 +14,7 @@
 			<img [src]="'assets/img/sponsors/' + img" alt="" [style.width]="'100%'">
 		</div> -->
 	</div>
+
 </section>
 <!-- <section>
 	<h2 class="mat-headline">Support us</h2>
