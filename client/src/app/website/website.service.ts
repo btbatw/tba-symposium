@@ -60,12 +60,42 @@ export class WebsiteService {
 			});
 		this.speakers = allSpeakers
 			.reduce((prev, curr) => [...prev, ...curr], [])
+			.reduce((prev, curr) => {
+				return prev.length === 0
+					? [...prev, ...curr]
+					: prev.map(el => el.name).includes(curr.name)
+					? [...prev]
+					: [...prev, ...curr];
+			}, [])
+			// keynote at front and sort by session time
 			.sort((a, b) => {
 				return a.title.includes('Keynote')
 					? -1
-					: b.title.includes('Keynote')
-					? 1
 					: new Date(a.from).getTime() - new Date(b.from).getTime();
+			})
+			// sort parallel session by session title
+			.sort((a, b) => {
+				return new Date(a.from).getTime() !== new Date(b.from).getTime()
+					? 0
+					: a.title[0].toUpperCase() > b.title[0].toUpperCase()
+					? 1
+					: -1;
+			})
+			// sort by last name
+			.sort((a, b) => {
+				return a.title.includes('Keynote')
+					? 0
+					: a.title.toUpperCase() !== b.title.toUpperCase()
+					? 0
+					: a.name.split(' ').pop().toUpperCase() > b.name.split(' ').pop().toUpperCase()
+					? 1
+					: -1;
+			})
+			// sort keynote by session time
+			.sort((a, b) => {
+				return a.title.includes('Keynote') && b.title.includes('Keynote')
+					? new Date(a.from).getTime() - new Date(b.from).getTime()
+					: 0;
 			});
 	}
 
