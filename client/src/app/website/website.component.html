@@ -2,10 +2,10 @@
 
 	<a id="pageTop"></a>
 	<header class="header-theme" fxLayoutAlign="center">
-		<div fxFlex="0 1 960px" [style.padding]="'2em'">
-			<app-website-header *ngIf="symposium" [symposium]="symposium">
-				</app-website-header>
-		</div>
+		<!-- <div fxFlex="0 1 960px" [style.padding]="'2em'"> -->
+			<app-website-header-static *ngIf="symposium" [symposium]="symposium">
+				</app-website-header-static>
+		<!-- </div> -->
 	</header>
 	<ng-template [ngIf]="symposium">
 	<app-website-nav appScrollFix [symposium]="symposium" [isSticky]="false"></app-website-nav>
