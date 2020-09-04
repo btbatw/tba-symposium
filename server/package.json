@@ -13,7 +13,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "hummus-recipe": "^1.4.1",
-    "mongodb": "^2.2.30",
+    "mongodb": "^3.6.1",
     "pdfkit": "^0.8.3"
   },
   "devDependencies": {
