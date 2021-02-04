@@ -8,3 +8,7 @@
 	<p class="mat-subheading-1" [innerHTML]="subject.description"></p>
 </div>
 <div style="height:1em"></div>
+<div fxLayoutAlign="center" style="margin-bottom: 1.5em">
+	<button md-raised-button color="accent"
+		(click)="goToLink(symposium.host.supportLink)">{{ 'support ' + symposium.host.nameShort | uppercase }}</button>
+</div>

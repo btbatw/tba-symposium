@@ -12,4 +12,7 @@ export class WebsiteAboutComponent {
 	ngOnInit() {
 	}
 
+	goToLink(link) {
+		window.open(link, '_blank');
+	}
 }

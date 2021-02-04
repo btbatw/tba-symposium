@@ -1,19 +1,24 @@
 <h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ 'Support' | uppercase }}</h2>
 <section>
+	<h2 class="mat-headline">Support us</h2>
+	<p class="mat-subheading-1">
+		All quality non-profit organizations need financial supports to help achieve their goals. Your contribution is critical to our success.
+		In addition, being a sponsor helps to increase the visibility of your company and allows young scientsts to
+		recognize your brand. Please support us!
+	</p>
 	<div fxLayoutAlign="center" style="margin-bottom: 1.5em">
 		<button md-raised-button color="accent"
 			(click)="goToLink(symposium.host.supportLink)">{{ 'support ' + symposium.host.nameShort | uppercase }}</button>
 	</div>
-	<h2 class="mat-headline">Thank you for your support!</h2>
-	<div fxLayout fxLayoutWrap fxLayoutAlign="space-around center" class="container-sponsor-imgs">
+	<!-- <div fxLayout fxLayoutWrap fxLayoutAlign="space-around center" class="container-sponsor-imgs">
 		<div *ngFor="let sponsor of symposium.sponsor.sponsors" fxFlex.xs="50" fxFlex="33%"
 			(click)="goToLink(sponsor.link)" class="clickable">
 			<img [src]="'assets/img/sponsors/' + sponsor.logoUrl" alt="" [style.width]="'100%'">
 		</div>
-		<!-- <div *ngFor="let img of sponsorImgs" fxFlex.xs="50" fxFlex="33%">
+		<div *ngFor="let img of sponsorImgs" fxFlex.xs="50" fxFlex="33%">
 			<img [src]="'assets/img/sponsors/' + img" alt="" [style.width]="'100%'">
-		</div> -->
-	</div>
+		</div>
+	</div> -->
 
 </section>
 <!-- <section>
