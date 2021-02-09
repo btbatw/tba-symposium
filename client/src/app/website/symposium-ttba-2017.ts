@@ -2,17 +2,17 @@ import { speakersObj } from './speakers-obj';
 
 export const ttbaSymposium2017 = {
     'symposiumInfo': {
-        'name': 'BTBA Symposium 2019',
-        'location': 'Boston',
+        'name': 'BTBA Symposium 2020',
+        'location': 'Virtual',
         'time': {
-            'from': new Date('2019/08/03'),
-            'to': new Date('2019/08/04')
+            'from': new Date('2020/07/11'),
+            'to': new Date('2020/07/11')
 		},
-		'timeZone': 'America/Chicago',
-        'year': '2019',
+		'timeZone': 'America/New_York',
+        'year': '2020',
         'title': 'HUSTLING IN THE ERA OF BIOTECH',
         'showPageLink': false,
-        'registrationLink': 'https://www.eventbrite.com/e/btba-annual-symposium-tickets-62120152047'
+        'registrationLink': 'https://www.eventbrite.com/e/2020-btba-virtual-symposium-registration-107354969604'
     },
     'host': {
         'name': 'Boston Taiwanese Biotechnology Association',
@@ -20,31 +20,37 @@ export const ttbaSymposium2017 = {
         'nameCh': '波士頓臺灣人生物科技協會',
         'webLink': 'https://www.btbatw.org/',
 		'logoSmall': 'logo-ttba-small.png',
-		'email': 'btbatw@gmail.com',
+		'email': 'btba.tw@gmail.com',
 		'supportLink': 'https://www.btbatw.org/support.html'
     },
     'about': {
-        'title': 'The symposium',
+        'title': '2020 BTBA Virtual Symposium',
         'showPageLink': true,
         'subjects': [{
             'title': '',
-            'description': '<p>Our annual symposiums attract more than 350 professionals and students every year from biology-related fields across the US. This two-day event is a great platform for attendees to network and engage in conversations about career development and trending topics in biotechnology. This year, the symposium will be held on August 3-4 at Harvard University Northwest Science Building, Cambridge, MA. We are honored to have Dr. Seng H. Cheng, Senior Vice President and Chief Scientific Officer at Pfizer and Dr. Jenny P-Y Ting, William Rand Kenan Professor at University of North Carolina at Chapel Hill as our keynote speakers. The registration is open. We invite you to participate in the event!</p>'
+            'description': `<p>Boston Taiwanese Biotechnology Association (BTBA) will hold the 2020 Annual Symposium virtually from 12:30 pm to 6:30 pm EDT on July 11 (Saturday), 2020. This event is co-hosted by the Harvard GSAS Taiwan Student Association.</p>
+
+			<p>This online symposium will bring experts from academia and industry to share their experiences in research, social responsibility, and career development, and lessons for young scientists. This year, we are honored to have Dr. Taiyin Yang, the Executive Vice President of Gilead Sciences, who supervised the development of Remdesivir, to deliver the keynote address.</p>
+
+			<p>This event is free. Please <a href="https://www.eventbrite.com/e/2020-btba-virtual-symposium-registration-107354969604" target="_blank">register on Eventbrite</a>, and you will receive information on how to join the meeting virtually.</p>
+
+			<p>As a non-profit organization,  we appreciate your consideration of giving a small gift to support BTBA! Your donation qualifies for tax-exemption and grants you guaranteed access to the 2020 BTBA Virtual Symposium meeting rooms.</p>`
         }, {
             'title': 'About BTBA',
-            'description': '<p>Boston Taiwanese Biotechnology Association (BTBA) was founded in 2012 by a group of Taiwanese graduate students, postdocs and young professionals in the greater Boston area. Our goals are to enhance scientific collaborations, to foster individual career development, to facilitate interactions and to strengthen networking among academic and industrial bioscience communities in Taiwan and the US.</p>'
+            'description': '<p>BTBA is a 501(c)(3) non-profit organization started in 2012 by a group of Taiwanese graduate Students, postdocs and young professionals in the greater Boston area. Our goals are to foster individual career development, to enhance scientific collaborations, to facilitate interactions and to strengthen networking among academic and industrial bioscience communities in Taiwan and the US. We hold annual symposiums as well as seminars and workshops throughout the year. We hope to serve as a platform to foster a community for young scientists to share their research, exchange ideas and explore career opportunities.</p>'
         }]
     },
     'talk': {
         'title': 'Talks',
         'showPageLink': true,
         'schedules': [{
-            'from': new Date('2019/08/03 08:00 EDT'),
-            'to': new Date('2019/08/03 09:00 EDT'),
-            'title': 'Registration and Poster Setup',
+            'from': new Date('2020/07/11 12:30 EDT'),
+            'to': new Date('2020/07/11 12:50 EDT'),
+            'title': 'Meeting room opens for attendees',
             'topic': null,
-            'sessionDescription': 'register @ room ... ...',
+            'sessionDescription': '',
             'tags': [],
-            'rooms': ['B100 Prefunction area'],
+            'rooms': [],
             'speakers': [{
                 'name': null,
                 'nameCh': null,
@@ -54,13 +60,13 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2019/08/03 09:00 EDT'),
-            'to': new Date('22019/08/03 09:10 EDT'),
+            'from': new Date('2020/07/11 12:50 EDT'),
+            'to': new Date('22020/07/11 13:00 EDT'),
             'title': 'Opening Remarks',
             'topic': null,
             'sessionDescription': '',
             'tags': [],
-            'rooms': ['Room B103'],
+            'rooms': [],
             'speakers': [{
                 'name': null,
                 'nameCh': null,
@@ -70,24 +76,24 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2019/08/03 09:10 EDT'),
-            'to': new Date('2019/08/03 10:10 EDT'),
-            'title': 'Keynote: Dr. Seng Cheng',
+            'from': new Date('2020/07/11 13:00 EDT'),
+            'to': new Date('2020/07/11 14:10 EDT'),
+            'title': 'Keynote by Dr. Taiyin Yang: Making a Difference',
             'topic': null,
             'sessionDescription': '',
             'tags': [],
-            'rooms': ['Room B103'],
+            'rooms': [],
             'speakers': [
-				speakersObj['Seng Cheng'],
+				speakersObj['Taiyin Yang'],
 			]
         }, {
-            'from': new Date('2019/08/03 10:10 EDT'),
-            'to': new Date('22019/08/03 10:30 EDT'),
-            'title': 'Group Photo & Coffee Break',
+            'from': new Date('2020/07/11 14:10 EDT'),
+            'to': new Date('22020/07/11 14:20 EDT'),
+            'title': 'Short Break',
             'topic': null,
             'sessionDescription': '',
             'tags': [],
-            'rooms': ['B100 Prefunction area'],
+            'rooms': [],
             'speakers': [{
                 'name': null,
                 'nameCh': null,
@@ -97,199 +103,77 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2019/08/03 10:30 EDT'),
-            'to': new Date('2019/08/03 12:15 EDT'),
-            'title': 'Biotech Forum: Drug Modality',
+            'from': new Date('2020/07/11 14:20 EDT'),
+            'to': new Date('2020/07/11 15:50 EDT'),
+            'title': 'Academia Session - A Reality Check on Becoming Faculty',
             'topic': null,
-            'sessionDescription': 'This session aims to provide our audience with a general overview of the various modalities of drug research and development in the pharmaceutical industry. From traditional small molecules to biologics and all the way to the new gene therapy and cell therapy. We will discuss basic mechanisms of each modality, delivery route, unique properties and challenges in the discovery/development process. We are excited to have a diverse group of panelists; each has first-hand experiences with these respective drug types. This would be a great discussion! We welcome our audience to bring your specific questions for an interactive session!',
+            'sessionDescription': '',
             'tags': [],
-            'rooms': ['Room B103'],
+            'rooms': [],
             'speakers': [
-				speakersObj['Chi-Wang Lin'],
-				speakersObj['Yvonne Meng'],
-				speakersObj['April Kuo'],
-				speakersObj['Wei-Chiang Chen'],
-				speakersObj['Leslie Wu'],
-				speakersObj['Ho-Chou Tu'],
-				speakersObj['Hon-Ren Huang'],
-				speakersObj['DeKuan Chang'],
-				speakersObj['Pam Shou-Ping Wang']
+				speakersObj['Hsiao-Ying Monica Wey'],
+				speakersObj['Ming-Ru Wu'],
+				speakersObj['Wan-Ting Grace Chen'],
+				speakersObj['Han-Yu Shih'],
+				speakersObj['Yu-Chen Tony Tsai']
 			]
         }, {
-            'from': new Date('2019/08/03 12:15 EDT'),
-            'to': new Date('2019/08/03 13:45 EDT'),
-            'title': 'Lunch & Elevator Pitch',
+            'from': new Date('2020/07/11 15:50 EDT'),
+            'to': new Date('2020/07/11 16:00 EDT'),
+            'title': 'Short Break',
             'topic': null,
-            'sessionDescription': 'Can you talk about your research? Now is your show time to present your esoteric works to strangers from any background. Please prepare 2.5 minutes talk and 3 slides for our elevator pitch and you might have a chance to win a prize!',
+            'sessionDescription': '',
             'tags': [],
-            'rooms': ['B100 Prefunction area'],
+            'rooms': [],
             'speakers': [{
                 'name': null,
                 'nameCh': null,
                 'affiliations': [],
+                'imgFileName': '',
                 'links': [],
                 'description': ''
             }]
         }, {
-            'from': new Date('2019/08/03 13:45 EDT'),
-            'to': new Date('2019/08/03 14:45 EDT'),
-            'title': 'Careers in Biotech Industry',
+            'from': new Date('2020/07/11 16:00 EDT'),
+            'to': new Date('2020/07/11 17:20 EDT'),
+            'title': 'Industry Session - Career Exploration: Navigating Your Next Journey',
             'topic': null,
-			'sessionDescription': `<p>As many people dream about entering the biotech/pharmaceutical industry after receiving their science diplomas, do you know what real life is like working in a biotech/pharmaceutical organization? What are the career pathways you can choose and the challenges you will eventually face as you climb the corporate ladder? How to maximize your strengths, expand skills in the industry as well as build your value over time?</p><p>Come join us for an hour discussion with some industrial pioneers -- from R&D to Patient Safety, Regulatory, Legal, Business Development and Equity Investment. Let’s find out how to prepare yourself step by step towards your dream lifestyle!</p>`,
-			'numOfParallelSessions': 2,
+			'sessionDescription': '',
             'tags': [],
-            'rooms': ['Room B103'],
+            'rooms': [],
             'speakers': [
-				speakersObj['Leyi (Colin) Wang'],
-				speakersObj['Seng-Lai (Thomas) Tan'],
-				speakersObj['Joy Chen'],
-				speakersObj['I-Hung Shih'],
-				speakersObj['Allyson Hatton'],
-				speakersObj['Curtis Chang']
+				speakersObj['Steven Chang'],
+				speakersObj['Hank Lin'],
+				speakersObj['Hannah Shen'],
+				speakersObj['Shianhuey Chiang'],
 			]
         }, {
-            'from': new Date('2019/08/03 13:45 EDT'),
-            'to': new Date('2019/08/03 14:45 EDT'),
-            'title': 'Academic Panel Discussion',
+            'from': new Date('2020/07/11 17:20 EDT'),
+            'to': new Date('2020/07/11 17:30 EDT'),
+            'title': 'Closing Remarks',
             'topic': null,
-			'sessionDescription': 'Do you wonder what a career in academia would be like and how to be successful in this path? Join us in an academic panel featuring professors with rich experiences, who will share their tips on how to thrive in this rapidly expanding field of academia!',
-			'numOfParallelSessions': 2,
+			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B101'],
-            'speakers': [
-				speakersObj['Isaac M. Chiu'],
-				speakersObj['Gene-Wei Li'],
-				speakersObj['Chih-Hao Lee'],
-				speakersObj['Lee-Yuan Liu-Chen'],
-			]
-        }, {
-            'from': new Date('2019/08/03 14:45 EDT'),
-            'to': new Date('2019/08/03 15:45 EDT'),
-            'title': 'Managing Up, Down and Across',
-            'topic': null,
-			'sessionDescription': 'Trained as scientists, we pursue a better understanding of the world and aim to improve human well-being. In the real world, achieving these goals often takes the effort from the whole team, if not multiple teams. Graduate school never taught us how to work with people! Worry not. In this session, we invited 4 respected professionals from both the academia and the industry to share with us their experiences in managing or collaborating with groups of different sizes and expertise. Our panelists will also be giving practical advice for young professionals to advance their managing skills strategically. Come join us and learn how to build a team, resolve conflicts, and manage up.',
-			'numOfParallelSessions': 2,
-            'tags': [],
-            'rooms': ['Room B103'],
-            'speakers': [
-				speakersObj['Albert Hwa'],
-				speakersObj['Lih-Ling Lin'],
-				speakersObj['Mary Ellen Lane']
-			]
-        }, {
-            'from': new Date('2019/08/03 14:45 EDT'),
-            'to': new Date('2019/08/03 15:45 EDT'),
-            'title': 'Academic Roundtable',
-            'topic': null,
-			'sessionDescription': 'Would you like to ask more questions about the academic field? The roundtable discussion offers a chance to network with outstanding professors in a small group setting, allowing you to get insights among local academic circumstance as well as to discover and develop your strengths!',
-			'numOfParallelSessions': 2,
-            'tags': [],
-            'rooms': ['Room B109 & B110'],
-            'speakers': [
-				speakersObj['Isaac M. Chiu'],
-				speakersObj['Gene-Wei Li'],
-				speakersObj['Chih-Hao Lee'],
-				speakersObj['Lee-Yuan Liu-Chen'],
-			]
-        }, {
-            'from': new Date('2019/08/03 15:40 EDT'),
-            'to': new Date('2019/08/03 17:00 EDT'),
-            'title': 'Poster Session (w/ Coffee & Snacks)',
-            'topic': null,
-            'sessionDescription': '',
-            'tags': [],
-            'rooms': ['B100 Prefunction area'],
             'speakers': [{
                 'name': null,
                 'nameCh': null,
                 'affiliations': [],
+                'imgFileName': '',
                 'links': [],
                 'description': ''
             }]
         }, {
-            'from': new Date('2019/08/04 08:00 EDT'),
-            'to': new Date('2019/08/04 09:00 EDT'),
-            'title': 'Breakfast and Meet',
-            'topic': '',
-            'sessionDescription': 'Are you graduating and thinking about landing a job in the biotech industry? Are you considering a career change but don’t know what options you have? We understand that the job hunting process can often feel frustrating and overwhelming! Come to our networking session to chat with young professionals with advanced degrees. Learn about useful skills to get your first job and explore the different fields in the biotech industry',
-            'tags': [],
-            'rooms': ['B100 Prefunction area'],
-            'speakers': [
-				speakersObj['Jimmy Chu'],
-				speakersObj['Chien-Chung (James) Wang'],
-				speakersObj['Kuei Ting (Tim) Chen'],
-				speakersObj['Jun-Yuan Huang'],
-				speakersObj['Eric Chen'],
-				speakersObj['Yian Ruan'],
-				speakersObj['Jessica Huang'],
-				speakersObj['Yi-Dong Lin'],
-				speakersObj['Pi-i Debby Lin'],
-				speakersObj['Ling-Fang Tseng'],
-				speakersObj['Po-Jen (Will) Yen'],
-				speakersObj['Pei-Wen Chu']
-			]
-        }, {
-            'from': new Date('2019/08/04 09:00 EDT'),
-            'to': new Date('2019/08/04 10:00 EDT'),
-            'title': 'Keynote: Dr. Jenny P-Y Ting',
-            'topic': '',
-            'sessionDescription': '',
-            'tags': [],
-            'rooms': ['Room B103'],
-            'speakers': [speakersObj['Jenny P-Y Ting']]
-        }, {
-            'from': new Date('2019/08/04 10:10 EDT'),
-            'to': new Date('2019/08/04 10:40 EDT'),
-            'title': 'Massachusetts Life Science Center (MLSC): Overview of Boston Biotech Ecosystem',
-            'topic': '',
-            'sessionDescription': 'Have you ever heard of Biotech clusters? These clusters are geographic regions active in bioscience and can range from small emerging groups to large, full-blown clusters like Boston. Despite the commonly shared key factors to make a top-tier biocluster: Talents and Capital. Each cluster has its advantages and focuses. In this session, we are honored to have Mass Life Science Center (MLSC) to give us an overview of Boston Biotech Ecosystem explaining why the Great Boston is the most successful Biotech Cluster.',
-            'tags': [],
-            'rooms': ['Room B103'],
-            'speakers': [
-				speakersObj['Sandhya Iyer']
-			]
-        }, {
-            'from': new Date('2019/08/04 10:40 EDT'),
-            'to': new Date('2019/08/04 11:40 EDT'),
-            'title': 'Biotech Clusters Across the US',
-            'topic': '',
-            'sessionDescription': 'Have you ever heard of Biotech clusters? These clusters are geographic regions active in bioscience and can range from small emerging groups to large, full-blown clusters like Boston. Despite the commonly shared key factors to make a top-tier biocluster: Talents and Capital. Each cluster has its advantages and focuses. In this session, three young professionals across the U.S will share their valuable experiences and observations of their local biotech environments. Join us to learn more about the culture and career opportunities in these biotech clusters!',
-            'tags': [],
-            'rooms': ['Room B103'],
-            'speakers': [
-				speakersObj['Chih-Hsu (Jack) Lin'],
-				speakersObj['Hao-Wei Chang'],
-				speakersObj['Eric Du']
-			]
-        }, {
-            'from': new Date('2019/08/04 11:40 EDT'),
-            'to': new Date('2019/08/04 12:40 EDT'),
-            'title': 'Trending Topic: Synthetic Biology',
-            'topic': '',
-			'sessionDescription': `
-			<p><strong>Imagine</strong> a future where microbe acts as fertilizers for cereal crops, where wastewater is purified by bacteria, where cultured ingredients are produced by microbes in a sustainable way, and genetic diseases are cured with engineered microorganisms. Welcome to the world of synthetic biology, an innovative field that brings chemistry, biology, engineering, and computer science together. </p>
-			<p>Join us as we explore this multi-billion-dollar industry that is making a huge impact across agriculture, energy, pharmaceutical, and manufacturing industries, and learn about its present and promising future.</p>
-			`,
-            'tags': [],
-            'rooms': ['Room B103'],
-            'speakers': [
-				speakersObj['Dawn Thompson'],
-				speakersObj['Sergio Florez'],
-				speakersObj['Felipe Sarmiento'],
-				speakersObj['Chin Giaw (Ryan) Lim'],
-				speakersObj['Jacky Ng']
-			]
-        }, {
-            'from': new Date('2019/08/04 12:40 EDT'),
-            'to': new Date('2019/08/04 13:00 EDT'),
-            'title': 'Closing Remarks & Poster Award Ceremony',
+            'from': new Date('2020/07/11 17:30 EDT'),
+            'to': new Date('2020/07/11 18:30 EDT'),
+            'title': 'Happy Hour Networking ',
             'topic': null,
-            'sessionDescription': null,
+			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
             'speakers': [{
-                'name': '',
-                'nameCh': '',
+                'name': null,
+                'nameCh': null,
                 'affiliations': [],
                 'imgFileName': '',
                 'links': [],
@@ -299,13 +183,13 @@ export const ttbaSymposium2017 = {
     },
     'elevatorPitch': {
         'title': 'Elevator Pitch & Poster Session',
-        'showPageLink': 'true',
+        'showPageLink': false,
         'text': '',
         'link': 'http://abstract2017.ttbatw.org/'
     },
     'location': {
         'title': 'Location',
-        'showPageLink': true,
+        'showPageLink': false,
         'text': 'Venue',
         'address': 'Harvard Northwest Science Building <br/>52 Oxford St, Cambridge, MA 02138',
         'googleMapLink': 'https://www.google.com/maps/place/Harvard+Northwest+Science+Building/@42.3799895,-71.1153309,18.44z/data=!4m12!1m6!3m5!1s0x89e37740b5a8044b:0x57eea3d2dca3f603!2sHarvard+Northwest+Science+Building!8m2!3d42.3799895!4d-71.1153309!3m4!1s0x89e37740b5a8044b:0x57eea3d2dca3f603!8m2!3d42.3799895!4d-71.1153309',
@@ -360,28 +244,8 @@ export const ttbaSymposium2017 = {
         }, {
             'level': 'string',
             'name': 'string',
-            'logoUrl': 'logo_biolegend.png',
-            'link': 'https://www.biolegend.com/'
-        }, {
-            'level': 'string',
-            'name': 'string',
-            'logoUrl': 'logo_scismic.png',
-            'link': 'https://scismic.com/beta'
-        }, {
-            'level': 'string',
-            'name': 'string',
-            'logoUrl': 'logo_taa_boston.png',
-            'link': 'https://www.facebook.com/TAABoston.Page/'
-        }, {
-            'level': 'string',
-            'name': 'string',
-            'logoUrl': 'itri.png',
-            'link': 'https://www.itri.org.tw/'
-        }, {
-            'level': 'string',
-            'name': 'string',
-            'logoUrl': 'logo_pfizer.png',
-            'link': 'https://www.pfizer.com/'
+            'logoUrl': 'lift_logo.png',
+            'link': 'https://lifttaiwan.stpi.narl.org.tw/en'
         }]
     },
     'imgs': [{
