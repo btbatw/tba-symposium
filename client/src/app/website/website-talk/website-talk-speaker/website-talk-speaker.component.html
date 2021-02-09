@@ -1,11 +1,11 @@
 <div class="cards-speaker mat-elevation-z1"
-	fxFlex="48%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between"
+	fxFlex="{{ speaker.title.toLowerCase().includes('keynote') ? '98%' : '48%'}}" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between"
 	*ngFor="let speaker of speakers">
 	<div fxLayout fxLayoutAlign="space-between">
-		<div fxFlex="30%">
+		<div fxFlex="{{ speaker.title.toLowerCase().includes('keynote') ? '15%' : '30%'}}" fxFlex.xs="30%">
 			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
 		</div>
-		<div fxFlex="65%">
+		<div fxFlex="{{ speaker.title.toLowerCase().includes('keynote') ? '80%' : '65%'}}" fxFlex.xs="65%">
 			<p class="mat-caption">{{ speaker.title }}, {{ formatTimeFromSetting(speaker.from, 'M/D HH:mm') }}</p>
 			<h5 class="mat-subheading-2 vertical-bullet-text border-color-of-theme">{{ speaker.name }} <br />{{ speaker.nameCh }}</h5>
 			<p class="mat-body-1">{{ speaker.affiliations[0] }}</p>
