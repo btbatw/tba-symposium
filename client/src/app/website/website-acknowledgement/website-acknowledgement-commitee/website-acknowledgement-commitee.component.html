@@ -1,0 +1,19 @@
+<div class="cards-speaker"
+	fxFlex="48%" fxFlex.xs="100%" fxLayout="column" fxLayoutAlign="space-between"
+	*ngFor="let speaker of speakers">
+	<div fxLayout fxLayoutAlign="space-between">
+		<div fxFlex="30%" fxFlex.xs="30%">
+			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/commitees/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
+		</div>
+		<div fxFlex="65%" fxFlex.xs="65%">
+			<p class="mat-caption">{{ speaker.role }}</p>
+			<h5 class="mat-subheading-2 vertical-bullet-text border-color-of-theme">{{ speaker.name }}</h5>
+			<p class="mat-body-1">{{ speaker.affiliations[0] }}</p>
+		</div>
+	</div>
+	<div fxLayout fxLayoutAlign="end" fxLayoutGap="10px">
+		<button md-mini-fab *ngFor="let link of speaker.links" (click)="goToLink(link)">
+			<fa name="{{ link.indexOf('linkedin') > 0 ? 'linkedin-square' : 'link' }}" size="lg"></fa>
+		</button>
+	</div>
+</div>

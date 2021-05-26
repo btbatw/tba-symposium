@@ -1,0 +1,11 @@
+@import 'dynamic-theme';
+
+.mat-caption {
+	margin: 0;
+}
+
+.cards-speaker {
+	margin-bottom: 10px;
+	padding: 1%;
+	background-color: lighten($bodyBgColor, 30%);
+}

@@ -18,7 +18,8 @@ import { WebsiteFooterComponent } from './website-footer/website-footer.componen
 import { HotelDetailDialog } from './website-location/hotel-detail-dialog/hotel-detail-dialog.component';
 import { WebsiteNavComponent } from './website-nav/website-nav.component';
 import { WebsiteHeaderStaticComponent } from './website-header-static/website-header-static.component';
-
+import { WebsiteAcknowledgementComponent } from './website-acknowledgement/website-acknowledgement.component';
+import { WebsiteAcknowledgementCommiteeComponent } from './website-acknowledgement/website-acknowledgement-commitee/website-acknowledgement-commitee.component';
 
 
 @NgModule({
@@ -37,7 +38,9 @@ import { WebsiteHeaderStaticComponent } from './website-header-static/website-he
 		WebsiteFooterComponent,
 		HotelDetailDialog,
 		WebsiteNavComponent,
-		WebsiteHeaderStaticComponent
+		WebsiteHeaderStaticComponent,
+		WebsiteAcknowledgementComponent,
+		WebsiteAcknowledgementCommiteeComponent
 	],
 	providers: [WebsiteService],
 	entryComponents: [SpeakerDetailDialog, HotelDetailDialog]

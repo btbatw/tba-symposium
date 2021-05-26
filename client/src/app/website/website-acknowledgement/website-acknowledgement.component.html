@@ -1,0 +1,6 @@
+<h2 class="mat-display-1 vertical-bullet-text border-color-of-theme">{{ symposium.acknowledgement.title | uppercase }}</h2>
+<p class="mat-subheading-1">
+	{{ symposium.acknowledgement.description }}
+</p>
+<app-website-acknowledgement-commitee [speakers]="symposium.acknowledgement.commitees" fxLayout fxLayoutGap.xs="0%" fxLayoutWrap fxLayoutAlign="space-around">
+</app-website-acknowledgement-commitee>

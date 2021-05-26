@@ -1,4 +1,5 @@
 import { speakersObj } from './speakers-obj';
+import { commiteesArray } from './commitees-array';
 
 export const ttbaSymposium2017 = {
     'symposiumInfo': {
@@ -228,6 +229,11 @@ export const ttbaSymposium2017 = {
             }]
         }
     },
+	'acknowledgement': {
+		'title': 'acknowledgement',
+		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit euismod in pellentesque massa placerat duis. Eget est lorem ipsum dolor. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Bibendum neque egestas congue quisque. Volutpat blandit aliquam etiam erat. Nec nam aliquam sem et tortor consequat id porta nibh. Urna nunc id cursus metus aliquam eleifend.',
+		'commitees': commiteesArray
+	},
     'sponsor': {
         'title': 'Sponsors',
         'showPageLink': false,
