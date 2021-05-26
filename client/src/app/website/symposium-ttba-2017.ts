@@ -3,17 +3,17 @@ import { commiteesArray } from './commitees-array';
 
 export const ttbaSymposium2017 = {
     'symposiumInfo': {
-        'name': 'BTBA Symposium 2020',
+        'name': 'BTBA Symposium 2021',
         'location': 'Virtual',
         'time': {
-            'from': new Date('2020/07/11'),
-            'to': new Date('2020/07/11')
+            'from': new Date('2021/07/10'),
+            'to': new Date('2021/07/11')
 		},
 		'timeZone': 'America/New_York',
-        'year': '2020',
+        'year': '2021',
         'title': 'HUSTLING IN THE ERA OF BIOTECH',
         'showPageLink': false,
-        'registrationLink': 'https://www.eventbrite.com/e/2020-btba-virtual-symposium-registration-107354969604'
+        'registrationLink': 'https://www.eventbrite.com/e/2021-btba-virtual-annual-symposium-registration-155894517699'
     },
     'host': {
         'name': 'Boston Taiwanese Biotechnology Association',
@@ -25,15 +25,15 @@ export const ttbaSymposium2017 = {
 		'supportLink': 'https://www.btbatw.org/support.html'
     },
     'about': {
-        'title': '2020 BTBA Virtual Symposium',
+        'title': '2021 BTBA Virtual Symposium',
         'showPageLink': true,
         'subjects': [{
             'title': '',
-            'description': `<p>Boston Taiwanese Biotechnology Association (BTBA) will hold the 2020 Annual Symposium virtually from 12:30 pm to 6:30 pm EDT on July 11 (Saturday), 2020. This event is co-hosted by the Harvard GSAS Taiwan Student Association.</p>
+            'description': `<p>Boston Taiwanese Biotechnology Association (BTBA) will hold the 2021 Annual Symposium virtually from 12:30 pm to 6:30 pm EDT on July 10 (Saturday), 2021. This event is co-hosted by the Harvard GSAS Taiwan Student Association.</p>
 
 			<p>This online symposium will bring experts from academia and industry to share their experiences in research, social responsibility, and career development, and lessons for young scientists. This year, we are honored to have Dr. Taiyin Yang, the Executive Vice President of Gilead Sciences, who supervised the development of Remdesivir, to deliver the keynote address.</p>
 
-			<p>This event is free. Please <a href="https://www.eventbrite.com/e/2020-btba-virtual-symposium-registration-107354969604" target="_blank">register on Eventbrite</a>, and you will receive information on how to join the meeting virtually.</p>
+			<p>This event is free. Please <a href="https://www.eventbrite.com/e/2021-btba-virtual-annual-symposium-registration-155894517699" target="_blank">register on Eventbrite</a>, and you will receive information on how to join the meeting virtually.</p>
 
 			<p>As a non-profit organization,  we appreciate your consideration of giving a small gift to support BTBA! Your donation qualifies for tax-exemption and grants you guaranteed access to the 2020 BTBA Virtual Symposium meeting rooms.</p>`
         }, {
@@ -45,8 +45,8 @@ export const ttbaSymposium2017 = {
         'title': 'Talks',
         'showPageLink': true,
         'schedules': [{
-            'from': new Date('2020/07/11 12:30 EDT'),
-            'to': new Date('2020/07/11 12:50 EDT'),
+            'from': new Date('2021/07/10 12:30 EDT'),
+            'to': new Date('2021/07/10 12:50 EDT'),
             'title': 'Meeting room opens for attendees',
             'topic': null,
             'sessionDescription': '',
@@ -61,8 +61,8 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2020/07/11 12:50 EDT'),
-            'to': new Date('22020/07/11 13:00 EDT'),
+            'from': new Date('2021/07/10 12:50 EDT'),
+            'to': new Date('22021/07/10 13:00 EDT'),
             'title': 'Opening Remarks',
             'topic': null,
             'sessionDescription': '',
@@ -77,19 +77,19 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2020/07/11 13:00 EDT'),
-            'to': new Date('2020/07/11 14:10 EDT'),
-            'title': 'Keynote by Dr. Taiyin Yang: Making a Difference',
-            'topic': null,
+            'from': new Date('2021/07/10 13:00 EDT'),
+            'to': new Date('2021/07/10 14:10 EDT'),
+            'title': 'Opening Keynote',
+            'topic': "Keynote by Dr. Herren Wu: Transforming patients’ lives: A story about innovation, strategy and resilience",
             'sessionDescription': '',
             'tags': [],
             'rooms': [],
             'speakers': [
-				speakersObj['Taiyin Yang'],
+				speakersObj['Herren Wu'],
 			]
         }, {
-            'from': new Date('2020/07/11 14:10 EDT'),
-            'to': new Date('22020/07/11 14:20 EDT'),
+            'from': new Date('2021/07/10 14:10 EDT'),
+            'to': new Date('22021/07/10 14:20 EDT'),
             'title': 'Short Break',
             'topic': null,
             'sessionDescription': '',
@@ -104,23 +104,23 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2020/07/11 14:20 EDT'),
-            'to': new Date('2020/07/11 15:50 EDT'),
-            'title': 'Academia Session - A Reality Check on Becoming Faculty',
+            'from': new Date('2021/07/10 14:20 EDT'),
+            'to': new Date('2021/07/10 15:50 EDT'),
+            'title': 'Academia to Industry I: Bench to Bedside',
             'topic': null,
             'sessionDescription': '',
             'tags': [],
             'rooms': [],
             'speakers': [
-				speakersObj['Hsiao-Ying Monica Wey'],
-				speakersObj['Ming-Ru Wu'],
-				speakersObj['Wan-Ting Grace Chen'],
-				speakersObj['Han-Yu Shih'],
-				speakersObj['Yu-Chen Tony Tsai']
+				// speakersObj['Hsiao-Ying Monica Wey'],
+				// speakersObj['Ming-Ru Wu'],
+				// speakersObj['Wan-Ting Grace Chen'],
+				// speakersObj['Han-Yu Shih'],
+				// speakersObj['Yu-Chen Tony Tsai']
 			]
         }, {
-            'from': new Date('2020/07/11 15:50 EDT'),
-            'to': new Date('2020/07/11 16:00 EDT'),
+            'from': new Date('2021/07/10 15:50 EDT'),
+            'to': new Date('2021/07/10 16:00 EDT'),
             'title': 'Short Break',
             'topic': null,
             'sessionDescription': '',
@@ -135,23 +135,23 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2020/07/11 16:00 EDT'),
-            'to': new Date('2020/07/11 17:20 EDT'),
-            'title': 'Industry Session - Career Exploration: Navigating Your Next Journey',
+            'from': new Date('2021/07/10 16:00 EDT'),
+            'to': new Date('2021/07/10 17:20 EDT'),
+            'title': 'Trending Topic I: Real World Evidence',
             'topic': null,
 			'sessionDescription': '',
             'tags': [],
             'rooms': [],
             'speakers': [
-				speakersObj['Steven Chang'],
-				speakersObj['Hank Lin'],
-				speakersObj['Hannah Shen'],
-				speakersObj['Shianhuey Chiang'],
+				// speakersObj['Steven Chang'],
+				// speakersObj['Hank Lin'],
+				// speakersObj['Hannah Shen'],
+				// speakersObj['Shianhuey Chiang'],
 			]
         }, {
-            'from': new Date('2020/07/11 17:20 EDT'),
-            'to': new Date('2020/07/11 17:30 EDT'),
-            'title': 'Closing Remarks',
+            'from': new Date('2021/07/10 17:20 EDT'),
+            'to': new Date('2021/07/10 17:30 EDT'),
+            'title': 'Short Break',
             'topic': null,
 			'sessionDescription': '',
             'tags': [],
@@ -165,9 +165,132 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
-            'from': new Date('2020/07/11 17:30 EDT'),
-            'to': new Date('2020/07/11 18:30 EDT'),
-            'title': 'Happy Hour Networking ',
+            'from': new Date('2021/07/10 17:30 EDT'),
+            'to': new Date('2021/07/10 18:30 EDT'),
+            'title': 'Virtual Networking with BTBA podcast speakers ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [{
+                'name': null,
+                'nameCh': null,
+                'affiliations': [],
+                'imgFileName': '',
+                'links': [],
+                'description': ''
+            }]
+        },{
+            'from': new Date('2021/07/11 12:50 EDT'),
+            'to': new Date('2021/07/11 13:00 EDT'),
+            'title': 'Virtual Lunch ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [{
+                'name': null,
+                'nameCh': null,
+                'affiliations': [],
+                'imgFileName': '',
+                'links': [],
+                'description': ''
+            }]
+        },{
+            'from': new Date('2021/07/11 13:00 EDT'),
+            'to': new Date('2021/07/11 14:10 EDT'),
+            'title': 'Closing Keynote ',
+            'topic': "Keynote by Dr. Jeannie T. Lee, M.D., Ph.D. : Reactivating a sex chromosome to treat Rett syndrome and other X-linked disorders",
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [
+                speakersObj['Jeannie Lee'],
+            ]
+        },{
+            'from': new Date('2021/07/11 14:10 EDT'),
+            'to': new Date('2021/07/11 14:20 EDT'),
+            'title': 'Short Break ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [{
+                'name': null,
+                'nameCh': null,
+                'affiliations': [],
+                'imgFileName': '',
+                'links': [],
+                'description': ''
+            }]
+        },{
+            'from': new Date('2021/07/11 14:20 EDT'),
+            'to': new Date('2021/07/11 15:50 EDT'),
+            'title': 'Trending Topic II: RNA Technology & Application ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [{
+                'name': null,
+                'nameCh': null,
+                'affiliations': [],
+                'imgFileName': '',
+                'links': [],
+                'description': ''
+            }]
+        },{
+            'from': new Date('2021/07/11 15:50 EDT'),
+            'to': new Date('2021/07/11 16:00 EDT'),
+            'title': 'Short Break ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [{
+                'name': null,
+                'nameCh': null,
+                'affiliations': [],
+                'imgFileName': '',
+                'links': [],
+                'description': ''
+            }]
+        },{
+            'from': new Date('2021/07/11 16:00 EDT'),
+            'to': new Date('2021/07/11 17:20 EDT'),
+            'title': 'Academia to Industry II: Gene Therapy ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [{
+                'name': null,
+                'nameCh': null,
+                'affiliations': [],
+                'imgFileName': '',
+                'links': [],
+                'description': ''
+            }]
+        },{
+            'from': new Date('2021/07/11 17:20 EDT'),
+            'to': new Date('2021/07/11 17:30 EDT'),
+            'title': 'Closing Remarks ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [{
+                'name': null,
+                'nameCh': null,
+                'affiliations': [],
+                'imgFileName': '',
+                'links': [],
+                'description': ''
+            }]
+        },{
+            'from': new Date('2021/07/11 17:30 EDT'),
+            'to': new Date('2021/07/11 18:30 EDT'),
+            'title': 'Virtual Networking with BTBA podcast speakers ',
             'topic': null,
 			'sessionDescription': '',
             'tags': [],
@@ -231,7 +354,7 @@ export const ttbaSymposium2017 = {
     },
 	'acknowledgement': {
 		'title': 'acknowledgement',
-		'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit euismod in pellentesque massa placerat duis. Eget est lorem ipsum dolor. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Bibendum neque egestas congue quisque. Volutpat blandit aliquam etiam erat. Nec nam aliquam sem et tortor consequat id porta nibh. Urna nunc id cursus metus aliquam eleifend.',
+		'description': '',
 		'commitees': commiteesArray
 	},
     'sponsor': {

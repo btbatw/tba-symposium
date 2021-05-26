@@ -1,25 +1,25 @@
 import { Placeholder } from "@angular/compiler/src/i18n/i18n_ast";
 
 const tsv_str = `Role	Name	Position	Image filename	Links
-Co-President	Hsien-Wei Yvonne Meng	Principal Scientist, Johnson and Johnson	Yvonne Meng.jpeg
-Co-President	Erica P. Cai	Principal Investigator, Indiana Bioscience Research Institute
-Advisory Board	Margaret (Chia-Ying) Wey	Senior Medical Scientist, AstraZeneca
-Advisory Board	Chih-Chung (Jerry) Lin	Postdoc, Masschusetts General Hospital
-Advisory Board	Jimmy Chiu	Scientist II, bluebird bio
-Advisory Board	Yung-Chih Cheng	Principal Scientist, Pfizer	Yung-Chih Cheng.tif
-Chief Executive	Ling-Fang Tseng	Clinical Scientist, Vertex Pharmaceuticals
-Chief Executive	Mei-Hsiu Lai	Vertex Pharmaceuticals
-Chief Scientific	Pin-Kuang Lai	Incoming Assistant Professor, Stevens Institute of Technology
-Chief Scientific	Ting-Ya Chang	PhD candidate, Boston University	Chang, Tingya_8470.JPG
-Chief Technology	Ming-Ju Tsai	Postdoc, Harvard Medical School
-Chief Technology	Chih-Hung Chou
-Chief Technology	Yu-An Chen	Research Scientist, Harvard Medical School		https://www.linkedin.com/in/yuanchenbio/
+Co-President	Hsien-Wei Yvonne Meng	Principal Scientist, Johnson and Johnson	Yvonne_Meng.jpeg
+Co-President	Erica P. Cai	Principal Investigator, Indiana Bioscience Research Institute	Erica_Cai.jpg
+Advisory Board	Margaret (Chia-Ying) Wey	Senior Medical Scientist, AstraZeneca	Margaret_Wey.jpg
+Advisory Board	Chih-Chung (Jerry) Lin	Postdoc, Masschusetts General Hospital	Jerry.png
+Advisory Board	Jimmy Chiu	Scientist II, bluebird bio	Jimmy_Chu.jpg
+Advisory Board	Yung-Chih Cheng	Principal Scientist, Pfizer	Yung-Chih_Cheng.jpg
+Chief Executive	Ling-Fang Tseng	Clinical Scientist, Vertex Pharmaceuticals	Ling-Fang_Tseng.jpg
+Chief Executive	Mei-Hsiu Lai	Vertex Pharmaceuticals	Mei-Hsiu_Lai.jpg
+Chief Scientific	Pin-Kuang Lai	Incoming Assistant Professor, Stevens Institute of Technology	Pin-kuang_Lai.jpg
+Chief Scientific	Ting-Ya Chang	PhD candidate, Boston University	Tingya_Chang.JPG
+Chief Technology	Ming-Ju Tsai	Postdoc, Harvard Medical School	Ming-Ju_Tsai.jpg
+Chief Technology	Chih-Hung Chou	Postdoc, Broad Institute of MIT and Harvard	Chih-Hung_Chou.jpg
+Chief Technology	Yu-An Chen	Research Scientist, Harvard Medical School	yu-an_chen.jpg	https://www.linkedin.com/in/yuanchenbio/
 Chief Technology	Li-Yuan Hung	Postdoc, Masschusetts General Hospital
-Chief Tax	Ting-Ya Chang	PhD candidate, Boston University
-Chief Finance	Shu-Wei Wu	Senior Associate Scientist, Sanofi
+Chief Tax	Ting-Ya Chang	PhD candidate, Boston University	Tingya_Chang.JPG
+Chief Finance	Shu-Wei Wu	Senior Associate Scientist, Sanofi	Shu-Wei_Wu.jpg
 Chief Creative	Amy Kao
-Chief Operating	Chi-Hsiu Liu	Scientist, Editas Medicine
-Session Chairs	Chi-An (Annie) Cheng	Postdoc, Harvard Medical School		`;
+Chief Operating	Chi-Hsiu Liu	Scientist, Editas Medicine	CHLiuPhotoFromLinkedin.jpeg
+Session Chairs	Chi-An (Annie) Cheng	Postdoc, Harvard Medical School	Chi-An_Cheng.JPG	`;
 
 const tsv_array = tsv_str
 	.split('\n')
