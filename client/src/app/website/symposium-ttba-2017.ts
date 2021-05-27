@@ -29,13 +29,13 @@ export const ttbaSymposium2017 = {
         'showPageLink': true,
         'subjects': [{
             'title': '',
-            'description': `<p>Boston Taiwanese Biotechnology Association (BTBA) will hold the 2021 Annual Symposium virtually from 12:30 pm to 6:30 pm EDT on July 10 (Saturday), 2021. This event is co-hosted by the Harvard GSAS Taiwan Student Association.</p>
+            'description': `<p>Boston Taiwanese Biotechnology Association (BTBA) will hold the 2021 BTBA Virtual Annual Symposium from 12:50 pm to 6:30 pm EDT on July 10 & 11 (Saturday and Sunday) 2021.</p>
 
-			<p>This online symposium will bring experts from academia and industry to share their experiences in research, social responsibility, and career development, and lessons for young scientists. This year, we are honored to have Dr. Taiyin Yang, the Executive Vice President of Gilead Sciences, who supervised the development of Remdesivir, to deliver the keynote address.</p>
+			<p>This online symposium will bring experts from academia and industry to share their experiences and knowledge on their research/responsibility, personal career development, and lessons learned for young scientists. This year, we are honored to have Dr. Herren Wu, Ph.D., the Senior Vice President of AstraZeneca, and Dr. Jeannie T. Lee, M.D., Ph.D., Professor of Genetics of Harvard Medical School.</p>
 
 			<p>This event is free. Please <a href="https://www.eventbrite.com/e/2021-btba-virtual-annual-symposium-registration-155894517699" target="_blank">register on Eventbrite</a>, and you will receive information on how to join the meeting virtually.</p>
 
-			<p>As a non-profit organization,  we appreciate your consideration of giving a small gift to support BTBA! Your donation qualifies for tax-exemption and grants you guaranteed access to the 2020 BTBA Virtual Symposium meeting rooms.</p>`
+			<p>As a non-profit organization, we appreciate your consideration of giving a small gift to support BTBA! Your donation qualifies for tax-exemption and grants you guaranteed access to the 2021 BTBA Virtual Symposium meeting rooms.</p>`
         }, {
             'title': 'About BTBA',
             'description': '<p>BTBA is a 501(c)(3) non-profit organization started in 2012 by a group of Taiwanese graduate Students, postdocs and young professionals in the greater Boston area. Our goals are to foster individual career development, to enhance scientific collaborations, to facilitate interactions and to strengthen networking among academic and industrial bioscience communities in Taiwan and the US. We hold annual symposiums as well as seminars and workshops throughout the year. We hope to serve as a platform to foster a community for young scientists to share their research, exchange ideas and explore career opportunities.</p>'
