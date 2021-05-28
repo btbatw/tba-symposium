@@ -21,10 +21,10 @@ ng serve
 
 Build for production
 ```bash
-# set --base-href based on the sitte structure
+# set --base-href based on the site structure
 # in the following example, the symposium site lives under
 # https://main-site.org/2020
 
 # in .../tba-symposium/client directory
-ng build --prod --output-path build-2020  --base-href /2020/
+ng build --prod --output-path 2020  --base-href /2020/
 ```

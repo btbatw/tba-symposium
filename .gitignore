@@ -35,7 +35,7 @@ test.js
 api-docs.*
 server/tools/**
 client/docs/**
-client/build*
+client/20*
 
 ### Cloud9 IDE
 .c9/
