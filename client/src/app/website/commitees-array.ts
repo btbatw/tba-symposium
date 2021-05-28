@@ -4,7 +4,7 @@ const tsv_str = `Role	Name	Position	Image filename	Links
 Co-President	Hsien-Wei Yvonne Meng	Principal Scientist, Johnson and Johnson	Yvonne_Meng.jpeg	https://www.linkedin.com/in/hwyvonnemeng/
 Co-President	Erica P. Cai	Principal Investigator, Indiana Bioscience Research Institute	Erica_Cai.jpg	https://www.linkedin.com/in/ericapcai/
 Advisory Board	Margaret (Chia-Ying) Wey	Senior Medical Scientist, AstraZeneca	Margaret_Wey.jpg	https://www.linkedin.com/in/margaretwey/
-Advisory Board	Chih-Chung (Jerry) Lin	Postdoc, Masschusetts General Hospital	Jerry.png	https://www.linkedin.com/in/chih-chung-lin-680b48113/
+Advisory Board	Chih-Chung (Jerry) Lin	Postdoc, Masschusetts General Hospital	Jerry.jpg	https://www.linkedin.com/in/chih-chung-lin-680b48113/
 Advisory Board	Jimmy Chiu	Scientist II, bluebird bio	Jimmy_Chu.jpg	https://www.linkedin.com/in/chih-chi-jimmy-chu-526b0073/
 Advisory Board	Yung-Chih Cheng	Principal Scientist, Pfizer	Yung-Chih_Cheng.jpg	https://www.linkedin.com/in/yung-chih-cheng-60522333/
 Chief Executive	Ling-Fang Tseng	Clinical Scientist, Vertex Pharmaceuticals	Ling-Fang_Tseng.jpg	https://www.linkedin.com/in/lingfangtseng/

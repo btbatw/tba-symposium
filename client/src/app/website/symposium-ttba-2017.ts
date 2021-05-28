@@ -353,7 +353,7 @@ export const ttbaSymposium2017 = {
         }
     },
 	'acknowledgement': {
-		'title': 'acknowledgement',
+		'title': 'Organizing Committee',
 		'description': '',
 		'commitees': commiteesArray
 	},
