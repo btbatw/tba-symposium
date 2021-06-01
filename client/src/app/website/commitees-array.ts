@@ -14,12 +14,19 @@ Chief Scientific	Ting-Ya Chang	PhD candidate, Boston University	Tingya_Chang.JPG
 Chief Technology	Ming-Ju Tsai	Postdoc, Harvard Medical School	Ming-Ju_Tsai.jpg	https://www.linkedin.com/in/mingju-tsai/
 Chief Technology	Chih-Hung Chou	Postdoc, Broad Institute of MIT and Harvard	Chih-Hung_Chou.jpg	https://www.linkedin.com/in/chchou23/
 Chief Technology	Yu-An Chen	Research Scientist, Harvard Medical School	yu-an_chen.jpg	https://www.linkedin.com/in/yuanchenbio/
-Chief Technology	Li-Yuan Hung	Postdoc, Masschusetts General Hospital		https://www.linkedin.com/in/liyuanhung/
+Chief Technology	Li-Yuan Hung	Postdoc, Masschusetts General Hospital	li-yuan_hung.jpg	https://www.linkedin.com/in/liyuanhung/
 Chief Tax	Ting-Ya Chang	PhD candidate, Boston University	Tingya_Chang.JPG	https://www.linkedin.com/in/chang-ting-ya-sophia-76577420a/
 Chief Finance	Shu-Wei Wu	Senior Associate Scientist, Sanofi	Shu-Wei_Wu.jpg	https://www.linkedin.com/in/shu-wei-wu-570a98120/
-Chief Creative	Amy Kao
+Chief Creative	Amy Kao		Amy.jpg	
 Chief Operating	Chi-Hsiu Liu	Scientist, Editas Medicine	CHLiuPhotoFromLinkedin.jpeg	https://www.linkedin.com/in/chi-hsiu-zoe-liu-8436417a/
-Session Chairs	Chi-An (Annie) Cheng	Postdoc, Harvard Medical School	Chi-An_Cheng.JPG	https://www.linkedin.com/in/chi-an-annie-cheng-774797103/`;
+Session Chairs	Chi-An (Annie) Cheng	Postdoc, Harvard Medical School	Chi-An_Cheng.JPG	https://www.linkedin.com/in/chi-an-annie-cheng-774797103/
+Session Chairs	Yu-Tien Hsu	PhD Student, Poulation Health Sceicnes, Harvard University	Yu-Tien_Hsu.jpg	https://www.linkedin.com/in/yu-tien-hsu-04043241/
+Session Chairs	Szu-Ta Chen	Associate Medical Director, Takeda Pharmaceuticals	Szu-Ta_Chen.jpg	https://www.linkedin.com/in/szutachen-md-phd/
+Session Chairs	Yi-Hui Lai	PhD candidate, Helmholtz centre for Infection Research	Yi-Hui-Lai.jpeg	https://www.linkedin.com/in/yi-hui-lai-87070b9a/
+Session Chairs	Richard Liang	Biomarker Scientist, Denali Therapeutics	Richard_Liang.jpg	https://www.linkedin.com/in/richardliangphd/
+Session Chairs	Linda Kang	Scientist, NovoBind	Linda_Kang.JPG	https://www.linkedin.com/in/linda-kang-64bb8546/
+Session Chairs	Sheng Chih (Peter) Jin	Assistant Professor, Washington University in St. Louis	Peter_Jin.jpg	https://www.linkedin.com/in/sheng-chih-jin-3b60a011/
+Session Chairs	Hanting Phoebe Tsai	Senior Research Associate, Vertex Pharmaceuticals	Hanting_Phoebe_Tsai .jpg	https://www.linkedin.com/in/hanting-phoebe-tsai-298a443b/`;
 
 const tsv_array = tsv_str
 	.split('\n')
