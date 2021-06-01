@@ -80,7 +80,7 @@ export const ttbaSymposium2017 = {
             'from': new Date('2021/07/10 13:00 EDT'),
             'to': new Date('2021/07/10 14:10 EDT'),
             'title': 'Opening Keynote',
-            'topic': "Keynote by Dr. Herren Wu: Transforming patients’ lives: A story about innovation, strategy and resilience",
+            'topic': "Keynote by Dr. Herren Wu: Transforming patients’ lives: A story of innovation, strategy and resilience",
             'sessionDescription': '',
             'tags': [],
             'rooms': [],
