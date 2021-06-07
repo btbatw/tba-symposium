@@ -107,14 +107,14 @@ export const ttbaSymposium2017 = {
             'from': new Date('2021/07/10 14:20 EDT'),
             'to': new Date('2021/07/10 15:50 EDT'),
             'title': 'Academia to Industry I: Bench to Bedside',
-            'topic': null,
+            'topic': 'How do you evaluate biotechnology',
             'sessionDescription': '',
             'tags': [],
             'rooms': [],
             'speakers': [
-				// speakersObj['Hsiao-Ying Monica Wey'],
-				// speakersObj['Ming-Ru Wu'],
-				// speakersObj['Wan-Ting Grace Chen'],
+				speakersObj['Gautam Rajpal'],
+				speakersObj['Jeremy Chang'],
+				speakersObj['Ying-Li Chen'],
 				// speakersObj['Han-Yu Shih'],
 				// speakersObj['Yu-Chen Tony Tsai']
 			]
@@ -143,9 +143,9 @@ export const ttbaSymposium2017 = {
             'tags': [],
             'rooms': [],
             'speakers': [
-				// speakersObj['Steven Chang'],
-				// speakersObj['Hank Lin'],
-				// speakersObj['Hannah Shen'],
+				speakersObj['Sengwee Darren Toh'],
+				speakersObj['Lina Titievsky'],
+				speakersObj['Liz Garry'],
 				// speakersObj['Shianhuey Chiang'],
 			]
         }, {
@@ -172,14 +172,16 @@ export const ttbaSymposium2017 = {
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
-            'speakers': [{
-                'name': null,
-                'nameCh': null,
-                'affiliations': [],
-                'imgFileName': '',
-                'links': [],
-                'description': ''
-            }]
+            'speakers': [
+                // speakersObj['Szu-Ta Chen'],
+                // speakersObj['Hsiao-Ling Hung'],
+                // speakersObj['Allen Chia-En Lien'],
+                // speakersObj['Dajun Sun'],
+                // speakersObj['Rosa Wang'],
+                // speakersObj['Margaret Wey'],
+                // speakersObj['Shaoyu Chang'],
+                // speakersObj['Ting-Hui Wu']
+            ]
         },{
             'from': new Date('2021/07/11 12:50 EDT'),
             'to': new Date('2021/07/11 13:00 EDT'),
@@ -231,14 +233,11 @@ export const ttbaSymposium2017 = {
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
-            'speakers': [{
-                'name': null,
-                'nameCh': null,
-                'affiliations': [],
-                'imgFileName': '',
-                'links': [],
-                'description': ''
-            }]
+            'speakers': [
+                speakersObj['Tasuku Kitada'],
+                speakersObj['Allen Horhota'],
+                speakersObj['Ho-Chou Tu']
+            ]
         },{
             'from': new Date('2021/07/11 15:50 EDT'),
             'to': new Date('2021/07/11 16:00 EDT'),
@@ -258,19 +257,15 @@ export const ttbaSymposium2017 = {
         },{
             'from': new Date('2021/07/11 16:00 EDT'),
             'to': new Date('2021/07/11 17:20 EDT'),
-            'title': 'Academia to Industry II: Gene Therapy ',
+            'title': 'Academia to Industry II: Ways to Gene Therapy ',
             'topic': null,
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
-            'speakers': [{
-                'name': null,
-                'nameCh': null,
-                'affiliations': [],
-                'imgFileName': '',
-                'links': [],
-                'description': ''
-            }]
+            'speakers': [
+                speakersObj['Ariel (Wei-His) Yeh'],
+                speakersObj['Yi-Li Min']
+            ]
         },{
             'from': new Date('2021/07/11 17:20 EDT'),
             'to': new Date('2021/07/11 17:30 EDT'),
@@ -295,14 +290,20 @@ export const ttbaSymposium2017 = {
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
-            'speakers': [{
-                'name': null,
-                'nameCh': null,
-                'affiliations': [],
-                'imgFileName': '',
-                'links': [],
-                'description': ''
-            }]
+            'speakers': [
+                // speakersObj['Erica Cai'],
+                // speakersObj['Chia-Wei Cheng'],
+                // speakersObj['Meng-Chuan Lai'],
+                // speakersObj['Sheng Chih (Peter) Jin'],
+                // speakersObj['Hsiao-Ying (Monica) Wey'],
+                // speakersObj['Shian-Huey Chiang'],
+                // speakersObj['Meredith Kuo'],
+                // speakersObj['Richard Liang'],
+                // speakersObj['Yvonne Meng'],
+                // speakersObj['Pin-Kuan Lai'],
+                // speakersObj['Ching-Yung Lin'],
+                // speakersObj['Michael Shih']
+            ]
         }]
     },
     'elevatorPitch': {
