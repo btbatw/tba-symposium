@@ -1,5 +1,7 @@
 import { speakersObj } from './speakers-obj';
 import { commiteesArray } from './commitees-array';
+import { commiteesObj } from './commitees-array';
+
 
 export const ttbaSymposium2017 = {
     'symposiumInfo': {
@@ -167,22 +169,35 @@ export const ttbaSymposium2017 = {
         }, {
             'from': new Date('2021/07/10 17:30 EDT'),
             'to': new Date('2021/07/10 18:30 EDT'),
-            'title': 'Virtual Networking with BTBA podcast speakers ',
-            'topic': null,
+			'numOfParallelSessions': 2,
+            'title': 'Networking - Clinical Research',
+            'topic': '',
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
             'speakers': [
-                // speakersObj['Szu-Ta Chen'],
-                // speakersObj['Hsiao-Ling Hung'],
-                // speakersObj['Allen Chia-En Lien'],
-                // speakersObj['Dajun Sun'],
-                // speakersObj['Rosa Wang'],
-                // speakersObj['Margaret Wey'],
-                // speakersObj['Shaoyu Chang'],
-                // speakersObj['Ting-Hui Wu']
+	            speakersObj['Szu-Ta Chen'],
+                speakersObj['Hsiao-Ling Hung'],
+                speakersObj['Allen Chia-En Lien'],
+                speakersObj['Dajun Sun'],
+                speakersObj['Rosa Wang'],
+                speakersObj['Margaret Wey'],
             ]
-        },{
+        }, {
+            'from': new Date('2021/07/10 17:30 EDT'),
+            'to': new Date('2021/07/10 18:30 EDT'),
+			'numOfParallelSessions': 2,
+            'title': 'Networking - Start-ups & VC',
+            'topic': '',
+			'sessionDescription': 'zzz',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [
+				speakersObj['Shaoyu Chang'],
+                speakersObj['Yi-Kai Lo'],
+                speakersObj['Ting-Hui Wu'],
+            ]
+        }, {
             'from': new Date('2021/07/11 12:50 EDT'),
             'to': new Date('2021/07/11 13:00 EDT'),
             'title': 'Virtual Lunch ',
@@ -282,27 +297,49 @@ export const ttbaSymposium2017 = {
                 'links': [],
                 'description': ''
             }]
-        },{
+        }, {
             'from': new Date('2021/07/11 17:30 EDT'),
             'to': new Date('2021/07/11 18:30 EDT'),
-            'title': 'Virtual Networking with BTBA podcast speakers ',
+			'numOfParallelSessions': 3,
+            'title': 'Networking - Academia',
             'topic': null,
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
             'speakers': [
-                // speakersObj['Erica Cai'],
-                // speakersObj['Chia-Wei Cheng'],
-                // speakersObj['Meng-Chuan Lai'],
-                // speakersObj['Sheng Chih (Peter) Jin'],
-                // speakersObj['Hsiao-Ying (Monica) Wey'],
-                // speakersObj['Shian-Huey Chiang'],
-                // speakersObj['Meredith Kuo'],
-                // speakersObj['Richard Liang'],
-                // speakersObj['Yvonne Meng'],
-                // speakersObj['Pin-Kuan Lai'],
-                // speakersObj['Ching-Yung Lin'],
-                // speakersObj['Michael Shih']
+                speakersObj['Erica Cai'],
+                speakersObj['Chia-Wei Cheng'],
+                speakersObj['Meng-Chuan Lai'],
+                speakersObj['Sheng Chih (Peter) Jin'],
+            ]
+        }, {
+            'from': new Date('2021/07/11 17:30 EDT'),
+            'to': new Date('2021/07/11 18:30 EDT'),
+			'numOfParallelSessions': 3,
+            'title': 'Networking - Preclinical and R&D',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [
+                speakersObj['Shian-Huey Chiang'],
+                speakersObj['Meredith Kuo'],
+                speakersObj['Richard Liang'],
+                speakersObj['Yvonne Meng'],
+            ]
+        }, {
+            'from': new Date('2021/07/11 17:30 EDT'),
+            'to': new Date('2021/07/11 18:30 EDT'),
+			'numOfParallelSessions': 3,
+            'title': 'Networking - AI & Machine Learning ',
+            'topic': null,
+			'sessionDescription': '',
+            'tags': [],
+            'rooms': ['Room B103'],
+            'speakers': [
+                speakersObj['Pin-Kuan Lai'],
+                speakersObj['Ching-Yung Lin'],
+                speakersObj['Michael Shih']
             ]
         }]
     },

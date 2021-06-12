@@ -17,7 +17,7 @@ Chief Technology	Yu-An Chen	Research Scientist, Harvard Medical School	yu-an_che
 Chief Technology	Li-Yuan Hung	Postdoc, Masschusetts General Hospital	li-yuan_hung.jpg	https://www.linkedin.com/in/liyuanhung/
 Chief Tax	Ting-Ya Chang	PhD candidate, Boston University	Tingya_Chang.JPG	https://www.linkedin.com/in/chang-ting-ya-sophia-76577420a/
 Chief Finance	Shu-Wei Wu	Senioår Associate Scientist, Sanofi	Shu-Wei_Wu.jpg	https://www.linkedin.com/in/shu-wei-wu-570a98120/
-Chief Creative	Amy Kao		Amy.jpg	
+Chief Creative	Amy Kao		Amy.jpg
 Chief Operating	Chi-Hsiu Liu	Scientist, Editas Medicine	CHLiuPhotoFromLinkedin.jpeg	https://www.linkedin.com/in/chi-hsiu-zoe-liu-8436417a/
 Session Chair	Chi-An (Annie) Cheng	Postdoc, Harvard Medical School	Chi-An_Cheng.JPG	https://www.linkedin.com/in/chi-an-annie-cheng-774797103/
 Session Chair	Yu-Tien Hsu	PhD Student, Poulation Health Sceicnes, Harvard University	Yu-Tien_Hsu.jpg	https://www.linkedin.com/in/yu-tien-hsu-04043241/
@@ -51,3 +51,4 @@ tsv_array.forEach(el => {
 });
 
 export const commiteesArray = tsv_array.slice(1);
+export const commiteesObj = tsv_dict;
