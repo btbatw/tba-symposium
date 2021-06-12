@@ -176,7 +176,7 @@ export const ttbaSymposium2017 = {
             'tags': [],
             'rooms': ['Room B103'],
             'speakers': [
-	            speakersObj['Szu-Ta Chen'],
+                commiteesObj['Szu-Ta Chen'],
                 speakersObj['Hsiao-Ling Hung'],
                 speakersObj['Allen Chia-En Lien'],
                 speakersObj['Dajun Sun'],
@@ -307,10 +307,11 @@ export const ttbaSymposium2017 = {
             'tags': [],
             'rooms': ['Room B103'],
             'speakers': [
-                speakersObj['Erica Cai'],
+                commiteesObj['Erica P. Cai'],
                 speakersObj['Chia-Wei Cheng'],
                 speakersObj['Meng-Chuan Lai'],
-                speakersObj['Sheng Chih (Peter) Jin'],
+                commiteesObj['Sheng Chih (Peter) Jin'],
+                speakersObj['Hsiao-Ying (Monica) Wey']
             ]
         }, {
             'from': new Date('2021/07/11 17:30 EDT'),
@@ -324,8 +325,8 @@ export const ttbaSymposium2017 = {
             'speakers': [
                 speakersObj['Shian-Huey Chiang'],
                 speakersObj['Meredith Kuo'],
-                speakersObj['Richard Liang'],
-                speakersObj['Yvonne Meng'],
+                commiteesObj['Richard Liang'],
+                commiteesObj['Hsien-Wei Yvonne Meng']
             ]
         }, {
             'from': new Date('2021/07/11 17:30 EDT'),
@@ -337,7 +338,7 @@ export const ttbaSymposium2017 = {
             'tags': [],
             'rooms': ['Room B103'],
             'speakers': [
-                speakersObj['Pin-Kuan Lai'],
+                commiteesObj['Pin-Kuang Lai'],
                 speakersObj['Ching-Yung Lin'],
                 speakersObj['Michael Shih']
             ]
