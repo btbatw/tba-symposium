@@ -3,7 +3,7 @@
 	*ngFor="let speaker of speakers">
 	<div fxLayout fxLayoutAlign="space-between">
 		<div fxFlex="30%" fxFlex.xs="30%">
-			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/commitees/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
+			<img [style.width]="'100%'" src="{{speaker.imgFileName ? 'assets/img/speakers/' + speaker.imgFileName : 'assets/img/carousel_01.jpg'}}">
 		</div>
 		<div fxFlex="65%" fxFlex.xs="65%">
 			<p class="mat-caption">{{ speaker.role }}</p>

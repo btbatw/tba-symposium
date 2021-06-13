@@ -181,7 +181,7 @@ export const ttbaSymposium2017 = {
                 speakersObj['Allen Chia-En Lien'],
                 speakersObj['Dajun Sun'],
                 speakersObj['Rosa Wang'],
-                speakersObj['Margaret Wey'],
+                commiteesObj['Margaret (Chia-Ying) Wey'],
             ]
         }, {
             'from': new Date('2021/07/10 17:30 EDT'),
