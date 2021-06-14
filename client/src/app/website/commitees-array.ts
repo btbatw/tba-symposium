@@ -16,7 +16,7 @@ Chief Technology	Chih-Hung Chou	Postdoc, Broad Institute of MIT and Harvard	Chih
 Chief Technology	Yu-An Chen	Research Scientist, Harvard Medical School	yu-an_chen.jpg	https://www.linkedin.com/in/yuanchenbio/
 Chief Technology	Li-Yuan Hung	Postdoc, Masschusetts General Hospital	li-yuan_hung.jpg	https://www.linkedin.com/in/liyuanhung/
 Chief Tax	Ting-Ya Chang	PhD candidate, Boston University	Tingya_Chang.JPG	https://www.linkedin.com/in/chang-ting-ya-sophia-76577420a/
-Chief Finance	Shu-Wei Wu	Senioår Associate Scientist, Sanofi	Shu-Wei_Wu.jpg	https://www.linkedin.com/in/shu-wei-wu-570a98120/
+Chief Finance	Shu-Wei Wu	Senior Associate Scientist, Sanofi	Shu-Wei_Wu.jpg	https://www.linkedin.com/in/shu-wei-wu-570a98120/
 Chief Creative	Amy Kao		Amy.jpg
 Chief Operating	Chi-Hsiu Liu	Scientist, Editas Medicine	CHLiuPhotoFromLinkedin.jpeg	https://www.linkedin.com/in/chi-hsiu-zoe-liu-8436417a/
 Session Chair	Chi-An (Annie) Cheng	Postdoc, Harvard Medical School	Chi-An_Cheng.JPG	https://www.linkedin.com/in/chi-an-annie-cheng-774797103/

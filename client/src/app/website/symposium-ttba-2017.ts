@@ -70,14 +70,10 @@ export const ttbaSymposium2017 = {
             'sessionDescription': '',
             'tags': [],
             'rooms': [],
-            'speakers': [{
-                'name': null,
-                'nameCh': null,
-                'affiliations': [],
-                'imgFileName': '',
-                'links': [],
-                'description': ''
-            }]
+            'speakers': [
+                commiteesObj['Erica P. Cai'],
+                commiteesObj['Hsien-Wei Yvonne Meng'],
+            ]
         }, {
             'from': new Date('2021/07/10 13:00 EDT'),
             'to': new Date('2021/07/10 14:10 EDT'),
@@ -140,8 +136,8 @@ export const ttbaSymposium2017 = {
             'from': new Date('2021/07/10 16:00 EDT'),
             'to': new Date('2021/07/10 17:20 EDT'),
             'title': 'Trending Topic I: Real World Evidence',
-            'topic': null,
-			'sessionDescription': '',
+            'topic': 'Real World Evidence: Trends and Application of Real-World Data in Drug Development and Safety',
+			'sessionDescription': null,
             'tags': [],
             'rooms': [],
             'speakers': [
@@ -272,7 +268,7 @@ export const ttbaSymposium2017 = {
         },{
             'from': new Date('2021/07/11 16:00 EDT'),
             'to': new Date('2021/07/11 17:20 EDT'),
-            'title': 'Academia to Industry II: Ways to Gene Therapy ',
+            'title': 'Academia to Industry II: Ways to Gene Therapy',
             'topic': null,
 			'sessionDescription': '',
             'tags': [],
@@ -289,14 +285,10 @@ export const ttbaSymposium2017 = {
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
-            'speakers': [{
-                'name': null,
-                'nameCh': null,
-                'affiliations': [],
-                'imgFileName': '',
-                'links': [],
-                'description': ''
-            }]
+            'speakers': [
+                commiteesObj['Erica P. Cai'],
+                commiteesObj['Hsien-Wei Yvonne Meng'],
+            ]
         }, {
             'from': new Date('2021/07/11 17:30 EDT'),
             'to': new Date('2021/07/11 18:30 EDT'),
