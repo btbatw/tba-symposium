@@ -213,7 +213,7 @@ export const ttbaSymposium2017 = {
             'from': new Date('2021/07/11 13:00 EDT'),
             'to': new Date('2021/07/11 14:10 EDT'),
             'title': 'Closing Keynote ',
-            'topic': "Keynote by Dr. Jeannie T. Lee, M.D., Ph.D. : Reactivating a sex chromosome to treat Rett syndrome and other X-linked disorders",
+            'topic': "Keynote by Jeannie T. Lee, M.D., Ph.D. : Reactivating a sex chromosome to treat Rett syndrome and other X-linked disorders",
 			'sessionDescription': '',
             'tags': [],
             'rooms': ['Room B103'],
