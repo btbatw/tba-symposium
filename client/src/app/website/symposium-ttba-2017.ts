@@ -48,7 +48,7 @@ export const ttbaSymposium2017 = {
         'showPageLink': true,
         'schedules': [{
             'from': new Date('2021/07/10 12:30 EDT'),
-            'to': new Date('2021/07/10 12:50 EDT'),
+            'to': new Date('2021/07/10 12:45 EDT'),
             'title': 'Meeting room opens for attendees',
             'topic': null,
             'sessionDescription': '',
@@ -63,6 +63,17 @@ export const ttbaSymposium2017 = {
                 'description': ''
             }]
         }, {
+            'from': new Date('2021/07/10 12:45 EDT'),
+            'to': new Date('22021/07/10 12:50 EDT'),
+            'title': 'Message from the Minister of Science and Technology of Taiwan',
+            'topic': null,
+            'sessionDescription': '',
+            'tags': [],
+            'rooms': [],
+            'speakers': [
+                speakersObj['Tsung-Tsong Wu']
+            ]
+        },{
             'from': new Date('2021/07/10 12:50 EDT'),
             'to': new Date('22021/07/10 13:00 EDT'),
             'title': 'Opening Remarks',
@@ -74,7 +85,7 @@ export const ttbaSymposium2017 = {
                 commiteesObj['Erica P. Cai'],
                 commiteesObj['Hsien-Wei Yvonne Meng'],
             ]
-        }, {
+        },{
             'from': new Date('2021/07/10 13:00 EDT'),
             'to': new Date('2021/07/10 14:10 EDT'),
             'title': 'Opening Keynote',

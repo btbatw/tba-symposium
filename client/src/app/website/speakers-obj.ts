@@ -35,7 +35,8 @@ Networking - Preclinical and R&D	Richard Liang		Biomarker Scientist, Denali Ther
 Networking - Preclinical and R&D	Yvonne Meng		Principal Scientist, Biologics Discovery, Janssen Biotherapeutics (JBIO) at Johnson & Johnson
 Networking - AI & Machine Learning 	Pin-Kuan Lai		Incoming Assistant Professor, Stevens Institute of Technology
 Networking - AI & Machine Learning 	Ching-Yung Lin		CEO, Graphen Inc.	Chin-Yung-Lin.jpg		Yes/No	https://www.linkedin.com/in/ching-yung-lin-97b640/
-Networking - AI & Machine Learning 	Michael Shih		Data Scientist at GNF of Novartis Institutes for BioMedical Research (NIBR)	Michael-Shih.jpg		Yes/No	https://www.linkedin.com/in/michaelcshih/			`;
+Networking - AI & Machine Learning 	Michael Shih		Data Scientist at GNF of Novartis Institutes for BioMedical Research (NIBR)	Michael-Shih.jpg		Yes/No	https://www.linkedin.com/in/michaelcshih/			
+MOST	Tsung-Tsong Wu		Minister of Science and Technology of Taiwan	Tsung-Tsong-wu.jpg		Yes/No	https://www.youtube.com/watch?v=YiyJPaUPiOE`;
 
 const tsv_array = tsv_str
 	.split('\n')

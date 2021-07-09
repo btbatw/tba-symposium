@@ -11,6 +11,7 @@
 			<p class="mat-body-1">{{ speaker.affiliations[0] }}</p>
 		</div>
 	</div>
+
 	<div fxLayout fxLayoutAlign="end" fxLayoutGap="10px">
 		<button md-mini-fab *ngFor="let link of speaker.links" (click)="goToLink(link)">
 			<fa name="{{ link.indexOf('linkedin') > 0 ? 'linkedin-square' : 'link' }}" size="lg"></fa>
